@@ -10,11 +10,16 @@ const Link = ({ href, children }: { href: string; children: React.ReactNode }) =
 
 const isDevelop: boolean = true;
 
-const navItems = [
-    { href: "/works", label: "Works" },
-    { href: "/blogs", label: "Blogs" },
-    { href: "/links", label: "Links" },
-    { href: "/contact", label: "Contact" },
+type NavItem = {
+    href: string;
+    label: string;
+}
+const navItems: Array<NavItem> = [
+    { label: "About", href: "/about" },
+    { label: "Works", href: "/works" },
+    { label: "Blogs", href: "/blogs", },
+    { label: "Links", href: "/links" },
+    { label: "Contact", href: "https://forms.gle/GmbZXQWXfwZpf4mr5" },
 ]
 
 const IndexPage = () => {
@@ -36,7 +41,7 @@ const IndexPage = () => {
                                     </div>
 
                                     <div className="mt-5">
-                                        <p className="text-gray-600 text-center border-b pb-3">
+                                        <p className="font-bold text-center border-b pb-3">
                                             I am a scenario writer and software developer.
                                         </p>
 
@@ -57,7 +62,7 @@ const IndexPage = () => {
 
 
 
-                                            <div className="mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-center sm:space-x-4 space-y-2 sm:space-y-0 text-center">
+                                            <div className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-4 text-center">
                                                 {navItems.map((item) => (
                                                     <Link key={item.href} href={item.href}>{item.label}</Link>
                                                 ))}
