@@ -17,7 +17,7 @@ type NavItem = {
 const navItems: Array<NavItem> = [
     { label: "About", href: "/about" },
     { label: "Works", href: "/works" },
-    { label: "Blogs", href: "/blogs", },
+    { label: "Blogs", href: "https://qiita.com/tanahiro2010", },
     { label: "Links", href: "/links" },
     { label: "Contact", href: "https://forms.gle/GmbZXQWXfwZpf4mr5" },
 ]
