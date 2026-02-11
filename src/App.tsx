@@ -2,12 +2,27 @@ import type { BaseRoute, HasChildrenRoute } from './types/routes';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './app/layout';
 import IndexPage from './app/index';
+import About from './app/about';
 import './index.css';
 
 const routes: Array<HasChildrenRoute> = [
   {
     path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
-    element: <div>About Page</div>,
+    element: <About />,
+  },
+  {
+    path: "/works", meta: { title: "Works", navLabel: "Works", visibleInNav: true },
+    element: null,
+    children: [
+      {
+        path: "/", meta: { title: "Works", navLabel: "Works", visibleInNav: false },
+        element: null,
+      }
+    ]
+  },
+  {
+    path: "/links", meta: { title: "Links", navLabel: "Links", visibleInNav: true },
+    element: null
   }
 ];
 
