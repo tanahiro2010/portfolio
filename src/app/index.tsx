@@ -62,11 +62,11 @@ const IndexPage = () => {
                 {!isDevelop ? (
                     <div className="sm:w-3/4">
                         <div className="w-full flex flex-col space-x-4 items-center text-left sm:items-stretch sm:flex-row">
-                            <div className="w-2/3 sm:w-1/2 p-3">
+                            <div className="w-3/4 sm:w-1/2 p-3">
                                 <img src="tanahiro_and_lambda.jpeg" alt="tanahiro2010のアイコン" className="rounded-md" />
                             </div>
 
-                            <div className="w-2/3 sm:w-1/2 p-2 sm:p-3">
+                            <div className="w-3/4 sm:w-1/2 p-2 sm:p-3">
                                 <BlurFade duration={0.5} delay={0.7}>
                                     <div className="flex flex-col">
                                         <h2 className="text-2xl font-bold leading-tight">田中博悠</h2>
