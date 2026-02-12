@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { BlurFade } from "@/components/animation/blur-fade";
 import { Link } from "@/components/ui/link";
+import { numToMs } from "@/lib/utils/time";
 
 type NavItem = {
     href: string;
@@ -13,6 +14,7 @@ const navItems: NavItem[] = [
     { label: "Links", href: "/links" },
     { label: "Contact", href: "https://forms.gle/GmbZXQWXfwZpf4mr5" },
 ];
+const TIME_TO_DEVELOP: number = numToMs(5); // milliseconds
 
 const IndexPage = () => {
     const [isDevelop, setIsDevelop] = useState(false);
@@ -24,7 +26,7 @@ const IndexPage = () => {
         }
         timerRef.current = setTimeout(() => {
             setIsDevelop(true);
-        }, 3000);
+        }, TIME_TO_DEVELOP);
     }, []);
 
     const handleEndPress = useCallback(() => {
