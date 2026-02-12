@@ -1,12 +1,5 @@
 import { BlurFade } from "@/components/animation/blur-fade";
-
-const Link = ({ href, children }: { href: string; children: React.ReactNode }) => {
-    return (
-        <a href={href} className="b py-2 px-4 inline-flex items-center justify-center">
-            {children}
-        </a>
-    );
-}
+import { Link } from "@/components/ui/link";
 
 const isDevelop: boolean = true;
 
