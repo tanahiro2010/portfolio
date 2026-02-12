@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
+import { BlurFade } from "@/components/animation/blur-fade";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
 const Layout = () => {
     return (
-        <div className="app-layout">
+        <BlurFade className="app-layout" duration={0.5} delay={0.2} offset={12} direction="down">
             <Header />
 
             <main>
@@ -12,7 +13,7 @@ const Layout = () => {
             </main>
             
             <Footer />
-        </div>
+        </BlurFade>
     );
 }
 
