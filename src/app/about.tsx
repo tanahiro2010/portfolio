@@ -2,7 +2,9 @@
 
 const About = () => {
     return (
-        null
+        <main>
+            test
+        </main>
     );
 }
 
