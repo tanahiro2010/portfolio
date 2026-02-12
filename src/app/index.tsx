@@ -1,7 +1,6 @@
+import { useState, useEffect } from "react";
 import { BlurFade } from "@/components/animation/blur-fade";
 import { Link } from "@/components/ui/link";
-
-const isDevelop: boolean = true;
 
 type NavItem = {
     href: string;
@@ -16,6 +15,15 @@ const navItems: Array<NavItem> = [
 ]
 
 const IndexPage = () => {
+    const [isDevelop, setIsDevelop] = useState(false);
+
+    useEffect(() => {
+        const uri = new URL(window.location.href);
+        if (uri.searchParams.get("dev") === "true") {
+            setIsDevelop(true);
+            return;
+        }
+    }, []);
     return (
         <BlurFade duration={0.5} delay={0.2} offset={12} direction="up">
             <main className="flex min-h-screen flex-col items-center justify-center">
