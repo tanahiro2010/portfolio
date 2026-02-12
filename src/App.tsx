@@ -13,12 +13,7 @@ const routes: Array<HasChildrenRoute> = [
   {
     path: "/works", meta: { title: "Works", navLabel: "Works", visibleInNav: true },
     element: null,
-    children: [
-      {
-        path: "/", meta: { title: "Works", navLabel: "Works", visibleInNav: false },
-        element: null,
-      }
-    ]
+    children: [],
   },
   {
     path: "/links", meta: { title: "Links", navLabel: "Links", visibleInNav: true },
