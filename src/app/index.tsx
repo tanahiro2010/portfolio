@@ -27,7 +27,7 @@ const IndexPage = () => {
     return (
         <BlurFade duration={0.5} delay={0.2} offset={12} direction="up">
             <main className="flex min-h-screen flex-col items-center justify-center">
-                {isDevelop ? (
+                {isDevelop === false ? (
                     <div className="sm:w-3/4">
                         <div className="w-full flex flex-col space-x-4 items-center text-left sm:items-stretch sm:flex-row">
                             <div className="w-2/3 sm:w-1/2 p-3">
