@@ -26,12 +26,23 @@ function updateVersionLog(content, oldVersion, newVersion) {
     
     const logEntry = `## [${newVersion}] - ${date}\n\n- Updated to version ${newVersion}.\n\n`;
     const updatedLog = content.replace(/(## \[\d+\.\d+\.\d+\] - \d{4}-\d{2}-\d{2}\n\n- .*\n\n)/, logEntry + '$1');
-    
-    fs.writeFileSync(versionLogPath, updatedLog, 'utf8');
+
+    // If the replace above didn't find a matching release block, prepend the new log entry.
+    const finalLog = updatedLog === content ? logEntry + content : updatedLog;
+
+    fs.writeFileSync(versionLogPath, finalLog, 'utf8');
     console.log(`Version log updated with version ${newVersion}`);
 }
 
 function main() {
+    // Ensure version log exists
+    if (!fs.existsSync(versionLogPath)) {
+        const initDate = new Date().toISOString().split('T')[0];
+        const initContent = `latest_version: [0.0.0]\n\n## [0.0.0] - ${initDate}\n\n- Initial version.\n\n`;
+        fs.writeFileSync(versionLogPath, initContent, 'utf8');
+        console.log('Created initial version log.');
+    }
+
     const content = fs.readFileSync(versionLogPath, 'utf8');
     console.log('Successfully read version log.');
     const latestVersion = getLatestVersion(content);
@@ -43,8 +54,9 @@ function main() {
     }
 
     // generate new version (for example, incrementing the patch number)
-    const versionParts = latestVersion.split('.').map(Number);
-    versionParts[2] += 1; // Increment patch number
+    const versionParts = latestVersion.split('.').map(p => Number(p) || 0);
+    while (versionParts.length < 3) versionParts.push(0);
+    versionParts[2] = (versionParts[2] || 0) + 1; // Increment patch number
     const newVersion = versionParts.join('.');
     console.log(`New version to be added: ${newVersion}`);
 
