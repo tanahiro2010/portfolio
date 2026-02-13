@@ -103,7 +103,7 @@ const IndexPage = () => {
                         </div>
                     </div>
                 ) : (
-                    <BlurFade duration={0.5} delay={0.2} offset={12} direction="up">
+                    <BlurFade duration={0.5} delay={0.2} offset={12} direction="up" className="text-center">
                         <h1 className="text-3xl font-bold">田中博悠 - tanahiro2010</h1>
                         <div className="mt-5">
                             I am a scenario writer and software developer.
