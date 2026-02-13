@@ -7,8 +7,9 @@ type Props = {
 }
 
 const Show = ({ children, show, className = "" }: Props) => {
+    const visibility = show === "mobile" ? "block sm:hidden" : "hidden sm:block";
     return (
-        <div className={`${cn(`${show === "mobile" ? "block sm:hidden" : "hidden sm:block"}`, className)}`}>
+        <div className={cn(className, visibility)}>
             { children }
         </div>
     );
