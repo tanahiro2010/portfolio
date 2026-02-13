@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const versionLogPath = 'version.md';
+const versionLogPath = '/version.md';
 
 /***
  * @returns { string|null } The latest version found in the version log.
