@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const versionLogPath = '/version.md';
+const versionLogPath = 'version.md';
 
 /***
  * @param { string } content - The content of the version log to search.
