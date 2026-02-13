@@ -94,7 +94,7 @@ const IndexPage = () => {
                                             </div>
 
                                             <div className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-4 text-center">
-                                                {navigationLinks}
+                                                { navigationLinks }
                                             </div>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@ const IndexPage = () => {
                         </div>
 
                         <div className="mt-5 flex space-x-4">
-                            {navigationLinks}
+                            { navigationLinks }
                         </div>
                     </BlurFade>
                 )}
