@@ -25,6 +25,7 @@ This project is licensed under the MIT License.
 ## 参考記事など
 - [GitHub Actions を用いてFTPサーバーへ自動Deployする方法](https://qiita.com/hoshimado/items/e2073b7a6d40a23cfb55)
 - [How to setup react project with vite](https://react.dev/learn/build-a-react-app-from-scratch)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
 
 
 # React + TypeScript + Vite
