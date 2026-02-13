@@ -33,7 +33,9 @@ function updateVersionLog(content, oldVersion, newVersion) {
 
 function main() {
     const content = fs.readFileSync(versionLogPath, 'utf8');
+    console.log('Successfully read version log.');
     const latestVersion = getLatestVersion(content);
+    console.log(`Latest version found: ${latestVersion}`);
 
     if (!latestVersion) {
         console.error('Could not find the latest version in the version log.');
@@ -44,8 +46,11 @@ function main() {
     const versionParts = latestVersion.split('.').map(Number);
     versionParts[2] += 1; // Increment patch number
     const newVersion = versionParts.join('.');
+    console.log(`New version to be added: ${newVersion}`);
 
     updateVersionLog(content, latestVersion, newVersion);
+
+    console.log('Version log update complete.');
 }
 
 main();
