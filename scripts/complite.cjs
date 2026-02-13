@@ -3,10 +3,11 @@ const fs = require('fs');
 const versionLogPath = '/version.md';
 
 /***
+ * @param { string } content - The content of the version log to search.
  * @returns { string|null } The latest version found in the version log.
  */
-function getLatestVersion() {
-    const latestVersionRegex = /latest_version: \[(\d+\.\d+\.\d+)\]/;
+function getLatestVersion(content) {
+    const latestVersionRegex = /latest_version:\s*\[(\d+\.\d+\.\d+)\]/;
     const match = content.match(latestVersionRegex);
 
     return match ? match[1] : null;
