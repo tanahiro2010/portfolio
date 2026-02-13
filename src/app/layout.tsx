@@ -8,7 +8,7 @@ const Layout = () => {
         <BlurFade className="app-layout" duration={0.5} delay={0.2} offset={12} direction="down">
             <Header />
 
-            <main>
+            <main className="px-4 py-2">
                 <Outlet />
             </main>
             
