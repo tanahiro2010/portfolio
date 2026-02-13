@@ -20,6 +20,20 @@ const IndexPage = () => {
     const [isDevelop, setIsDevelop] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+    useEffect(() => {
+        const uri = new URL(window.location.href);
+        if (uri.searchParams.get("dev") === "true") {
+            setIsDevelop(true);
+        }
+
+        // Cleanup function to clear timer on unmount
+        return () => {
+            if (timerRef.current) {
+                clearTimeout(timerRef.current);
+            }
+        };
+    }, []);
+
     const handleStartPress = useCallback(() => {
         if (timerRef.current) {
             clearTimeout(timerRef.current);
@@ -36,25 +50,12 @@ const IndexPage = () => {
         }
     }, []);
 
-    useEffect(() => {
-        const uri = new URL(window.location.href);
-        if (uri.searchParams.get("dev") === "true") {
-            setIsDevelop(true);
-        }
-
-        // Cleanup function to clear timer on unmount
-        return () => {
-            if (timerRef.current) {
-                clearTimeout(timerRef.current);
-            }
-        };
-    }, []);
-
     const navigationLinks = useMemo(() => (
         navItems.map((item) => (
             <Link key={item.href} href={item.href}>{item.label}</Link>
         ))
     ), []);
+
 
     return (
         <BlurFade duration={0.5} delay={0.2} offset={12} direction="up">
@@ -81,7 +82,7 @@ const IndexPage = () => {
                                         <div className="flex flex-col justify-between mt-5">
                                             <div className="text-gray-600 hidden sm:block space-y-4">
                                                 <p>
-                                                    I write scenarios for visual novels and develop software applications. 
+                                                    I write scenarios for visual novels and develop software applications.
                                                     Welcome to my personal website where you can find my works, blogs, and links.
                                                 </p>
 
@@ -93,7 +94,7 @@ const IndexPage = () => {
                                             </div>
 
                                             <div className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-4 text-center">
-                                                { navigationLinks }
+                                                {navigationLinks}
                                             </div>
                                         </div>
                                     </div>
@@ -109,7 +110,7 @@ const IndexPage = () => {
                         </div>
 
                         <div className="mt-5 flex space-x-4">
-                            { navigationLinks }
+                            {navigationLinks}
                         </div>
                     </BlurFade>
                 )}
