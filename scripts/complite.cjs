@@ -25,10 +25,7 @@ function updateVersionLog(content, oldVersion, newVersion) {
     content = content.replace(`latest_version: [${oldVersion}]`, `latest_version: [${newVersion}]`);
     
     const logEntry = `## [${newVersion}] - ${date}\n\n- Updated to version ${newVersion}.\n\n`;
-    const updatedLog = content.replace(/(## \[\d+\.\d+\.\d+\] - \d{4}-\d{2}-\d{2}\n\n- .*\n\n)/, logEntry + '$1');
-
-    // If the replace above didn't find a matching release block, prepend the new log entry.
-    const finalLog = updatedLog === content ? logEntry + content : updatedLog;
+    const updatedLog = content + "\n\n" + logEntry;
 
     fs.writeFileSync(versionLogPath, finalLog, 'utf8');
     console.log(`Version log updated with version ${newVersion}`);
