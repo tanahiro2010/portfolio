@@ -1,3 +1,32 @@
+# tanahiro2010のポートフォリオ
+
+Vite + React + TypeScriptで作成したポートフォリオサイトです。
+
+デプロイは主に[シンクラウド for フリー](https://xfree.ne.jp)を利用しています。
+
+手動デプロイの手間を減らすためにGitHub ActionsによるCI/CDも導入しています。
+
+## 使用技術
+- Vite
+- React
+- TypeScript
+- ESLint
+- Tailwind CSS
+- DaisyUI
+- Framer Motion
+- React Router DOM
+- React Icons
+- GitHub Actions
+- シンクラウド for フリー
+
+## ライセンス
+This project is licensed under the MIT License.
+
+## 参考記事など
+- [GitHub Actions を用いてFTPサーバーへ自動Deployする方法](https://qiita.com/hoshimado/items/e2073b7a6d40a23cfb55)
+- [How to setup react project with vite](https://react.dev/learn/build-a-react-app-from-scratch)
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
