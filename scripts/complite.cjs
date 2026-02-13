@@ -24,7 +24,7 @@ function updateVersionLog(content, oldVersion, newVersion) {
     const date = new Date().toISOString().split('T')[0];
     content = content.replace(`latest_version: [${oldVersion}]`, `latest_version: [${newVersion}]`);
     
-    const logEntry = `## [${newVersion}] - ${date}\n\n- Updated to version ${newVersion}.\n\n`;
+    const logEntry = `## [${newVersion}] - ${date}\n\n- Updated to version ${newVersion}.`;
     const updatedLog = content + "\n\n" + logEntry;
 
     fs.writeFileSync(versionLogPath, finalLog, 'utf8');
