@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+
 type HistoryItem = {
     date: string;
     title?: string;
@@ -77,13 +79,16 @@ const HISTORY: Array<HistoryItem> = [
 ]
 
 const About = () => {
+    const history = useMemo<Array<HistoryItem>>(() => [...HISTORY].sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    ), []);
     return (
         <main className="container mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold text-center">About</h1>
             <div className="mt-6">
                 { /* シンプルで影を使わない年表スタイル */}
                 <ul className="relative border-l-2 border-gray-200">
-                    {HISTORY.map((item, index) => (
+                    {history.map((item, index) => (
                         <li key={index} className="mb-8 ml-6 relative">
                             <span className="absolute -left-3 top-4 flex items-center justify-center w-6 h-6 bg-white border-2 border-blue-500 rounded-full">
                                 <span className="block w-2 h-2 bg-blue-500 rounded-full"></span>
