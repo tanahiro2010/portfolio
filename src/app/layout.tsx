@@ -5,10 +5,10 @@ import Footer from "@/components/layout/footer";
 
 const Layout = () => {
     return (
-        <BlurFade className="app-layout" duration={0.5} delay={0.2} offset={12} direction="down">
+        <BlurFade className="app-layout min-h-screen flex flex-col" duration={0.5} delay={0.2} offset={12} direction="down">
             <Header />
 
-            <main className="px-4 py-2">
+            <main className="flex-1 px-4 py-2">
                 <Outlet />
             </main>
             
