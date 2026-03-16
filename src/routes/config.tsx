@@ -18,6 +18,7 @@ const routes: Array<HasChildrenRoute> = [
     path: "/links", meta: { title: "Links", navLabel: "Links", visibleInNav: true },
     element: <Links />
   },
+  
   /* 外部サイトへのルーティング */
   {
     path: "/youtube", meta: { title: "YouTube", navLabel: "YouTube", visibleInNav: true },
