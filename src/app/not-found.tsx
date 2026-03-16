@@ -1,5 +1,6 @@
 import { Link } from "@/components/ui/link";
-export default function NotFound() {
+
+const NotFound = () => {
     return (
         <div className="container mx-auto px-4 py-8">
             <h2 className="text-3xl font-bold mb-6 text-center">404 - Not Found</h2>
@@ -13,3 +14,5 @@ export default function NotFound() {
         </div>
     );
 }
+
+export default NotFound;

@@ -13,7 +13,7 @@ const LINKS: Array<LinkItem> = [
   { label: "Contact",  href: "/contact" },
 ];
 
-export default function Links() {
+const Links = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold mb-6 text-center">Links</h2>
@@ -49,3 +49,5 @@ export default function Links() {
     </div>
   );
 }
+
+export default Links;
