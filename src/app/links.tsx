@@ -4,13 +4,13 @@ type LinkItem = {
 };
 
 const LINKS: Array<LinkItem> = [
-  { label: "YouTube", href: "/youtube" },
-  { label: "Twitter", href: "/twitter" },
+  { label: "YouTube",  href: "/youtube" },
+  { label: "Twitter",  href: "/twitter" },
   { label: "Kakuyomu", href: "/kakuyomu" },
-  { label: "GitHub", href: "/github" },
-  { label: "Qiita", href: "/blogs" },
-  { label: "Zenn", href: "/zenn" },
-  { label: "Contact", href: "/contact" },
+  { label: "GitHub",   href: "/github" },
+  { label: "Qiita",    href: "/blogs" },
+  { label: "Zenn",     href: "/zenn" },
+  { label: "Contact",  href: "/contact" },
 ];
 
 export default function Links() {
