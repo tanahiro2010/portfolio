@@ -18,9 +18,9 @@ export default function Links() {
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold mb-6 text-center">Links</h2>
 
-      <ul className="flex flex-wrap gap-4" role="list">
+      <ul className="space-y-3" role="list">
         {LINKS.map((link) => (
-          <li key={link.href} className="grow basis-[220px] min-w-0">
+          <li key={link.href}>
             <a
               href={link.href}
               aria-label={`${link.label} を開く`}
