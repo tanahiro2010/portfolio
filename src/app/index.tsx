@@ -70,7 +70,7 @@ const IndexPage = () => {
                             <div className="w-3/4 sm:w-1/2 p-2 sm:p-3">
                                 <BlurFade duration={0.5} delay={0.7}>
                                     <div className="flex flex-col">
-                                        <h2 className="text-2xl font-bold leading-tight">田中博悠</h2>
+                                        <h2 className="text-2xl font-bold leading-tight" title="田中博悠">Hirohisa Tanaka</h2>
                                         <p className="mt-1 text-sm text-gray-400 leading-tight">@tanahiro2010</p>
                                     </div>
 
@@ -104,7 +104,7 @@ const IndexPage = () => {
                     </div>
                 ) : (
                     <BlurFade duration={0.5} delay={0.2} offset={12} direction="up" className="text-center">
-                        <h1 className="text-3xl font-bold">田中博悠 - tanahiro2010</h1>
+                        <h1 className="text-3xl font-bold" title="田中博悠">Hirohisa Tanaka - tanahiro2010</h1>
                         <div className="mt-5">
                             I am a scenario writer and software developer.
                         </div>
