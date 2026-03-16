@@ -17,8 +17,8 @@ const Header = () => {
                 </Show>
 
                 <div className="text-gray-600 flex items-center space-x-3">
-                    <Link href="https://github.com/tanahiro2010">GitHub</Link>
-                    <Link href="https://twitter.com/tanahiro2010">Twitter</Link>
+                    <Link href="/github">GitHub</Link>
+                    <Link href="/twitter">Twitter</Link>
                 </div>
             </div>
         </header>
