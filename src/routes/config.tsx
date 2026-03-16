@@ -1,9 +1,14 @@
 import type { HasChildrenRoute } from "@/types/routes";
 import { Navigate } from "@/components/utils/navigate";
+import NotFound from "@/app/not-found";
 import About from "@/app/about";
 import Links from "@/app/links";
 
 const routes: Array<HasChildrenRoute> = [
+  {
+    path: "*", meta: { title: "Not Found", navLabel: "Not Found", visibleInNav: false },
+    element: <NotFound />
+  },
   /* サイト内ルーティング */
   {
     path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
