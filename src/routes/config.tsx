@@ -34,7 +34,7 @@ const routes: Array<HasChildrenRoute> = [
   },
   {
     path: "/github", meta: { title: "GitHub", navLabel: "GitHub", visibleInNav: true },
-    element: <Navigate to={`https://github.com/users/tanahiro2010`} />
+    element: <Navigate to={`https://github.com/tanahiro2010`} />
   },
   {
     path: "/zenn", meta: { title: "Zenn", navLabel: "Zenn", visibleInNav: true },
