@@ -10,9 +10,9 @@ type NavItem = {
 const navItems: NavItem[] = [
     { label: "About", href: "/about" },
     { label: "Works", href: "/works" },
-    { label: "Blogs", href: "https://qiita.com/tanahiro2010" },
+    { label: "Blogs", href: "/blogs" },
     { label: "Links", href: "/links" },
-    { label: "Contact", href: "https://forms.gle/GmbZXQWXfwZpf4mr5" },
+    { label: "Contact", href: "/contact" },
 ];
 const TIME_TO_DEVELOP: number = numToMs(5); // milliseconds
 
