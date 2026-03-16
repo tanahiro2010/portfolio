@@ -100,7 +100,7 @@ const About = () => {
                             </span>
 
                             <div className="bg-white border border-gray-100 rounded-lg p-4">
-                                <p className="text-sm text-gray-400">{item.date}</p>
+                                <time className="text-sm text-gray-400" dateTime={item.date}>{item.date}</time>
                                 <h3 className="text-lg font-semibold text-gray-800 mt-1">{item.title}</h3>
                                 <p className="text-gray-700 mt-2">{item.description}</p>
                             </div>
