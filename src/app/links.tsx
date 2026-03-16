@@ -1,5 +1,3 @@
-const ID = "tanahiro2010";
-
 type LinkItem = {
   label: string;
   href: string;
