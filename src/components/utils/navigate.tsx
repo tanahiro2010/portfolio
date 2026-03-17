@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "@/components/ui/link";
 
+
 const Navigate = ({ to }: { to: string }) => {
-    window.location.href = to;
+    useEffect(() => {
+        window.location.href = to;
+    }, [to]);
 
     return (
         <div className="container mx-auto px-4 py-8">
