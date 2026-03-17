@@ -112,7 +112,7 @@ const About = () => {
                             ["UniProject", "Circle for Digital creation"],
                             ["UniSchool", "DX promotion team directly under Sanda Gakuen"],
                             ["Kotob", "Community for developing projects with LLM translation system as core"],
-                            ["SF-Kosen", "Shonan Fujisawa College of Technology, where I am a student and also serve as the vice president of the student council"],
+                            ["SF-Kosen", "Shonan Fujisawa Kosen of Technology, where I am a student and also serve as the vice president of the student council"],
                         ]} />
                     </div>
                     <div className="mt-6">
