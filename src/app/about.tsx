@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import Table from "@/components/ui/table";
+import { BlurFade } from "@/components/animation/blur-fade";
 
 type HistoryItem = {
     date: string;
@@ -89,59 +90,94 @@ const About = () => {
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     ), []);
     return (
-        <main className="container mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold text-center">About</h1>
-            <div className="flex md:flex-row flex-col mt-6 gap-4">
-                <div className="w-full md:w-1/2 md:max-h-[60vh] md:overflow-auto md:pr-2"> { /* 自己紹介セクション */}
-                    <div>
-                        <h2 className="text-3xl">Self-introduction</h2>
-                        <p className="mt-4 text-gray-700">
-                            {/* こんにちは、私はtanahiro2010と申します。シナリオライターやソフトウェア開発者として活動しています。<br />
-                            憧れを文章に表すこと、そして技術を駆使して創造的なプロジェクトに取り組むことが大好きです。<br />
-                            これまでの経験を活かし、創造的なプロジェクトに取り組んでいきたいと思っています。 */}
-                            Hello, I'm tanahiro2010. I'm a scenario writer and software developer. <br />
-                            I love expressing admiration through writing and using technology to work on creative projects. <br />
-                            I hope to leverage my experiences to continue working on creative endeavors.
-                        </p>
-                    </div>
+        <main className="max-w-5xl mx-auto px-4 py-12 md:py-24">
+            <BlurFade delay={0.1} inView>
+                <div className="mb-12">
+                    <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-foreground">About</h1>
+                    <p className="text-lg text-muted-foreground max-w-[600px]">
+                        私自身のことや、これまでの活動歴についてご紹介します。
+                    </p>
+                </div>
+            </BlurFade>
 
-                    <div className="mt-6">
-                        <h2 className="text-3xl">Teams</h2>
-                        <Table headers={["Name", "Description"]} items={[
-                            ["Zisty", "Community for Engineers"],
-                            ["UniProject", "Circle for Digital creation"],
-                            ["UniSchool", "DX promotion team directly under Sanda Gakuen"],
-                            ["Kotob", "Community for developing projects with LLM translation system as core"],
-                            ["SF-Kosen", "Shonan Fujisawa Kosen of Technology, where I am a student and also serve as the vice president of the student council"],
-                        ]} />
-                    </div>
-                    <div className="mt-6">
-                        <h2 className="text-3xl">Skills</h2>
-                        <ul className="mt-4 list-disc list-inside mt-4 text-gray-700">
-                            <li>Scenario Writing: Crafting narratives, developing characters, and writing dialogue</li>
-                            <li>Software Development: Building projects using technologies such as Python, Ruby, JavaScript, TypeScript, and React, Nextjs</li>
-                            <li>Communication: Strong collaboration and client communication skills</li>
-                        </ul>
-                    </div>
+            <div className="flex md:flex-row flex-col mt-6 gap-12 md:gap-16">
+                <div className="w-full md:w-1/2 space-y-12 md:max-h-[800px] md:overflow-y-auto md:pr-4 custom-scrollbar"> { /* Self-introduction, Teams, Skills - side1 section */ }
+                    {/* Self-introduction */}
+                    <BlurFade delay={0.2} inView>
+                        <div>
+                            <h2 className="text-2xl font-bold tracking-tight mb-6 text-foreground">Self-introduction</h2>
+                            <div className="space-y-4 text-muted-foreground leading-relaxed">
+                                <p>
+                                    Hello, I'm tanahiro2010. I'm a scenario writer and software developer.
+                                </p>
+                                <p>
+                                    I love expressing admiration through writing and using technology to work on creative projects.
+                                </p>
+                                <p>
+                                    I hope to leverage my experiences to continue working on creative endeavors.
+                                </p>
+                            </div>
+                        </div>
+                    </BlurFade>
+
+                    {/* Teams */}
+                    <BlurFade delay={0.3} inView>
+                        <div>
+                            <h2 className="text-2xl font-bold tracking-tight mb-6 text-foreground">Teams</h2>
+                            <div className=" overflow-hidden bg-background">
+                                <Table headers={["Name", "Description"]} items={[
+                                    ["Zisty", "Community for Engineers"],
+                                    ["UniProject", "Circle for Digital creation"],
+                                    ["UniSchool", "DX promotion team directly under Sanda Gakuen"],
+                                    ["Kotob", "Community for developing projects with LLM translation system as core"],
+                                    ["SF-Kosen", "Shonan Fujisawa Kosen of Technology, where I am a student"],
+                                ]} />
+                            </div>
+                        </div>
+                    </BlurFade>
+
+                    {/* Skills */}
+                    <BlurFade delay={0.4} inView>
+                        <div>
+                            <h2 className="text-2xl font-bold tracking-tight mb-6 text-foreground">Skills</h2>
+                            <ul className="space-y-4">
+                                {[
+                                    { name: "Scenario Writing", desc: "Crafting narratives, developing characters, and writing dialogue" },
+                                    { name: "Software Development", desc: "Building projects using technologies such as Python, Ruby, JavaScript, TypeScript, and React, Nextjs" },
+                                    { name: "Communication", desc: "Strong collaboration and client communication skills" }
+                                ].map((skill, idx) => (
+                                    <li key={idx} className="group flex flex-col gap-1.5 border border-border rounded-2xl p-5 md:p-6 transition-all hover:bg-muted/50">
+                                        <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">{skill.name}</h3>
+                                        <p className="text-sm text-muted-foreground leading-relaxed">{skill.desc}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </BlurFade>
                 </div>
 
-                <div className="w-full md:w-1/2 md:max-h-[60vh] md:overflow-auto md:pl-2"> { /* 活動歴セクション */}
-                    <h2 className="text-3xl">Experiences</h2>
-                    <ul className="mt-4 relative border-l-2 border-gray-200">
-                        {history.map((item, index) => (
-                            <li key={index} className="mb-8 ml-6 relative">
-                                <span className="absolute -left-3 top-4 flex items-center justify-center w-6 h-6 bg-white border-2 border-blue-500 rounded-full">
-                                    <span className="block w-2 h-2 bg-blue-500 rounded-full"></span>
-                                </span>
+                {/* Experiences */}
+                <div className="w-full md:w-1/2">            { /* Experiences - side2 section */ }
+                    <BlurFade delay={0.2} inView>
+                        <h2 className="text-2xl font-bold tracking-tight mb-8 text-foreground">Experiences</h2>
+                    </BlurFade>
+                    <div className="md:max-h-[800px] md:overflow-y-auto md:pr-4 pb-12 custom-scrollbar">
+                        <ul className="relative border-l-2 border-border ml-4 space-y-8">
+                            {history.map((item, index) => (
+                                <BlurFade key={index} delay={0.3 + index * 0.05} inView>
+                                    <li className="relative pl-8">
+                                        <span className="absolute -left-[9px] top-2 flex items-center justify-center w-4 h-4 bg-background border-2 border-primary rounded-full"></span>
 
-                                <div className="bg-white border border-gray-100 rounded-lg p-4">
-                                    <time className="text-sm text-gray-400" dateTime={item.date}>{item.date}</time>
-                                    <h3 className="text-lg font-semibold text-gray-800 mt-1">{item.title}</h3>
-                                    <p className="text-gray-700 mt-2">{item.description}</p>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                                        <div className="group border border-border rounded-2xl p-5 transition-all hover:bg-muted/50 hover:border-primary/50">
+                                            <time className="text-sm font-medium text-muted-foreground mb-1 block" dateTime={item.date}>{item.date}</time>
+                                            <h3 className="text-lg font-bold text-foreground mt-1 group-hover:text-primary transition-colors">{item.title}</h3>
+                                            <p className="text-muted-foreground mt-2 text-sm leading-relaxed">{item.description}</p>
+                                        </div>
+                                    </li>
+                                </BlurFade>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>
