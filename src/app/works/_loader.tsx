@@ -7,3 +7,5 @@ const WorkLoader = () => {
 
     return null;
 }
+
+export default WorkLoader;
