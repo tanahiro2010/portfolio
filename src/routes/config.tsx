@@ -3,6 +3,7 @@ import { Navigate } from "@/components/utils/navigate";
 import NotFound from "@/app/not-found";
 import About from "@/app/about";
 import Links from "@/app/links";
+import Works from "@/app/works";
 
 const routes: Array<HasChildrenRoute> = [
   {
@@ -16,7 +17,7 @@ const routes: Array<HasChildrenRoute> = [
   },
   {
     path: "/works", meta: { title: "Works", navLabel: "Works", visibleInNav: true },
-    element: null,
+    element: <Works />,
     children: [],
   },
   {
@@ -52,6 +53,19 @@ const routes: Array<HasChildrenRoute> = [
   {
     path: "/blogs", meta: { title: "Blogs", navLabel: "Blogs", visibleInNav: true },
     element: <Navigate to={`https://qiita.com/tanahiro2010`} />,
+  },
+
+  {
+    path: "/works/unischool", meta: { title: "UniSchool Website", navLabel: "UniSchool", visibleInNav: true },
+    element: <Navigate to={`https://unischool-official.vercel.app/`} />
+  },
+  {
+    path: "/works/recoron", meta: { title: "ReCoron", navLabel: "ReCoron", visibleInNav: true },
+    element: <Navigate to={`https://re-coron.vercel.app/`} />
+  },
+  {
+    path: "/works/renv", meta: { title: "Renv", navLabel: "Renv", visibleInNav: true },
+    element: <Navigate to={`https://renv-web.vercel.app/`} />
   },
 ];
 
