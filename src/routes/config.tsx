@@ -55,6 +55,7 @@ const routes: Array<HasChildrenRoute> = [
     element: <Navigate to={`https://qiita.com/tanahiro2010`} />,
   },
 
+  /* 作品ページへのルーティング */
   {
     path: "/works/unischool", meta: { title: "UniSchool Website", navLabel: "UniSchool", visibleInNav: true },
     element: <Navigate to={`https://unischool-official.vercel.app/`} />
