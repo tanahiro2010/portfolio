@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { BlurFade } from "@/components/animation/blur-fade";
+
 type LinkItem = {
   label: string;
   href: string;
@@ -14,40 +18,40 @@ const LINKS: Array<LinkItem> = [
 ];
 
 const Links = () => {
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6 text-center">Links</h2>
+    return (
+        <div className="max-w-2xl mx-auto px-4 py-12 md:py-24">
+            <BlurFade delay={0.1} inView>
+                <div className="mb-12 text-center">
+                    <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-foreground">Links</h1>
+                    <p className="text-lg text-muted-foreground">
+                        各種プラットフォームやSNSのアカウント一覧です。
+                    </p>
+                </div>
+            </BlurFade>
 
-      <ul className="space-y-3" role="list">
-        {LINKS.map((link) => (
-          <li key={link.href}>
-            <a
-              href={link.href}
-              aria-label={`${link.label} を開く`}
-              title={link.label}
-              className="block w-full h-full rounded-lg border border-gray-200 px-4 py-3 text-lg text-gray-800
-                         hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400
-                         transition-colors"
-            >
-              <div className="flex items-center justify-between">
-                <span className="font-medium truncate">{link.label}</span>
-                <svg
-                  className="w-5 h-5 text-blue-500"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+            <ul className="flex flex-col gap-4" role="list">
+                {LINKS.map((link, idx) => (
+                    <BlurFade key={link.href} delay={0.2 + idx * 0.05} inView>
+                        <li>
+                            <Link
+                                to={link.href}
+                                aria-label={`${link.label} を開く`}
+                                title={link.label}
+                                className="group flex items-center justify-between border border-border rounded-2xl p-5 md:p-6 transition-all hover:bg-muted/50 hover:border-primary/30"
+                            >
+                                <span className="text-lg font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                                    {link.label}
+                                </span>
+                                <div className="shrink-0 p-2 md:p-2.5 rounded-full border border-border bg-background group-hover:border-primary/50 group-hover:bg-primary/5 transition-colors">
+                                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                                </div>
+                            </Link>
+                        </li>
+                    </BlurFade>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
 export default Links;
