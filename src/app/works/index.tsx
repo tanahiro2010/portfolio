@@ -7,7 +7,7 @@ type Work = {
     description: string;
     href: string;
 }
-const works: Array<Work> = [
+const WORKS: Array<Work> = [
     {
         title: "UniSchool Website",
         description: "The official website for UniSchool, a DX promotion team affiliated with Sanda Gakuen Junior High School, providing information about the team and its activities.",
@@ -43,7 +43,7 @@ const Works = () => {
             </BlurFade>
 
             <div className="flex flex-col gap-6">
-                {works.map((work, idx) => (
+                {WORKS.map((work, idx) => (
                     <BlurFade key={work.title} delay={0.2 + idx * 0.1} inView>
                         <Link 
                             to={work.href} 
