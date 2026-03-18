@@ -5,14 +5,14 @@ import Layout from './app/layout';
 import IndexPage from './app/index';
 import './index.css';
 
-function joinPaths(parent: string, child: string) {
+const joinPaths = (parent: string, child: string): string => {
   if (child === "/") return "/";
   if (child.startsWith("/")) return child;
   const p = parent === "" || parent === "/" ? "" : parent;
   return `${p}/${child}`.replace(/\/+/g, "/");
 }
 
-function flattenRoutes(route: HasChildrenRoute, parent = ""): Array<BaseRoute> {
+const flattenRoutes = (route: HasChildrenRoute, parent = ""): Array<BaseRoute> => {
   const fullPath = joinPaths(parent, route.path);
   const me: BaseRoute = { path: fullPath, element: route.element, meta: route.meta };
   const kids = route.children ? route.children.flatMap((child) => flattenRoutes(child, fullPath)) : [];
@@ -21,7 +21,7 @@ function flattenRoutes(route: HasChildrenRoute, parent = ""): Array<BaseRoute> {
 
 export const flatRoutes: Array<BaseRoute> = routes.flatMap((route) => flattenRoutes(route, ""));
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
