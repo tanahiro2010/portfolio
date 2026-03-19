@@ -26,7 +26,7 @@ const WORKS: Array<Work> = [
     {
         title: "Syosetsu Downloader",
         description: "A tool for downloading novels from the Syosetsu website, allowing users to save their favorite stories for offline reading.",
-        href: "/_works/syosetsu"
+        href: "/works/syosetsu"
     }
 ]
 
