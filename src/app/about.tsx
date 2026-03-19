@@ -127,7 +127,7 @@ const About = () => {
                             <div className=" overflow-hidden bg-background">
                                 <Table headers={["Name", "Description"]} items={[
                                     ["Zisty", "Community for Engineers"],
-                                    ["UniProject", "Circle for Digital creation"],
+                                    ["UniProject", "Club for Digital creation"],
                                     ["UniSchool", "DX promotion team directly under Sanda Gakuen"],
                                     ["Kotob", "Community for developing projects with LLM translation system as core"],
                                     ["SF-Kosen", "Shonan Fujisawa Kosen of Technology, where I am a student"],
