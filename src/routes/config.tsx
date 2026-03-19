@@ -5,26 +5,7 @@ import About from "@/app/about";
 import Links from "@/app/links";
 import Works from "@/app/works";
 
-const routes: Array<HasChildrenRoute> = [
-  {
-    path: "*", meta: { title: "Not Found", navLabel: "Not Found", visibleInNav: false },
-    element: <NotFound />
-  },
-  /* サイト内ルーティング */
-  {
-    path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
-    element: <About />,
-  },
-  {
-    path: "/works", meta: { title: "Works", navLabel: "Works", visibleInNav: true },
-    element: <Works />,
-    children: [],
-  },
-  {
-    path: "/links", meta: { title: "Links", navLabel: "Links", visibleInNav: true },
-    element: <Links />
-  },
-  
+const otherRoutes: Array<HasChildrenRoute> = [
   /* 外部サイトへのルーティング */
   {
     path: "/youtube", meta: { title: "YouTube", navLabel: "YouTube", visibleInNav: true },
@@ -54,8 +35,9 @@ const routes: Array<HasChildrenRoute> = [
     path: "/blogs", meta: { title: "Blogs", navLabel: "Blogs", visibleInNav: true },
     element: <Navigate to={`https://qiita.com/tanahiro2010`} />,
   },
+];
 
-  /* 作品ページへのルーティング */
+const workRoutes: Array<HasChildrenRoute> = [
   {
     path: "/works/unischool", meta: { title: "UniSchool Website", navLabel: "UniSchool", visibleInNav: true },
     element: <Navigate to={`https://unischool-official.vercel.app/`} />
@@ -69,5 +51,32 @@ const routes: Array<HasChildrenRoute> = [
     element: <Navigate to={`https://renv-web.vercel.app/`} />
   },
 ];
+
+const baseRoutes: Array<HasChildrenRoute> = [
+  {
+    path: "*", meta: { title: "Not Found", navLabel: "Not Found", visibleInNav: false },
+    element: <NotFound />
+  },
+
+  {
+    path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
+    element: <About />,
+  },
+  {
+    path: "/works", meta: { title: "Works", navLabel: "Works", visibleInNav: true },
+    element: <Works />,
+    children: [],
+  },
+  {
+    path: "/links", meta: { title: "Links", navLabel: "Links", visibleInNav: true },
+    element: <Links />
+  },
+];
+
+const routes: Array<HasChildrenRoute> = new Array();
+
+routes.push(...baseRoutes);
+routes.push(...workRoutes);
+routes.push(...otherRoutes);
 
 export { routes };
