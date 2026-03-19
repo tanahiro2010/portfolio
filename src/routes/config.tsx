@@ -4,6 +4,7 @@ import NotFound from "@/app/not-found";
 import About from "@/app/about";
 import Links from "@/app/links";
 import Works from "@/app/works";
+import Syosetsu from "@/app/works/syosetsu";
 
 const otherRoutes: Array<HasChildrenRoute> = [
   /* 外部サイトへのルーティング */
@@ -50,6 +51,11 @@ const workRoutes: Array<HasChildrenRoute> = [
     path: "/works/renv", meta: { title: "Renv", navLabel: "Renv", visibleInNav: true },
     element: <Navigate to={`https://renv-web.vercel.app/`} />
   },
+
+  {
+    path: "/works/syosetsu", meta: { title: "小説ダウンローダー", navLabel: "小説", visibleInNav: true },
+    element: <Syosetsu />
+  }
 ];
 
 const baseRoutes: Array<HasChildrenRoute> = [
