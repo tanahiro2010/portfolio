@@ -11,16 +11,21 @@ class Kakuyomu {
     ];
     public function __construct(string $url)
     {
-        $this->novel_url = $this->getNovelId($url);
+        $this->novel_url = $url;
+        $id = $this->getNovelId($url);
+        if ($id === null) {
+            throw new InvalidArgumentException('Invalid Kakuyomu URL');
+        }
+        $this->novel_id = $id;
     }
 
     private function getNovelId(string $url): ?string {
         // URLから小説IDを抽出するロジックを実装
         // 例: https://kakuyomu.jp/works/1234567890 の場合、1234567890 を抽出
-        //.    https://kakuyomu.jp/works/16818622170904321138
-        $pattern = '/https:\/\/kakuyomu\.jp\/works\/(\d+)/';
+        // 対応: http/https と末尾のスラッシュを許容
+        $pattern = '#https?://kakuyomu\.jp/works/(\d+)(?:/|$)#';
         if (preg_match($pattern, $url, $matches)) {
-            return $matches[0];
+            return $matches[1];
         }
         return null;
     }
@@ -39,8 +44,7 @@ class Kakuyomu {
     }
 
     public function isValidUrl(): bool {
-        $novel_id = $this->getNovelId($this->novel_url);
-        return $novel_id !== null;
+        return !empty($this->novel_id);
     }
 
     public function downloadNovel(): string {
