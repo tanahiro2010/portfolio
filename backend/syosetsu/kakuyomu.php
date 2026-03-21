@@ -14,12 +14,13 @@ class Kakuyomu {
         $this->novel_url = $this->getNovelId($url);
     }
 
-    private function getNovelId(string $url): string | null {
+    private function getNovelId(string $url): ?string {
         // URLから小説IDを抽出するロジックを実装
         // 例: https://kakuyomu.jp/works/1234567890 の場合、1234567890 を抽出
+        //.    https://kakuyomu.jp/works/16818622170904321138
         $pattern = '/https:\/\/kakuyomu\.jp\/works\/(\d+)/';
         if (preg_match($pattern, $url, $matches)) {
-            return $matches[1];
+            return $matches[0];
         }
         return null;
     }
