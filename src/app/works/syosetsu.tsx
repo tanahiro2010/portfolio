@@ -7,7 +7,7 @@ const Syosetsu = () => {
     const getProviderType = useCallback((url: string): "kakuyomu" | "syosetsu" | null => {
         if (/^https?:\/\/(www\.)?kakuyomu\.jp\/.+/.test(url)) {
             return "kakuyomu";
-        } else if (/^https?:\/\/ncode.syosetsu\.com\/.+/.test(url)) {
+        } else if (/^https?:\/\/ncode.syosetu\.com\/.+/.test(url)) {
             return "syosetsu";
         } else {
             return null;
