@@ -56,6 +56,8 @@ const Syosetsu = () => {
 
         return setIsLoading(false);
     }, []);
+
+    
     return (
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-24 font-sans text-black">
             <h1 className="text-4xl md:text-5xl font-black tracking-tighter uppercase border-b-4 border-black pb-4 mb-8">
