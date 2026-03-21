@@ -12,7 +12,8 @@ const Syosetsu = () => {
         } else {
             return null;
         }
-    }, [])
+    }, []);
+    
     const handleDownload = useCallback(async (data: FormData) => {
         const url = data.get("url") as string;
         if (!url) return alert("URLを入力してください。");
@@ -40,6 +41,7 @@ const Syosetsu = () => {
             if (!response.ok) {
                 const errorData = await response.json();
                 alert(`ダウンロードに失敗しました: ${errorData.error}`);
+                setIsLoading(false);
                 return;
             }
 
