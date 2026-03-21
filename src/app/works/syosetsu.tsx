@@ -1,8 +1,9 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 const API_ENDPOINT = "/api/syosetsu";
 
 const Syosetsu = () => {
+    const [isLoading, setIsLoading] = useState<boolean>(false);
     const getProviderType = useCallback((url: string): "kakuyomu" | "syosetsu" | null => {
         if (/^https?:\/\/(www\.)?kakuyomu\.jp\/.+/.test(url)) {
             return "kakuyomu";
@@ -14,10 +15,12 @@ const Syosetsu = () => {
     }, [])
     const handleDownload = useCallback(async (data: FormData) => {
         const url = data.get("url") as string;
-        if (!url) return;
+        if (!url) return alert("URLを入力してください。");
+        setIsLoading(true);
 
         const provider = getProviderType(url);
         if (!provider) {
+            setIsLoading(false);
             alert("URLがKakuyomuまたは小説家になろうの形式ではありません。");
             return;
         }
@@ -50,8 +53,8 @@ const Syosetsu = () => {
         } catch (error) {
             alert(`ダウンロード中にエラーが発生しました: ${(error as Record<string, string>).message}`);
         }
-        
-        return;
+
+        return setIsLoading(false);
     }, []);
     return (
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-24 font-sans text-black">
@@ -79,9 +82,10 @@ const Syosetsu = () => {
                 <div>
                     <button 
                         type="submit" 
-                        className="inline-block w-full md:w-auto px-12 py-4 border-4 border-black text-xl font-black bg-black text-white hover:bg-white hover:text-black transition-colors rounded-none focus:outline-none uppercase tracking-widest"
+                        className={`inline-block w-full md:w-auto px-12 py-4 border-4 border-black text-xl font-black text-white hover:text-black transition-colors rounded-none focus:outline-none uppercase tracking-widest ${isLoading ? "bg-gray-400 cursor-not-allowed" : "bg-black hover:bg-white"}`}
+                        disabled={isLoading}
                     >
-                        Download
+                        { isLoading ? "Downloading now..." : "Download" }
                     </button>
                 </div>
             </form>
