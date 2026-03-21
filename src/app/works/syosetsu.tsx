@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 
-const API_ENDPOINT = "/api/syosetsu";
+const API_ENDPOINT = "/api/syosetsu/";
 
 const Syosetsu = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -13,7 +13,7 @@ const Syosetsu = () => {
             return null;
         }
     }, []);
-    
+
     const handleDownload = useCallback(async (data: FormData) => {
         const url = data.get("url") as string;
         if (!url) return alert("URLを入力してください。");
