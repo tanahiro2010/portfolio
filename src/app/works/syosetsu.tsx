@@ -39,11 +39,11 @@ const Syosetsu = () => {
                 alert(`ダウンロードに失敗しました: ${errorData.error}`);
                 return;
             }
-            const blob = await response.blob();
-            const downloadUrl = URL.createObjectURL(blob);
+
+            const data = await response.json();
             const a = document.createElement("a");
-            a.href = downloadUrl;
-            a.download = `${provider}-novel.zip`;
+            a.href = data.file;
+            a.download = `${provider}`;
             document.body.appendChild(a);
             a.click();
             a.remove();
