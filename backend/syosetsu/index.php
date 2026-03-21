@@ -76,5 +76,5 @@ if ($METHOD === 'POST') {
     }
 } else {
     http_response_code(405);
-    echo json_encode(['error' => 'Method Not Allowed'], JSON_UNESCAPED_UNICODE);
+    echo json_encode(['error' => 'Method Not Allowed', "method" => $METHOD], JSON_UNESCAPED_UNICODE);
 }
