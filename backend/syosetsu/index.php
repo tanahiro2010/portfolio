@@ -84,7 +84,7 @@ if ($METHOD === 'POST') {
         }
         try {
             $download_result = $kakuyomu->downloadNovel(TEMP_DIR);
-            echo json_encode(['file' => $download_result], JSON_UNESCAPED_UNICODE);
+            echo json_encode(['id' => $download_result], JSON_UNESCAPED_UNICODE);
         } catch (Exception $e) {
             http_response_code(500);
             echo json_encode(['error' => 'Failed to download novel', 'message' => $e->getMessage()], JSON_UNESCAPED_UNICODE);
