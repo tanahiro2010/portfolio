@@ -20,7 +20,7 @@ class Syosetsu {
     private function getNovelInfo(): ?array
     {
         $api_url = SYOSETSU_API_ENDPOINT . '?ncode=' . $this->novel_code . '&out=json';
-        $response = Http::sendGetRequest($api_url, $this->headers);
+        $response = Http::sendRequest(HttpMethod::GET, $api_url, [], $this->headers);
         if ($response['status'] !== 200) {
             return null;
         }
@@ -65,7 +65,7 @@ class Syosetsu {
         $content = '';
         for ($i = 0; $i <= $novel_info['general_all_no']; $i++) {
             $chapter_url = SYOSETSU_CONTENT_ENDPOINT . $this->novel_code . '/' . $i + 1;
-            $response = Http::sendGetRequest($chapter_url, $this->headers);
+            $response = Http::sendRequest(HttpMethod::GET, $chapter_url, [], $this->headers);
             if ($response['status'] !== 200) {
                 continue; // エピソードの取得に失敗した場合はスキップ
             }

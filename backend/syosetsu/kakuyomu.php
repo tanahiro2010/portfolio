@@ -54,7 +54,7 @@ class Kakuyomu
     public function downloadNovel(string $path): string
     {
         try {
-            $response = Http::sendGetRequest($this->novel_url, $this->headers);
+            $response = Http::sendRequest(HttpMethod::GET, $this->novel_url, [], $this->headers);
             if ($response['status'] !== 200) {
                 throw new Exception('Failed to fetch novel page');
             }
@@ -78,7 +78,7 @@ class Kakuyomu
 
         while (true) {
             try {
-                $response = Http::sendGetRequest($url, $this->headers);
+                $response = Http::sendRequest(HttpMethod::GET, $url, [], $this->headers);
                 if ($response['status'] !== 200) {
                     throw new Exception('Failed to fetch episode page');
                 }
