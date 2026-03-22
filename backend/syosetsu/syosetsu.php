@@ -58,7 +58,7 @@ class Syosetsu {
     {
         $novel_info = $this->getNovelInfo();
         if (!$novel_info) {
-            throw new Exception('Failed to fetch novel info, ' . json_encode($novel_info, JSON_UNESCAPED_UNICODE));
+            throw new Exception('Failed to fetch novel info, ncode: ' . $this->novel_code . ", " . json_encode($novel_info, JSON_UNESCAPED_UNICODE));
         }
 
         $content = '';
