@@ -98,7 +98,7 @@ const IndexPage = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="mt-8 flex flex-wrap justify-center sm:justify-start gap-4">
+                                            <div className="mt-8 flex flex-wrap justify-center gap-4">
                                                 { navigationLinks }
                                             </div>
                                         </div>
