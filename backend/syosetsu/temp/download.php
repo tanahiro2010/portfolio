@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
 
     header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename="' . basename($file) . '"');
+    header('Content-Disposition: attachment; filename="' . $id . '.txt"');
     readfile($file_path);
     unlink($file_path); // ダウンロード後にファイルを削除
     exit;
