@@ -25,12 +25,11 @@ class Syosetsu {
             return null;
         }
         $data = json_decode($response['body'], true);
-        echo "API Response: " . json_encode($data, JSON_UNESCAPED_UNICODE) . "\n";
         if (empty($data)) {
             return null;
         }
 
-        return $data[1];
+        return $data;
     }
 
     private function getNovelContent(DOMDocument $parser): string
@@ -61,6 +60,7 @@ class Syosetsu {
         if (!$novel_info) {
             throw new Exception('Failed to fetch novel info, ncode: ' . $this->novel_code . ", " . json_encode($novel_info, JSON_UNESCAPED_UNICODE));
         }
+        echo json_encode($novel_info, JSON_UNESCAPED_UNICODE);
 
         $content = '';
         for ($i = 0; $i <= $novel_info['general_all_no']; $i++) {
