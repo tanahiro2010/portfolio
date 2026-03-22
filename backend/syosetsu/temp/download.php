@@ -7,19 +7,20 @@ if (METHOD === 'OPTIONS') {
     exit;
 }
 if (METHOD === 'GET') {
-    $file = $_GET['file'] ?? null;
+    $id = $_GET['id'] ?? null;
     if (!$file) {
         http_response_code(400);
         echo json_encode(['error' => 'Missing file parameter'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
-    $file_path = TEMP_DIR . '/' . basename($file);
+    $file_path = TEMP_DIR . '/' . basename($id . '.txt');
     if (!file_exists($file_path)) {
         http_response_code(404);
         echo json_encode(['error' => 'File not found'], JSON_UNESCAPED_UNICODE);
         exit;
     }
+    
     header('Content-Type: application/octet-stream');
     header('Content-Disposition: attachment; filename="' . basename($file) . '"');
     readfile($file_path);
