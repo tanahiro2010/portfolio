@@ -59,41 +59,46 @@ const IndexPage = () => {
 
     return (
         <BlurFade duration={0.5} delay={0.2} offset={12} direction="up">
-            <main className="flex min-h-screen flex-col items-center justify-center">
+            <main className="flex min-h-screen flex-col items-center justify-center bg-white text-black p-4">
                 {!isDevelop ? (
-                    <div className="sm:w-3/4">
-                        <div className="w-full flex flex-col space-x-4 items-center text-left sm:items-stretch sm:flex-row">
-                            <div className="w-3/4 sm:w-1/2 p-3">
-                                <img src="tanahiro_and_lambda.jpeg" alt="tanahiro2010のアイコン" className="rounded-md" />
+                    <div className="w-full sm:w-4/5 max-w-6xl">
+                        <div className="w-full flex flex-col items-center text-left sm:items-stretch sm:flex-row sm:space-x-8 gap-8 sm:gap-0">
+                            <div className="w-3/4 sm:w-1/2 flex items-center justify-center">
+                                <img src="tanahiro_and_lambda.jpeg" alt="tanahiro2010のアイコン" className="rounded-none border-4 border-black w-full object-cover shadow-none" />
                             </div>
 
-                            <div className="w-3/4 sm:w-1/2 p-2 sm:p-3">
+                            <div className="w-full sm:w-1/2 flex flex-col justify-center p-2 sm:p-0">
                                 <BlurFade duration={0.5} delay={0.7}>
-                                    <div className="flex flex-col">
-                                        <h2 className="text-2xl font-bold leading-tight" title="田中博悠">Hirohisa Tanaka</h2>
-                                        <p className="mt-1 text-sm text-gray-400 leading-tight">@tanahiro2010</p>
+                                    <div className="flex flex-col border-b-4 border-black pb-4 mb-6">
+                                        <h2 className="text-4xl sm:text-6xl font-black uppercase tracking-tighter leading-none mb-2" title="田中博悠">Hirohisa Tanaka</h2>
+                                        <p className="text-xl font-bold uppercase tracking-widest text-black">@tanahiro2010</p>
                                     </div>
 
-                                    <div className="mt-5">
-                                        <p className="font-bold text-center border-b pb-3">
-                                            I am a scenario writer and software developer.
+                                    <div>
+                                        <p className="font-black text-xl sm:text-2xl uppercase tracking-tighter mb-6 text-black">
+                                            I am a scenario writer & software developer.
                                         </p>
 
-                                        <div className="flex flex-col justify-between mt-5">
-                                            <div className="text-gray-600 hidden sm:block space-y-4">
+                                        <div className="flex flex-col justify-between">
+                                            <div className="text-black font-bold hidden sm:block space-y-6 text-lg leading-relaxed">
                                                 <p>
                                                     I write scenarios for visual novels and develop software applications.
                                                     Welcome to my personal website where you can find my works, blogs, and links.
                                                 </p>
 
-                                                <div className="border" onMouseDown={handleStartPress} onMouseUp={handleEndPress} onMouseLeave={handleEndPress}>
-                                                    <p className="p-3 bg-gray-100">
+                                                <div 
+                                                    className="border-4 border-black transition-colors hover:bg-black hover:text-white cursor-pointer shadow-none" 
+                                                    onMouseDown={handleStartPress} 
+                                                    onMouseUp={handleEndPress} 
+                                                    onMouseLeave={handleEndPress}
+                                                >
+                                                    <p className="p-5 font-bold">
                                                         Feel free to explore my portfolio and get in touch if you have any questions or collaboration ideas!
                                                     </p>
                                                 </div>
                                             </div>
 
-                                            <div className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-4 text-center">
+                                            <div className="mt-8 flex flex-wrap justify-center sm:justify-start gap-4">
                                                 { navigationLinks }
                                             </div>
                                         </div>
@@ -103,18 +108,18 @@ const IndexPage = () => {
                         </div>
                     </div>
                 ) : (
-                    <BlurFade duration={0.5} delay={0.2} offset={12} direction="up" className="text-center">
-                        <h1 className="text-3xl font-bold" title="田中博悠">Hirohisa Tanaka - tanahiro2010</h1>
-                        <div className="mt-5">
+                    <BlurFade duration={0.5} delay={0.2} offset={12} direction="up" className="text-center border-4 border-black p-8 sm:p-16 max-w-3xl w-full bg-white shadow-none">
+                        <h1 className="text-4xl sm:text-6xl font-black uppercase tracking-tighter mb-4 text-black" title="田中博悠">Hirohisa Tanaka</h1>
+                        <h2 className="text-2xl font-bold uppercase tracking-widest border-b-4 border-black pb-6 mb-6 text-black">@tanahiro2010</h2>
+                        <div className="text-xl font-black mb-8 uppercase tracking-widest text-black">
                             I am a scenario writer and software developer.
                         </div>
 
-                        <div className="mt-5 flex space-x-4">
+                        <div className="mt-8 flex flex-wrap justify-center gap-4">
                             { navigationLinks }
                         </div>
                     </BlurFade>
                 )}
-
 
             </main>
         </BlurFade>
