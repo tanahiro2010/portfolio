@@ -85,6 +85,25 @@ const HISTORY: Array<HistoryItem> = [
     }
 ];
 
+type Team = Array<string>; // [Name, Description]
+const TEAMS: Array<Team> = [
+    ["Zisty",      "Community for Engineers"],
+    ["UniProject", "Club for Digital creation"],
+    ["UniSchool",  "DX promotion team directly under Sanda Gakuen"],
+    ["Kotob",      "Community for developing projects with LLM translation system as core"],
+    ["SF-Kosen",   "Shonan Fujisawa Kosen of Technology, where I am a student"],
+];
+
+type Skill = {
+    name: string;
+    desc: string;
+}
+const SKILLS: Array<Skill> = [
+    { name: "Scenario Writing",     desc: "Crafting narratives, developing characters, and writing dialogue" },
+    { name: "Software Development", desc: "Building projects using technologies such as Python, Ruby, JavaScript, TypeScript, and React, Nextjs" },
+    { name: "Communication",        desc: "Strong collaboration and client communication skills" }
+];
+
 const About = () => {
     const history = useMemo<Array<HistoryItem>>(() => [...HISTORY].sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -101,7 +120,7 @@ const About = () => {
             </BlurFade>
 
             <div className="flex md:flex-row flex-col mt-6 gap-12 md:gap-16">
-                <div className="w-full md:w-1/2 space-y-12 md:max-h-[800px] md:overflow-y-auto md:pr-4 custom-scrollbar"> { /* Self-introduction, Teams, Skills - side1 section */ }
+                <div className="w-full md:w-1/2 space-y-12 md:max-h-[800px] md:overflow-y-auto md:pr-4 custom-scrollbar"> { /* Self-introduction, Teams, Skills - side1 section */}
                     {/* Self-introduction */}
                     <BlurFade delay={0.2} inView>
                         <div>
@@ -125,13 +144,7 @@ const About = () => {
                         <div>
                             <h2 className="text-2xl font-bold tracking-tight mb-6 text-foreground">Teams</h2>
                             <div className=" overflow-hidden bg-background">
-                                <Table headers={["Name", "Description"]} items={[
-                                    ["Zisty", "Community for Engineers"],
-                                    ["UniProject", "Club for Digital creation"],
-                                    ["UniSchool", "DX promotion team directly under Sanda Gakuen"],
-                                    ["Kotob", "Community for developing projects with LLM translation system as core"],
-                                    ["SF-Kosen", "Shonan Fujisawa Kosen of Technology, where I am a student"],
-                                ]} />
+                                <Table headers={["Name", "Description"]} items={TEAMS} />
                             </div>
                         </div>
                     </BlurFade>
@@ -141,11 +154,7 @@ const About = () => {
                         <div>
                             <h2 className="text-2xl font-bold tracking-tight mb-6 text-foreground">Skills</h2>
                             <ul className="space-y-4">
-                                {[
-                                    { name: "Scenario Writing", desc: "Crafting narratives, developing characters, and writing dialogue" },
-                                    { name: "Software Development", desc: "Building projects using technologies such as Python, Ruby, JavaScript, TypeScript, and React, Nextjs" },
-                                    { name: "Communication", desc: "Strong collaboration and client communication skills" }
-                                ].map((skill, idx) => (
+                                {SKILLS.map((skill, idx) => (
                                     <li key={idx} className="group flex flex-col gap-1.5 border border-border rounded-2xl p-5 md:p-6 transition-all hover:bg-muted/50">
                                         <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">{skill.name}</h3>
                                         <p className="text-sm text-muted-foreground leading-relaxed">{skill.desc}</p>
@@ -157,7 +166,7 @@ const About = () => {
                 </div>
 
                 {/* Experiences */}
-                <div className="w-full md:w-1/2">            { /* Experiences - side2 section */ }
+                <div className="w-full md:w-1/2">            { /* Experiences - side2 section */}
                     <BlurFade delay={0.2} inView>
                         <h2 className="text-2xl font-bold tracking-tight mb-8 text-foreground">Experiences</h2>
                     </BlurFade>
