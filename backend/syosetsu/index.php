@@ -2,6 +2,16 @@
 // 定数の定義
 const SYOSETSU_API_ENDPOINT = 'https://api.syosetu.com/novelapi/api/';
 const KAKUYOMU_NOVEL_ENDPOINT = 'https://kakuyomu.jp/works/';
+const IS_DEBUG = false; // デバッグモードのフラグ
+
+// エラー表示に関する設定
+if (IS_DEBUG) {
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+} else {
+    error_reporting(0);
+    ini_set('display_errors', '0');
+}
 
 // CORS設定
 header('Access-Control-Allow-Origin: *');
