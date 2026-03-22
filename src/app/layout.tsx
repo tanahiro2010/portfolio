@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { BlurFade } from "@/components/animation/blur-fade";
+import { Toaster } from "sonner";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
@@ -13,6 +14,7 @@ const Layout = () => {
             </main>
             
             <Footer />
+            <Toaster position="bottom-right" />
         </BlurFade>
     );
 }
