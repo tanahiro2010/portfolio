@@ -1,5 +1,10 @@
 <?php
+// 一時的なダウンロード用スクリプト
 const TEMP_DIR = __DIR__;
+
+// エラーを非表示にする
+error_reporting(0);
+ini_set('display_errors', '0');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
@@ -7,9 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $id = $_GET['id'] ?? null;
-    if (!$file) {
+    if (!$id) {
         http_response_code(400);
-        echo json_encode(['error' => 'Missing file parameter'], JSON_UNESCAPED_UNICODE);
+        echo json_encode(['error' => 'Missing id parameter'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
