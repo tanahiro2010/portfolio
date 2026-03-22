@@ -1,9 +1,11 @@
 import { useCallback, useState } from "react";
+import { toast } from "sonner";
 
 const API_ENDPOINT = "/api/syosetsu/";
 
 const Syosetsu = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false);
+
     const getProviderType = useCallback((url: string): "kakuyomu" | "syosetsu" | null => {
         if (/^https?:\/\/(www\.)?kakuyomu\.jp\/.+/.test(url)) {
             return "kakuyomu";
@@ -17,10 +19,13 @@ const Syosetsu = () => {
     const handleDownload = useCallback(async (data: FormData) => {
         const url = data.get("url") as string;
         if (!url) return alert("URLを入力してください。");
+        const id = toast.loading("ダウンロードを開始します...");
         setIsLoading(true);
 
         const provider = getProviderType(url);
         if (!provider) {
+            toast.dismiss(id);
+            toast.error("URLがKakuyomuまたは小説家になろうの形式ではありません。");
             setIsLoading(false);
             alert("URLがKakuyomuまたは小説家になろうの形式ではありません。");
             return;
@@ -40,6 +45,8 @@ const Syosetsu = () => {
             });
             if (!response.ok) {
                 const errorData = await response.json();
+                toast.dismiss(id);
+                toast.error(`ダウンロードに失敗しました: ${errorData.error}`);
                 alert(`ダウンロードに失敗しました: ${errorData.error}`);
                 setIsLoading(false);
                 return;
@@ -52,7 +59,11 @@ const Syosetsu = () => {
             document.body.appendChild(a);
             a.click();
             a.remove();
+            toast.dismiss(id);
+            toast.success("ダウンロードが完了しました！");
         } catch (error) {
+            toast.dismiss(id);
+            toast.error(`ダウンロード中にエラーが発生しました: ${(error as Record<string, string>).message}`);
             alert(`ダウンロード中にエラーが発生しました: ${(error as Record<string, string>).message}`);
         }
 
