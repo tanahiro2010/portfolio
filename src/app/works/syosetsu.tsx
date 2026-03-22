@@ -55,7 +55,7 @@ const Syosetsu = () => {
             const data = await response.json();
             const a = document.createElement("a");
             a.href = `${API_ENDPOINT}/temp/download.php?id=${data.id}`;
-            a.download = `${provider}`;
+            a.download = `${data.id}.txt`;
             document.body.appendChild(a);
             a.click();
             a.remove();
