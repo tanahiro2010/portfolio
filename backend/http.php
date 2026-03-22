@@ -1,41 +1,66 @@
 <?php
 class Http {
-    public static function sendPostRequest(string $url, array $data, array $headers): array {
-        $headers_string = '';
+    private static function buildHeaders(array $headers): array {
+        $out = [];
         foreach ($headers as $key => $value) {
-            $headers_string .= "$key: $value\r\n";
+            $out[] = "$key: $value";
         }
-        $options = [
-            'http' => [
-                'header'  => "Content-Type: application/json\r\n" . $headers_string,
-                'method'  => 'POST',
-                'content' => json_encode($data, JSON_UNESCAPED_UNICODE),
-            ],
-        ];
-        $context  = stream_context_create($options);
-        $result = file_get_contents($url, false, $context);
-        if ($result === FALSE) {
-            return ['error' => 'Request failed'];
-        }
-        return json_decode($result, true);
+        return $out;
     }
 
-    public static function sendGetRequest(string $url, array $headers): array {
-        $headers_string = '';
-        foreach ($headers as $key => $value) {
-            $headers_string .= "$key: $value\r\n";
+    public static function sendPostRequest(string $url, array $data, array $headers = []): array {
+        $ch = curl_init($url);
+        $json = json_encode($data, JSON_UNESCAPED_UNICODE);
+        $default = ['Content-Type: application/json'];
+        $httpHeaders = array_merge($default, self::buildHeaders($headers));
+
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => $json,
+            CURLOPT_HTTPHEADER => $httpHeaders,
+            CURLOPT_TIMEOUT => 30,
+        ]);
+
+        $result = curl_exec($ch);
+        if ($result === false) {
+            $err = curl_error($ch);
+            curl_close($ch);
+            return ['error' => 'Request failed', 'message' => $err];
         }
-        $options = [
-            'http' => [
-                'header'  => $headers_string,
-                'method'  => 'GET',
-            ],
-        ];
-        $context  = stream_context_create($options);
-        $result = file_get_contents($url, false, $context);
-        if ($result === FALSE) {
-            return ['error' => 'Request failed'];
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+
+        $decoded = json_decode($result, true);
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            return ['status' => $httpCode, 'body' => $result];
         }
-        return json_decode($result, true);
+        return $decoded;
+    }
+
+    public static function sendGetRequest(string $url, array $headers = []): array {
+        $ch = curl_init($url);
+        $httpHeaders = self::buildHeaders($headers);
+
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HTTPHEADER => $httpHeaders,
+            CURLOPT_TIMEOUT => 30,
+        ]);
+
+        $result = curl_exec($ch);
+        if ($result === false) {
+            $err = curl_error($ch);
+            curl_close($ch);
+            return ['error' => 'Request failed', 'message' => $err];
+        }
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+
+        $decoded = json_decode($result, true);
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            return ['status' => $httpCode, 'body' => $result];
+        }
+        return $decoded;
     }
 }
