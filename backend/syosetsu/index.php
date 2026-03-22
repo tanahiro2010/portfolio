@@ -55,8 +55,13 @@ if ($METHOD === 'POST') {
             exit;
         }
 
-        $download_result = $syosetsu->downloadNovel();
-        echo json_encode(['file' => $download_result], JSON_UNESCAPED_UNICODE);
+        try {
+            $download_result = $syosetsu->downloadNovel();
+            echo json_encode(['file' => $download_result], JSON_UNESCAPED_UNICODE);
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => 'Failed to download novel', 'message' => $e->getMessage()], JSON_UNESCAPED_UNICODE);
+        }
     } elseif ($provider === 'kakuyomu') {
         require_once './kakuyomu.php';
 
@@ -66,9 +71,13 @@ if ($METHOD === 'POST') {
             echo json_encode(['error' => 'Invalid Kakuyomu URL'], JSON_UNESCAPED_UNICODE);
             exit;
         }
-
-        $download_result = $kakuyomu->downloadNovel();
-        echo json_encode(['file' => $download_result], JSON_UNESCAPED_UNICODE);
+        try {
+            $download_result = $kakuyomu->downloadNovel();
+            echo json_encode(['file' => $download_result], JSON_UNESCAPED_UNICODE);
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => 'Failed to download novel', 'message' => $e->getMessage()], JSON_UNESCAPED_UNICODE);
+        }
     } else {
         http_response_code(400);
         echo json_encode(['error' => 'Unsupported provider'], JSON_UNESCAPED_UNICODE);
