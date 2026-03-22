@@ -3,7 +3,8 @@ require_once '../http.php';
 
 const KAKUTOMU_WORKS_URL = 'https://kakuyomu.jp/works/';
 
-class Kakuyomu {
+class Kakuyomu
+{
     private string $novel_url;
     private string $novel_id;
     private array  $headers = [
@@ -19,7 +20,8 @@ class Kakuyomu {
         $this->novel_id = $id;
     }
 
-    private function getNovelId(string $url): ?string {
+    private function getNovelId(string $url): ?string
+    {
         // URLから小説IDを抽出するロジックを実装
         // 例: https://kakuyomu.jp/works/1234567890 の場合、1234567890 を抽出
         // 対応: http/https と末尾のスラッシュを許容
@@ -30,7 +32,8 @@ class Kakuyomu {
         return null;
     }
 
-    private function getNovelContent(DOMDocument $parser): string {
+    private function getNovelContent(DOMDocument $parser): string
+    {
         // DOMDocumentから小説の内容を抽出するロジックを実装
         // 例: 小説の内容が特定のクラスやIDを持つ要素に含まれている場合、その要素からテキストを抽出
         $content = "";
@@ -43,15 +46,22 @@ class Kakuyomu {
         return $content;
     }
 
-    public function isValidUrl(): bool {
+    public function isValidUrl(): bool
+    {
         return !empty($this->novel_id);
     }
 
-    public function downloadNovel(): string {
-        $response = Http::sendGetRequest(KAKUTOMU_WORKS_URL . $this->novel_id, $this->headers);
-        if ($response['status'] !== 200) {
-            throw new Exception('Failed to fetch novel page');
+    public function downloadNovel(): string
+    {
+        try {
+            $response = Http::sendGetRequest($this->novel_url, $this->headers);
+            if ($response['status'] !== 200) {
+                throw new Exception('Failed to fetch novel page');
+            }
+        } catch (Exception $e) {
+            throw new Exception('Failed to fetch novel page: ' . $e->getMessage());
         }
+
 
         // 初期idを取得
         $parser = new DOMDocument();
@@ -61,15 +71,19 @@ class Kakuyomu {
             throw new Exception('Failed to parse novel page');
         }
         $novel_data = $page_json['props']['pageProps']['__APOLLO_STATE__']["Work:$this->novel_id"];
-        $url = KAKUTOMU_WORKS_URL . $this->novel_id . '/episodes/' . str_replace('Episode:', '', $novel_data['firstPublicEpisodeUnion']['__ref']);
+        $url = $this->novel_url . '/episodes/' . str_replace('Episode:', '', $novel_data['firstPublicEpisodeUnion']['__ref']);
 
         $episode_no = 1;
         $text = "";
 
         while (true) {
-            $response = Http::sendGetRequest($url, $this->headers);
-            if ($response['status'] !== 200) {
-                throw new Exception('Failed to fetch episode page');
+            try {
+                $response = Http::sendGetRequest($url, $this->headers);
+                if ($response['status'] !== 200) {
+                    throw new Exception('Failed to fetch episode page');
+                }
+            } catch (Exception $e) {
+                throw new Exception('Failed to fetch episode page: ' . $e->getMessage());
             }
 
             $parser = new DOMDocument();
