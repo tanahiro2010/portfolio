@@ -54,7 +54,7 @@ class Syosetsu {
         return false;
     }
 
-    public function downloadNovel(): string
+    public function downloadNovel(string $path): string
     {
         $novel_info = $this->getNovelInfo();
         if (!$novel_info) {
@@ -74,7 +74,7 @@ class Syosetsu {
             $content .= "\n\n-- Episode $i --\n\n" . $this->getNovelContent($parser);
         }
 
-        file_put_contents('./novels/' . $this->novel_code . '.txt', $content);
+        file_put_contents($path . $this->novel_code . '.txt', $content);
         return './novels/' . $this->novel_code . '.txt';
     }
 }

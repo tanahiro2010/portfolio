@@ -3,6 +3,7 @@
 const SYOSETSU_API_ENDPOINT = 'https://api.syosetu.com/novelapi/api/';
 const KAKUYOMU_NOVEL_ENDPOINT = 'https://kakuyomu.jp/works/';
 const IS_DEBUG = false; // デバッグモードのフラグ
+const TEMP_DIR = __DIR__ . '/temp/'; // 一時ファイルの保存ディレクトリ
 
 // エラー表示に関する設定
 if (IS_DEBUG) {
@@ -66,7 +67,7 @@ if ($METHOD === 'POST') {
         }
 
         try {
-            $download_result = $syosetsu->downloadNovel();
+            $download_result = $syosetsu->downloadNovel(TEMP_DIR);
             echo json_encode(['file' => $download_result], JSON_UNESCAPED_UNICODE);
         } catch (Exception $e) {
             http_response_code(500);
@@ -82,7 +83,7 @@ if ($METHOD === 'POST') {
             exit;
         }
         try {
-            $download_result = $kakuyomu->downloadNovel();
+            $download_result = $kakuyomu->downloadNovel(TEMP_DIR);
             echo json_encode(['file' => $download_result], JSON_UNESCAPED_UNICODE);
         } catch (Exception $e) {
             http_response_code(500);

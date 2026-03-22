@@ -51,7 +51,7 @@ class Kakuyomu
         return !empty($this->novel_id);
     }
 
-    public function downloadNovel(): string
+    public function downloadNovel(string $path): string
     {
         try {
             $response = Http::sendGetRequest($this->novel_url, $this->headers);
@@ -95,7 +95,7 @@ class Kakuyomu
                 $url = "https://kakuyomu.jp" . $next->getAttribute("href");
                 $episode_no++;
             } else {
-                $filePath = "./novels/{$this->novel_id}.txt";
+                $filePath = $path . $this->novel_id . ".txt";
                 file_put_contents($filePath, $text);
                 return $filePath;
             }
