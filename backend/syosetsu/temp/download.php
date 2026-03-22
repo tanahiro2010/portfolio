@@ -1,12 +1,11 @@
 <?php
-const METHOD = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 const TEMP_DIR = __DIR__;
 
-if (METHOD === 'OPTIONS') {
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;
 }
-if (METHOD === 'GET') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $id = $_GET['id'] ?? null;
     if (!$file) {
         http_response_code(400);
@@ -20,7 +19,7 @@ if (METHOD === 'GET') {
         echo json_encode(['error' => 'File not found'], JSON_UNESCAPED_UNICODE);
         exit;
     }
-    
+
     header('Content-Type: application/octet-stream');
     header('Content-Disposition: attachment; filename="' . basename($file) . '"');
     readfile($file_path);
