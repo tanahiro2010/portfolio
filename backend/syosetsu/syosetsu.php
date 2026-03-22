@@ -20,6 +20,7 @@ class Syosetsu {
     private function getNovelInfo(): ?array
     {
         $api_url = SYOSETSU_API_ENDPOINT . '?ncode=' . $this->novel_code . '&out=json';
+        echo "Fetching novel info from API: $api_url\n";
         $response = Http::sendGetRequest($api_url, $this->headers);
         if ($response['status'] !== 200) {
             return null;
