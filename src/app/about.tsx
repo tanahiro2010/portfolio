@@ -45,7 +45,7 @@ const HISTORY: Array<HistoryItem> = [
     },
     {
         date: '2025-04-07',
-        title: 'Joined UniSchool',
+        title: 'Founded UniSchool',
         description: 'Became a founding member of UniSchool, the DX promotion team affiliated with Sanda Gakuen'
     },
     {
@@ -79,9 +79,14 @@ const HISTORY: Array<HistoryItem> = [
         description: 'Attended Security Camp Mini again as a third-year junior high school student, learning advanced topics such as build system optimization and CTF challenges'
     },
     {
-        date: '2026-04-19',
+        date: '2026-03-19',
         title: 'Graduated from Junior High School',
         description: 'Graduated from Sanda Gakuen Junior High School and moved on to the next stage. The adventure has only just begun.'
+    },
+    {
+        date: '2026-04-07',
+        title: 'Entered Senior High School',
+        description: 'Enrolled at Sanda Gakuen Senior High School and started a new chapter in my educational journey'
     }
 ];
 
@@ -105,9 +110,11 @@ const SKILLS: Array<Skill> = [
 ];
 
 const About = () => {
-    const history = useMemo<Array<HistoryItem>>(() => [...HISTORY].sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-    ), []);
+    const history = useMemo<Array<HistoryItem>>(() => [...HISTORY]
+        .filter((a) => new Date(a.date).getTime() <= Date.now())
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
+    []);
+    
     return (
         <main className="max-w-5xl mx-auto px-4 py-12 md:py-24">
             <BlurFade delay={0.1} inView>
