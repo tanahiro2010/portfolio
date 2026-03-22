@@ -2,7 +2,7 @@
 require_once '../http.php';
 require_once '../html.php';
 
-const SYOSETSU_API_ENDPOINT = 'https://api.syosetu.com/novelapi/api/';
+const SYOSETSU_API_ENDPOINT = 'https://api.syosetu.com/novelapi/api';
 const SYOSETSU_CONTENT_ENDPOINT = 'https://ncode.syosetu.com/';
 
 class Syosetsu {
