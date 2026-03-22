@@ -75,6 +75,6 @@ class Syosetsu {
         }
 
         file_put_contents($path . $this->novel_code . '.txt', $content);
-        return './novels/' . $this->novel_code . '.txt';
+        return $this->novel_code;
     }
 }

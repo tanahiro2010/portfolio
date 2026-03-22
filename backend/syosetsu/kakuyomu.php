@@ -97,7 +97,7 @@ class Kakuyomu
             } else {
                 $filePath = $path . $this->novel_id . ".txt";
                 file_put_contents($filePath, $text);
-                return $filePath;
+                return $this->novel_id;
             }
         }
     }
