@@ -25,11 +25,11 @@ class Http {
         $result = curl_exec($ch);
         if ($result === false) {
             $err = curl_error($ch);
-            curl_close($ch);
+            $ch = null;
             return ['error' => 'Request failed', 'message' => $err];
         }
         $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
+        $ch = null;
 
         $decoded = json_decode($result, true);
         if (json_last_error() !== JSON_ERROR_NONE) {
@@ -51,11 +51,11 @@ class Http {
         $result = curl_exec($ch);
         if ($result === false) {
             $err = curl_error($ch);
-            curl_close($ch);
+            $ch = null;
             return ['error' => 'Request failed', 'message' => $err];
         }
         $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
+        $ch = null;
 
         $decoded = json_decode($result, true);
         if (json_last_error() !== JSON_ERROR_NONE) {
