@@ -27,7 +27,12 @@ const Syosetsu = () => {
             toast.dismiss(id);
             toast.error("URLがKakuyomuまたは小説家になろうの形式ではありません。");
             setIsLoading(false);
-            alert("URLがKakuyomuまたは小説家になろうの形式ではありません。");
+            return;
+        }
+        if (provider === "syosetsu") {
+            toast.dismiss(id);
+            toast.error("Syosetsuka ni Narouからのダウンロードは現在サポートされていません。");
+            setIsLoading(false);
             return;
         }
 
@@ -47,7 +52,6 @@ const Syosetsu = () => {
                 const errorData = await response.json();
                 toast.dismiss(id);
                 toast.error(`ダウンロードに失敗しました: ${errorData.error}`);
-                alert(`ダウンロードに失敗しました: ${errorData.error}`);
                 setIsLoading(false);
                 return;
             }
@@ -64,7 +68,6 @@ const Syosetsu = () => {
         } catch (error) {
             toast.dismiss(id);
             toast.error(`ダウンロード中にエラーが発生しました: ${(error as Record<string, string>).message}`);
-            alert(`ダウンロード中にエラーが発生しました: ${(error as Record<string, string>).message}`);
         }
 
         return setIsLoading(false);
