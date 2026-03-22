@@ -8,6 +8,14 @@ class Http {
         return $out;
     }
 
+    public static function sendRequest(string $method, string $url, array $data = [], array $headers = []): array {
+        if ($method === 'POST') {
+            return self::sendPostRequest($url, $data, $headers);
+        } else {
+            return self::sendGetRequest($url, $headers);
+        }
+    }
+
     public static function sendPostRequest(string $url, array $data, array $headers = []): array {
         $ch = curl_init($url);
         $json = json_encode($data, JSON_UNESCAPED_UNICODE);
