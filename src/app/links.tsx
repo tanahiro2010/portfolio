@@ -8,13 +8,14 @@ type LinkItem = {
 };
 
 const LINKS: Array<LinkItem> = [
-  { label: "YouTube",  href: "/youtube" },
-  { label: "Twitter",  href: "/twitter" },
-  { label: "Kakuyomu", href: "/kakuyomu" },
-  { label: "GitHub",   href: "/github" },
-  { label: "Qiita",    href: "/blogs" },
-  { label: "Zenn",     href: "/zenn" },
-  { label: "Contact",  href: "/contact" },
+  { label: "YouTube",   href: "/youtube" },
+  { label: "Twitter",   href: "/twitter" },
+  { label: "Instagram", href: "/instagram" },
+  { label: "Kakuyomu",  href: "/kakuyomu" },
+  { label: "GitHub",    href: "/github" },
+  { label: "Qiita",     href: "/blogs" },
+  { label: "Zenn",      href: "/zenn" },
+  { label: "Contact",   href: "/contact" },
 ];
 
 const Links = () => {

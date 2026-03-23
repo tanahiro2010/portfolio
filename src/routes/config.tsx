@@ -17,6 +17,10 @@ const otherRoutes: Array<HasChildrenRoute> = [
     element: <Navigate to={`https://twitter.com/tanahiro2010`} />
   },
   {
+    path: "/instagram", meta: { title: "Instagram", navLabel: "Instagram", visibleInNav: true },
+    element: <Navigate to={`https://www.instagram.com/tanahiro2010_official/`} />
+  },
+  {
     path: "/kakuyomu", meta: { title: "Kakuyomu", navLabel: "Kakuyomu", visibleInNav: true },
     element: <Navigate to={`https://kakuyomu.jp/users/tanahiro2010`} />
   },
