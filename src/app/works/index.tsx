@@ -10,8 +10,8 @@ type Work = {
 const WORKS: Array<Work> = [
     {
         title: "UniSchool Website",
-        description: "The official website for UniSchool, a DX promotion team affiliated with Sanda Gakuen Junior High School, providing information about the team and its activities.",
-        href: "/works/a"
+        description: "The official website for UniSchool, a DX promotion team affiliated with Sanda Gakuen Junior High School, providing information about the team and its activities. Designed by Ri0n",
+        href: "/works/unischool"
     },
     {
         title: "ReCoron | Cron as a Service for API Users",
