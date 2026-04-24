@@ -1,5 +1,6 @@
 import type { BaseRoute, HasChildrenRoute } from './types/routes';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import { routes } from './routes/config';
 import Layout from './app/layout';
 import IndexPage from './app/index';
@@ -22,6 +23,14 @@ const flattenRoutes = (route: HasChildrenRoute, parent = ""): Array<BaseRoute> =
 export const flatRoutes: Array<BaseRoute> = routes.flatMap((route) => flattenRoutes(route, ""));
 
 const App = () => {
+  useEffect(() => {
+    const pathname = location.pathname;
+    const metadata = flatRoutes.find((route) => route.path === pathname);
+    if (!metadata) return;
+
+    document.title = metadata.meta?.title + " | tanahiro2010";
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
