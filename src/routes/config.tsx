@@ -68,10 +68,10 @@ const baseRoutes: Array<HasChildrenRoute> = [
     element: <NotFound />
   },
 
-  {
-    path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
-    element: <About />,
-  },
+  // {
+  //   path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
+  //   element: <About />,
+  // },
   {
     path: "/works", meta: { title: "Works", navLabel: "Works", visibleInNav: true },
     element: <Works />,
