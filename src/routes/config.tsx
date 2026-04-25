@@ -1,7 +1,7 @@
 import type { HasChildrenRoute } from "@/types/routes";
 import { Navigate } from "@/components/utils/navigate";
 import NotFound from "@/app/not-found";
-import About from "@/app/about";
+// import About from "@/app/about";
 import Links from "@/app/links";
 import Works from "@/app/works";
 import Syosetsu from "@/app/works/syosetsu";
@@ -15,10 +15,6 @@ const otherRoutes: Array<HasChildrenRoute> = [
   {
     path: "/twitter", meta: { title: "Twitter", navLabel: "Twitter", visibleInNav: true },
     element: <Navigate to={`https://twitter.com/tanahiro2010`} />
-  },
-  {
-    path: "/instagram", meta: { title: "Instagram", navLabel: "Instagram", visibleInNav: true },
-    element: <Navigate to={`https://www.instagram.com/tanahiro2010_official/`} />
   },
   {
     path: "/kakuyomu", meta: { title: "Kakuyomu", navLabel: "Kakuyomu", visibleInNav: true },
