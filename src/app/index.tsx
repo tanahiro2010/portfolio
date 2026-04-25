@@ -17,7 +17,7 @@ const navItems: NavItem[] = [
 const TIME_TO_DEVELOP: number = numToMs(5); // milliseconds
 
 const IndexPage = () => {
-    const [isDevelop, setIsDevelop] = useState(false);
+    const [isDevelop, setIsDevelop] = useState(true);
     const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     useEffect(() => {
