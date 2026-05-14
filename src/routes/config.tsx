@@ -1,7 +1,7 @@
 import type { HasChildrenRoute } from "@/types/routes";
 import { Navigate } from "@/components/utils/navigate";
 import NotFound from "@/app/not-found";
-// import About from "@/app/about";
+import About from "@/app/about";
 import Links from "@/app/links";
 import Works from "@/app/works";
 import Syosetsu from "@/app/works/syosetsu";
@@ -64,10 +64,10 @@ const baseRoutes: Array<HasChildrenRoute> = [
     element: <NotFound />
   },
 
-  // {
-  //   path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
-  //   element: <About />,
-  // },
+  {
+    path: "/about", meta: { title: "About", navLabel: "About", visibleInNav: true },
+    element: <About />,
+  },
   {
     path: "/works", meta: { title: "Works", navLabel: "Works", visibleInNav: true },
     element: <Works />,
