@@ -14,21 +14,6 @@ const HISTORY: Array<HistoryItem> = [
         description: 'Born in Kyoto, Japan'
     },
     {
-        date: '2013-04-01',
-        title: 'Moved to Hyogo',
-        description: 'Relocated to Hyogo Prefecture with my family'
-    },
-    {
-        date: '2016-04-04',
-        title: 'Entered Elementary School',
-        description: 'Started elementary school in Hyogo Prefecture'
-    },
-    {
-        date: '2023-04-01',
-        title: 'Entered Junior High School',
-        description: 'Enrolled at Sanda Gakuen Junior High School'
-    },
-    {
         date: '2023-05-01',
         title: 'Joined Zisty',
         description: 'Began activities as a member of the engineering community Zisty'
@@ -77,16 +62,6 @@ const HISTORY: Array<HistoryItem> = [
         date: '2026-03-14',
         title: 'Participated in Security Camp Mini in Osaka',
         description: 'Attended Security Camp Mini again as a third-year junior high school student, learning advanced topics such as build system optimization and CTF challenges'
-    },
-    {
-        date: '2026-03-19',
-        title: 'Graduated from Junior High School',
-        description: 'Graduated from Sanda Gakuen Junior High School and moved on to the next stage. The adventure has only just begun.'
-    },
-    {
-        date: '2026-04-07',
-        title: 'Entered Senior High School',
-        description: 'Enrolled at Sanda Gakuen Senior High School and started a new chapter in my educational journey'
     }
 ];
 
