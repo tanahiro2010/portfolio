@@ -32,12 +32,12 @@ const WORKS: Array<Work> = [
 
 const Works = () => {
     return (
-        <div className="mx-auto max-w-4xl bg-white px-4 py-10 text-black md:py-16">
+        <div className="w-full bg-white px-0 py-0 text-black md:py-8">
             <BlurFade delay={0.1} inView>
-                <div className="mb-10 rounded-[2rem] border border-black/15 bg-white p-6 md:p-8">
+                <div className="mb-8 rounded border border-black/15 bg-white p-4 md:p-6">
                     <p className="text-[11px] uppercase tracking-[0.35em] text-black/50">projects</p>
-                    <h1 className="mt-3 text-4xl font-semibold tracking-tight text-black md:text-5xl">Works</h1>
-                    <p className="mt-4 max-w-[620px] text-base leading-8 text-black/75 md:text-lg">
+                    <h1 className="mt-2 text-3xl font-semibold tracking-tight text-black md:text-4xl">Works</h1>
+                    <p className="mt-3 max-w-[620px] text-base leading-7 text-black/75 md:text-lg">
                         これまでに開発してきたプロダクトや関わってきたプロジェクトの一部をご紹介します。
                     </p>
                 </div>
@@ -48,7 +48,7 @@ const Works = () => {
                     <BlurFade key={work.title} delay={0.2 + idx * 0.1} inView>
                         <Link 
                             to={work.href} 
-                            className="group block rounded-[1.5rem] border border-black/15 p-6 md:p-8 transition-colors hover:bg-black hover:text-white"
+                            className="group block rounded border border-black/15 p-6 md:p-8 transition-colors hover:bg-black hover:text-white"
                         >
                             <div className="flex items-start justify-between gap-4">
                                 <div className="space-y-3">
