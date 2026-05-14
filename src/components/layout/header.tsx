@@ -16,10 +16,12 @@ const Header = () => {
                     <span>Scenario Writer / Software Developer</span>
                 </Show>
 
-                <div className="flex items-center gap-3 text-black">
-                    <Link href="/github">GitHub</Link>
-                    <Link href="/twitter">Twitter</Link>
-                </div>
+                <nav className="flex items-center gap-3 text-black">
+                    <Link href="#about">About</Link>
+                    <Link href="#works">Works</Link>
+                    <Link href="#links">Links</Link>
+                    <Link href="#contact">Contact</Link>
+                </nav>
             </div>
         </header>
     );
