@@ -15,6 +15,7 @@ const LINKS: Array<LinkItem> = [
   { label: "GitHub",    href: "/github" },
   { label: "Qiita",     href: "/blogs" },
   { label: "Zenn",      href: "/zenn" },
+  { label: "Connpass",  href: "/connpass" },
   { label: "Contact",   href: "/contact" },
 ];
 
