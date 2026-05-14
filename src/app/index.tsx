@@ -17,7 +17,7 @@ const navItems: NavItem[] = [
 const TIME_TO_DEVELOP: number = numToMs(5); // milliseconds
 
 const IndexPage = () => {
-    const [isDevelop, setIsDevelop] = useState(true);
+    const [isDevelop, setIsDevelop] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     useEffect(() => {
@@ -56,67 +56,89 @@ const IndexPage = () => {
         ))
     ), []);
 
+    const profileTags = useMemo(() => ([
+        "Scenario writer",
+        "Software developer",
+        "Minimal / black & white",
+    ]), []);
+
 
     return (
         <BlurFade duration={0.5} delay={0.2} offset={12} direction="up">
-            <main className="flex min-h-screen flex-col items-center justify-center bg-white text-black p-4">
+            <main className="min-h-screen bg-white px-4 py-6 text-black sm:px-6 lg:px-8">
                 {!isDevelop ? (
-                    <div className="w-full sm:w-4/5 max-w-6xl">
-                        <div className="w-full flex flex-col items-center text-left sm:items-stretch sm:flex-row sm:space-x-8 gap-8 sm:gap-0">
-                            <div className="w-3/4 sm:w-1/2 flex items-center justify-center">
-                                <img src="tanahiro_and_lambda.jpeg" alt="tanahiro2010のアイコン" className="rounded-none border-4 border-black w-full object-cover shadow-none" />
+                    <section className="mx-auto grid w-full max-w-6xl gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+                        <BlurFade duration={0.55} delay={0.15} className="order-2 lg:order-1">
+                            <div className="overflow-hidden rounded-[2rem] border border-black/15 bg-white">
+                                <img
+                                    src="tanahiro2010.jpeg"
+                                    alt="tanahiro2010のアイコン"
+                                    className="aspect-[4/5] w-full object-cover"
+                                />
                             </div>
+                        </BlurFade>
 
-                            <div className="w-full sm:w-1/2 flex flex-col justify-center p-2 sm:p-0">
-                                <BlurFade duration={0.5} delay={0.7}>
-                                    <div className="flex flex-col border-b-4 border-black pb-4 mb-6">
-                                        <h2 className="text-4xl sm:text-6xl font-black uppercase tracking-tighter leading-none mb-2" title="田中博悠">Hirohisa Tanaka</h2>
-                                        <p className="text-xl font-bold uppercase tracking-widest text-black">@tanahiro2010</p>
+                        <BlurFade duration={0.55} delay={0.25} className="order-1 flex items-center lg:order-2">
+                            <div className="w-full rounded-[2rem] border border-black/15 bg-white p-6 sm:p-8 lg:p-10">
+                                <div className="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-black/50">
+                                    <span className="h-px w-10 bg-black/20" />
+                                    relaxed minimal portfolio
+                                </div>
+
+                                <div className="space-y-5">
+                                    <div>
+                                        <h1 className="text-4xl font-semibold tracking-tight leading-tight sm:text-5xl" title="田中博悠">Hirohisa Tanaka</h1>
+                                        <p className="mt-2 text-sm uppercase tracking-[0.28em] text-black/55">@tanahiro2010</p>
                                     </div>
 
-                                    <div>
-                                        <p className="font-black text-xl sm:text-2xl uppercase tracking-tighter mb-6 text-black">
-                                            I am a scenario writer & software developer.
+                                    <p className="max-w-xl text-lg leading-8 text-black/85 sm:text-xl">
+                                        I write scenarios and build software. This site keeps the same monochrome simplicity, but with a little more space to breathe.
+                                    </p>
+
+                                    <div className="flex flex-wrap gap-2">
+                                        {profileTags.map((tag) => (
+                                            <span key={tag} className="rounded-full border border-black/15 px-3 py-1 text-xs uppercase tracking-[0.24em] text-black/70">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+
+                                    <div className="rounded-[1.5rem] border border-black/15 p-4 sm:p-5">
+                                        <p className="text-sm leading-7 text-black/75 sm:text-base">
+                                            I write scenarios for visual novels and develop software applications. Explore my works, notes, and links whenever you feel like it.
                                         </p>
-
-                                        <div className="flex flex-col justify-between">
-                                            <div className="text-black font-bold hidden sm:block space-y-6 text-lg leading-relaxed">
-                                                <p>
-                                                    I write scenarios for visual novels and develop software applications.
-                                                    Welcome to my personal website where you can find my works, blogs, and links.
-                                                </p>
-
-                                                <div 
-                                                    className="border-4 border-black transition-colors hover:bg-black hover:text-white cursor-pointer shadow-none" 
-                                                    onMouseDown={handleStartPress} 
-                                                    onMouseUp={handleEndPress} 
-                                                    onMouseLeave={handleEndPress}
-                                                >
-                                                    <p className="p-5 font-bold">
-                                                        Feel free to explore my portfolio and get in touch if you have any questions or collaboration ideas!
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div className="mt-8 flex flex-wrap justify-center gap-4">
-                                                { navigationLinks }
-                                            </div>
+                                        <div
+                                            className="mt-4 cursor-pointer rounded-[1.25rem] border border-black/15 px-4 py-3 transition-colors hover:bg-black hover:text-white"
+                                            onMouseDown={handleStartPress}
+                                            onMouseUp={handleEndPress}
+                                            onMouseLeave={handleEndPress}
+                                        >
+                                            <p className="text-sm font-medium leading-6 sm:text-base">
+                                                Press and hold here if you want the compact view.
+                                            </p>
                                         </div>
                                     </div>
-                                </BlurFade>
-                            </div>
-                        </div>
-                    </div>
-                ) : (
-                    <BlurFade duration={0.5} delay={0.2} offset={12} direction="up" className="text-center border-4 border-black p-8 sm:p-16 max-w-3xl w-full bg-white shadow-none">
-                        <h1 className="text-4xl sm:text-6xl font-black uppercase tracking-tighter mb-4 text-black" title="田中博悠">Hirohisa Tanaka</h1>
-                        <h2 className="text-2xl font-bold uppercase tracking-widest border-b-4 border-black pb-6 mb-6 text-black">@tanahiro2010</h2>
-                        <div className="text-xl font-black mb-8 uppercase tracking-widest text-black">
-                            I am a scenario writer and software developer.
-                        </div>
 
-                        <div className="mt-8 flex flex-wrap justify-center gap-4">
-                            { navigationLinks }
+                                    <div className="flex flex-wrap gap-3 pt-1">
+                                        {navigationLinks}
+                                    </div>
+                                </div>
+                            </div>
+                        </BlurFade>
+                    </section>
+                ) : (
+                    <BlurFade duration={0.5} delay={0.2} offset={12} direction="up" className="mx-auto flex min-h-[calc(100vh-3rem)] max-w-3xl items-center">
+                        <div className="w-full rounded-[2rem] border border-black/15 bg-white p-8 text-center sm:p-12">
+                            <p className="text-xs uppercase tracking-[0.35em] text-black/50">compact view</p>
+                            <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl" title="田中博悠">Hirohisa Tanaka</h1>
+                            <p className="mt-3 text-sm uppercase tracking-[0.28em] text-black/55">@tanahiro2010</p>
+                            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-black/80">
+                                I am a scenario writer and software developer.
+                            </p>
+
+                            <div className="mt-8 flex flex-wrap justify-center gap-3">
+                                {navigationLinks}
+                            </div>
                         </div>
                     </BlurFade>
                 )}

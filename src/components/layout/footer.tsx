@@ -2,9 +2,9 @@
 
 const Footer = () => {
     return (
-        <footer className="w-full border-t-4 border-black mt-8 bg-white text-black">
-            <div className="container mx-auto px-4 py-8 text-center text-sm font-bold uppercase tracking-widest">
-                <p>© 2024 tanahiro2010. All rights reserved.</p>
+        <footer className="mt-8 w-full border-t border-black/15 bg-white text-black">
+            <div className="container mx-auto px-4 py-8 text-center text-sm text-black/60">
+                <p>© 2026 tanahiro2010.</p>
             </div>
         </footer>
     );

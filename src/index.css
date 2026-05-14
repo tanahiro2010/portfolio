@@ -47,11 +47,11 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.985 0 0);
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --card: oklch(0.985 0 0);
   --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
+  --popover: oklch(0.985 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
@@ -62,8 +62,8 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
+  --border: oklch(0.88 0 0);
+  --input: oklch(0.88 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -119,33 +119,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
-  }
-}
-
-@layer components {
-  /* Center-expanding underline for elements using the `b` class */
-  .b {
-    position: relative;
-    display: inline-block;
-  }
-  .b::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0.25rem;
-    transform: translateX(-50%) scaleX(0);
-    transform-origin: center;
-    width: 80%;
-    height: 2px;
-    background-color: currentColor;
-    border-radius: 9999px;
-    transition: transform 200ms ease, opacity 200ms ease;
-    opacity: 0;
-  }
-  .b:hover::after,
-  .b:focus::after {
-    transform: translateX(-50%) scaleX(1);
-    opacity: 1;
+    @apply bg-background text-foreground antialiased;
+    line-height: 1.7;
   }
 }
