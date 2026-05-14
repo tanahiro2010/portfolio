@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 
 type RouteMeta = {
   title?: string;
+  description?: string;
   navLabel?: string;
   visibleInNav?: boolean;
   protected?: boolean;
