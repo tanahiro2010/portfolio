@@ -91,23 +91,24 @@ const About = () => {
     []);
     
     return (
-        <main className="max-w-5xl mx-auto px-4 py-12 md:py-24 bg-white text-black">
+        <main className="mx-auto max-w-5xl bg-white px-4 py-10 text-black md:py-16">
             <BlurFade delay={0.1} inView>
-                <div className="mb-12 border-b-4 border-black pb-4">
-                    <h1 className="text-4xl md:text-5xl font-black uppercase tracking-widest mb-4 text-black">About</h1>
-                    <p className="text-lg text-black font-bold max-w-[600px]">
+                <div className="mb-10 rounded-[2rem] border border-black/15 bg-white p-6 md:p-8">
+                    <p className="text-[11px] uppercase tracking-[0.35em] text-black/50">profile</p>
+                    <h1 className="mt-3 text-4xl font-semibold tracking-tight text-black md:text-5xl">About</h1>
+                    <p className="mt-4 max-w-[620px] text-base leading-8 text-black/75 md:text-lg">
                         私自身のことや、これまでの活動歴についてご紹介します。
                     </p>
                 </div>
             </BlurFade>
 
-            <div className="flex md:flex-row flex-col mt-6 gap-12 md:gap-16">
-                <div className="w-full md:w-1/2 space-y-12 md:max-h-[800px] md:overflow-y-auto md:pr-4 custom-scrollbar"> { /* Self-introduction, Teams, Skills - side1 section */}
+            <div className="mt-6 flex flex-col gap-8 md:flex-row md:gap-10">
+                <div className="w-full space-y-8 md:w-1/2 md:max-h-[800px] md:overflow-y-auto md:pr-4 custom-scrollbar"> { /* Self-introduction, Teams, Skills - side1 section */}
                     {/* Self-introduction */}
                     <BlurFade delay={0.2} inView>
-                        <div>
-                            <h2 className="text-2xl font-black uppercase tracking-widest mb-6 text-black border-l-4 border-black pl-4">Self-introduction</h2>
-                            <div className="space-y-4 text-black font-bold leading-relaxed">
+                        <div className="rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                            <h2 className="mb-5 text-xl font-semibold tracking-tight text-black">Self-introduction</h2>
+                            <div className="space-y-4 text-black/80 leading-8">
                                 <p>
                                     Hello, I'm tanahiro2010. I'm a scenario writer and software developer.
                                 </p>
@@ -123,9 +124,9 @@ const About = () => {
 
                     {/* Teams */}
                     <BlurFade delay={0.3} inView>
-                        <div>
-                            <h2 className="text-2xl font-black uppercase tracking-widest mb-6 text-black border-l-4 border-black pl-4">Teams</h2>
-                            <div className="overflow-hidden bg-white border-4 border-black rounded-none">
+                        <div className="rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                            <h2 className="mb-5 text-xl font-semibold tracking-tight text-black">Teams</h2>
+                            <div className="overflow-hidden rounded-[1rem] border border-black/15 bg-white">
                                 <Table headers={["Name", "Description"]} items={TEAMS} />
                             </div>
                         </div>
@@ -133,13 +134,13 @@ const About = () => {
 
                     {/* Skills */}
                     <BlurFade delay={0.4} inView>
-                        <div>
-                            <h2 className="text-2xl font-black uppercase tracking-widest mb-6 text-black border-l-4 border-black pl-4">Skills</h2>
+                        <div className="rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                            <h2 className="mb-5 text-xl font-semibold tracking-tight text-black">Skills</h2>
                             <ul className="space-y-4">
                                 {SKILLS.map((skill, idx) => (
-                                    <li key={idx} className="group flex flex-col gap-1.5 border-4 border-black rounded-none p-5 md:p-6 transition-colors hover:bg-black hover:text-white">
-                                        <h3 className="font-black uppercase tracking-widest text-black group-hover:text-white transition-colors">{skill.name}</h3>
-                                        <p className="text-sm font-bold text-black group-hover:text-white leading-relaxed">{skill.desc}</p>
+                                    <li key={idx} className="group flex flex-col gap-1.5 rounded-[1.25rem] border border-black/15 p-5 transition-colors hover:bg-black hover:text-white">
+                                        <h3 className="font-semibold tracking-tight text-black group-hover:text-white transition-colors">{skill.name}</h3>
+                                        <p className="text-sm leading-relaxed text-black/75 group-hover:text-white">{skill.desc}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -150,19 +151,21 @@ const About = () => {
                 {/* Experiences */}
                 <div className="w-full md:w-1/2">            { /* Experiences - side2 section */}
                     <BlurFade delay={0.2} inView>
-                        <h2 className="text-2xl font-black uppercase tracking-widest mb-8 text-black border-l-4 border-black pl-4">Experiences</h2>
+                        <div className="mb-6 rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                            <h2 className="text-xl font-semibold tracking-tight text-black">Experiences</h2>
+                        </div>
                     </BlurFade>
                     <div className="md:max-h-[800px] md:overflow-y-auto md:pr-4 pb-12 custom-scrollbar">
-                        <ul className="relative border-l-4 border-black ml-4 space-y-8">
+                        <ul className="relative ml-3 space-y-6 border-l border-black/20 pl-6">
                             {history.map((item, index) => (
                                 <BlurFade key={index} delay={0.3 + index * 0.05} inView>
-                                    <li className="relative pl-8">
-                                        <span className="absolute -left-[10px] top-2 flex items-center justify-center w-4 h-4 bg-white border-4 border-black rounded-none shadow-none"></span>
+                                    <li className="relative pl-2">
+                                        <span className="absolute -left-[10px] top-2 flex h-4 w-4 items-center justify-center rounded-full border border-black/30 bg-white"></span>
 
-                                        <div className="group border-4 border-black rounded-none p-5 transition-colors hover:bg-black hover:text-white shadow-none">
-                                            <time className="text-sm font-bold border-b-2 border-black inline-block mb-2 group-hover:border-white" dateTime={item.date}>{item.date}</time>
-                                            <h3 className="text-lg font-black text-black group-hover:text-white transition-colors uppercase tracking-tight">{item.title}</h3>
-                                            <p className="font-bold mt-2 text-sm leading-relaxed">{item.description}</p>
+                                        <div className="group rounded-[1.25rem] border border-black/15 p-5 transition-colors hover:bg-black hover:text-white">
+                                            <time className="mb-2 inline-block border-b border-black/20 text-sm text-black/65 group-hover:border-white/70 group-hover:text-white" dateTime={item.date}>{item.date}</time>
+                                            <h3 className="text-lg font-semibold tracking-tight text-black group-hover:text-white transition-colors">{item.title}</h3>
+                                            <p className="mt-2 text-sm leading-relaxed text-black/75 group-hover:text-white">{item.description}</p>
                                         </div>
                                     </li>
                                 </BlurFade>

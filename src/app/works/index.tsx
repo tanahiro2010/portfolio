@@ -32,33 +32,34 @@ const WORKS: Array<Work> = [
 
 const Works = () => {
     return (
-        <div className="max-w-4xl mx-auto px-4 py-12 md:py-24 bg-white text-black">
+        <div className="mx-auto max-w-4xl bg-white px-4 py-10 text-black md:py-16">
             <BlurFade delay={0.1} inView>
-                <div className="mb-12 border-b-4 border-black pb-4">
-                    <h1 className="text-4xl md:text-5xl font-black uppercase tracking-widest mb-4 text-black">Works</h1>
-                    <p className="text-lg text-black font-bold max-w-[600px]">
+                <div className="mb-10 rounded-[2rem] border border-black/15 bg-white p-6 md:p-8">
+                    <p className="text-[11px] uppercase tracking-[0.35em] text-black/50">projects</p>
+                    <h1 className="mt-3 text-4xl font-semibold tracking-tight text-black md:text-5xl">Works</h1>
+                    <p className="mt-4 max-w-[620px] text-base leading-8 text-black/75 md:text-lg">
                         これまでに開発してきたプロダクトや関わってきたプロジェクトの一部をご紹介します。
                     </p>
                 </div>
             </BlurFade>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-5">
                 {WORKS.map((work, idx) => (
                     <BlurFade key={work.title} delay={0.2 + idx * 0.1} inView>
                         <Link 
                             to={work.href} 
-                            className="group block border-4 border-black rounded-none p-6 md:p-8 transition-colors hover:bg-black hover:text-white"
+                            className="group block rounded-[1.5rem] border border-black/15 p-6 md:p-8 transition-colors hover:bg-black hover:text-white"
                         >
                             <div className="flex items-start justify-between gap-4">
                                 <div className="space-y-3">
-                                    <h2 className="text-xl md:text-2xl font-black uppercase tracking-widest text-black group-hover:text-white transition-colors">
+                                    <h2 className="text-xl font-semibold tracking-tight text-black group-hover:text-white transition-colors md:text-2xl">
                                         {work.title}
                                     </h2>
-                                    <p className="text-black font-bold leading-relaxed group-hover:text-white transition-colors">
+                                    <p className="text-black/75 leading-relaxed group-hover:text-white transition-colors">
                                         {work.description}
                                     </p>
                                 </div>
-                                <div className="shrink-0 p-2 md:p-3 rounded-none border-4 border-black bg-white group-hover:border-white group-hover:bg-black transition-colors hidden sm:block">
+                                <div className="hidden shrink-0 rounded-full border border-black/15 bg-white p-2 transition-colors group-hover:border-white/40 group-hover:bg-black sm:block">
                                     <ArrowRight className="w-6 h-6 text-black group-hover:text-white transition-colors" strokeWidth={3} />
                                 </div>
                             </div>
