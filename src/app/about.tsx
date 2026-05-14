@@ -84,6 +84,58 @@ const SKILLS: Array<Skill> = [
     { name: "Communication",        desc: "Strong collaboration and client communication skills" }
 ];
 
+type TechStack = {
+    lang: string;
+    framework: string[];
+}
+const techstacks: TechStack[] = [
+    {
+        lang: "JavaScript / TypeScript",
+        framework: [
+            "React", "Nextjs", "ReactNative",
+            "Vue", "Nuxtjs", 
+            "Hono", "Expressjs", "Nestjs", 
+            "Discord.js"
+        ]
+    },
+    {
+        lang: "Ruby",
+        framework: ["Sinatra", "Ruby on Rails"]
+    },
+    {
+        lang: "Python",
+        framework: ["Flask", "FastAPI", "Django", "Discord.py"]
+    },
+    {
+        lang: "PHP",
+        framework: ["Laravel"]
+    },
+    {
+        lang: "Go",
+        framework: ["Gin", "Echo", "Discord.go"]
+    },
+    {
+        lang: "Java",
+        framework: ["Spring Boot"]
+    },
+    {
+        lang: "C#",
+        framework: [".NET Framework"]
+    },
+    {
+        lang: "Flutter",
+        framework: []
+    },
+    {
+        lang: "C / C++",
+        framework: []
+    },
+    {
+        lang: "Rust",
+        framework: []
+    }
+];
+
 const About = () => {
     const history = useMemo<Array<HistoryItem>>(() => [...HISTORY]
         .filter((a) => new Date(a.date).getTime() <= Date.now())
@@ -91,9 +143,9 @@ const About = () => {
     []);
     
     return (
-        <main className="mx-auto max-w-5xl bg-white px-4 py-10 text-black md:py-16">
+        <div className="w-full bg-white px-0 py-0 text-black">
             <BlurFade delay={0.1} inView>
-                <div className="mb-10 rounded-[2rem] border border-black/15 bg-white p-6 md:p-8">
+                <div className="mb-10 rounded border border-black/15 bg-white p-6 md:p-8">
                     <p className="text-[11px] uppercase tracking-[0.35em] text-black/50">profile</p>
                     <h1 className="mt-3 text-4xl font-semibold tracking-tight text-black md:text-5xl">About</h1>
                     <p className="mt-4 max-w-[620px] text-base leading-8 text-black/75 md:text-lg">
@@ -103,10 +155,10 @@ const About = () => {
             </BlurFade>
 
             <div className="mt-6 flex flex-col gap-8 md:flex-row md:gap-10">
-                <div className="w-full space-y-8 md:w-1/2 md:max-h-[800px] md:overflow-y-auto md:pr-4 custom-scrollbar"> { /* Self-introduction, Teams, Skills - side1 section */}
+                <div className="w-full space-y-8 md:w-1/2"> { /* Self-introduction, Teams, Skills - side1 section */}
                     {/* Self-introduction */}
                     <BlurFade delay={0.2} inView>
-                        <div className="rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                        <div className="rounded border border-black/15 p-5 md:p-6">
                             <h2 className="mb-5 text-xl font-semibold tracking-tight text-black">Self-introduction</h2>
                             <div className="space-y-4 text-black/80 leading-8">
                                 <p>
@@ -124,9 +176,9 @@ const About = () => {
 
                     {/* Teams */}
                     <BlurFade delay={0.3} inView>
-                        <div className="rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                        <div className="rounded border border-black/15 p-5 md:p-6">
                             <h2 className="mb-5 text-xl font-semibold tracking-tight text-black">Teams</h2>
-                            <div className="overflow-hidden rounded-[1rem] border border-black/15 bg-white">
+                            <div className="overflow-hidden rounded border border-black/15 bg-white">
                                 <Table headers={["Name", "Description"]} items={TEAMS} />
                             </div>
                         </div>
@@ -134,11 +186,11 @@ const About = () => {
 
                     {/* Skills */}
                     <BlurFade delay={0.4} inView>
-                        <div className="rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                        <div className="rounded border border-black/15 p-5 md:p-6">
                             <h2 className="mb-5 text-xl font-semibold tracking-tight text-black">Skills</h2>
                             <ul className="space-y-4">
                                 {SKILLS.map((skill, idx) => (
-                                    <li key={idx} className="group flex flex-col gap-1.5 rounded-[1.25rem] border border-black/15 p-5 transition-colors hover:bg-black hover:text-white">
+                                    <li key={idx} className="group flex flex-col gap-1.5 rounded border border-black/15 p-5 transition-colors hover:bg-black hover:text-white">
                                         <h3 className="font-semibold tracking-tight text-black group-hover:text-white transition-colors">{skill.name}</h3>
                                         <p className="text-sm leading-relaxed text-black/75 group-hover:text-white">{skill.desc}</p>
                                     </li>
@@ -146,23 +198,44 @@ const About = () => {
                             </ul>
                         </div>
                     </BlurFade>
+
+                    {/* Tech Stack */}
+                    <BlurFade delay={0.45} inView>
+                        <div className="rounded border border-black/15 p-5 md:p-6">
+                            <h2 className="mb-4 text-xl font-semibold tracking-tight text-black">Tech Stack</h2>
+                            <p className="mb-3 text-sm text-black/75">主に以下の言語と主要フレームワークで開発できます。</p>
+
+                            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                {techstacks.map((stack: TechStack) => (
+                                    <div key={stack.lang} className="rounded border border-black/15 p-4">
+                                        <h4 className="font-semibold text-black">{stack.lang}</h4>
+                                        {stack.framework && stack.framework.length > 0 ? (
+                                            <p className="mt-2 text-sm text-black/75">{stack.framework.join('・')}</p>
+                                        ) : (
+                                            <p className="mt-2 text-sm text-black/75">標準ライブラリ / ネイティブ</p>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </BlurFade>
                 </div>
 
                 {/* Experiences */}
                 <div className="w-full md:w-1/2">            { /* Experiences - side2 section */}
                     <BlurFade delay={0.2} inView>
-                        <div className="mb-6 rounded-[1.5rem] border border-black/15 p-5 md:p-6">
+                        <div className="mb-6 rounded border border-black/15 p-4 md:p-6">
                             <h2 className="text-xl font-semibold tracking-tight text-black">Experiences</h2>
                         </div>
                     </BlurFade>
-                    <div className="md:max-h-[800px] md:overflow-y-auto md:pr-4 pb-12 custom-scrollbar">
+                    <div className="pb-12">
                         <ul className="relative ml-3 space-y-6 border-l border-black/20 pl-6">
                             {history.map((item, index) => (
                                 <BlurFade key={index} delay={0.3 + index * 0.05} inView>
                                     <li className="relative pl-2">
                                         <span className="absolute -left-[10px] top-2 flex h-4 w-4 items-center justify-center rounded-full border border-black/30 bg-white"></span>
 
-                                        <div className="group rounded-[1.25rem] border border-black/15 p-5 transition-colors hover:bg-black hover:text-white">
+                                        <div className="group rounded border border-black/15 p-5 transition-colors hover:bg-black hover:text-white">
                                             <time className="mb-2 inline-block border-b border-black/20 text-sm text-black/65 group-hover:border-white/70 group-hover:text-white" dateTime={item.date}>{item.date}</time>
                                             <h3 className="text-lg font-semibold tracking-tight text-black group-hover:text-white transition-colors">{item.title}</h3>
                                             <p className="mt-2 text-sm leading-relaxed text-black/75 group-hover:text-white">{item.description}</p>
@@ -174,7 +247,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     );
 }
 
