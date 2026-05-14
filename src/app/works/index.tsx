@@ -24,11 +24,16 @@ const WORKS: Array<Work> = [
         href: "/works/renv"
     },
     {
+        title: "AnyQuiz",
+        description: "A web platform where anyone can create, share, and solve custom quizzes and flashcards.",
+        href: "/works/nandemo"
+    },
+    {
         title: "Syosetsu Downloader",
         description: "A tool for downloading novels from the Syosetsu website, allowing users to save their favorite stories for offline reading.",
         href: "/works/syosetsu"
-    }
-]
+    },
+];
 
 const Works = () => {
     return (
