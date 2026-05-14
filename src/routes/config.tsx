@@ -36,6 +36,10 @@ const otherRoutes: Array<HasChildrenRoute> = [
     path: "/blogs", meta: { title: "Blogs", navLabel: "Blogs", visibleInNav: true },
     element: <Navigate to={`https://qiita.com/tanahiro2010`} />,
   },
+  {
+    path: "/connpass", meta: { title: "Connpass", navLabel: "connpass", visibleInNav: true },
+    element: <Navigate to={`https://connpass.com/user/tanahiro2010`} />
+  }
 ];
 
 const workRoutes: Array<HasChildrenRoute> = [
@@ -51,11 +55,14 @@ const workRoutes: Array<HasChildrenRoute> = [
     path: "/works/renv", meta: { title: "Renv", navLabel: "Renv", visibleInNav: true },
     element: <Navigate to={`https://renv-web.vercel.app/`} />
   },
-
+  {
+    path: "/works/nandemo", meta: { title: "なんでも問題集", navLabel: "問題集", visibleInNav: true },
+    element: <Navigate to={`https://nandemo.tanahiro2010.com`} />
+  },
   {
     path: "/works/syosetsu", meta: { title: "小説ダウンローダー", navLabel: "小説", visibleInNav: true },
     element: <Syosetsu />
-  }
+  },
 ];
 
 const baseRoutes: Array<HasChildrenRoute> = [
