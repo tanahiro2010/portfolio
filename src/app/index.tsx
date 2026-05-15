@@ -79,7 +79,7 @@ const IndexPage = () => {
                     <div className="rounded-[1.5rem] border border-black/15 bg-white p-8">
                         <h3 className="text-2xl font-semibold">Contact</h3>
                         <p className="mt-3 text-black/80">ご依頼・お問い合わせは以下のメールアドレス、またはSNSからお願いします。</p>
-                        <p className="mt-4 font-medium">email: <a href="mailto:info@tanahiro2010.example" className="underline">info@tanahiro2010.example</a></p>
+                        <p className="mt-4 font-medium">email: <a href="mailto:tanahiro2010.offical@gmail.com" className="underline">tanahiro2010.offical@gmail.com</a></p>
                     </div>
                 </section>
             </main>
