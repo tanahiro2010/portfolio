@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { BlurFade } from "@/components/animation/blur-fade";
 
