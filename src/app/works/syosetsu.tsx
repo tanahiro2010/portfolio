@@ -71,7 +71,7 @@ const Syosetsu = () => {
         }
 
         return setIsLoading(false);
-    }, []);
+    }, [getProviderType]);
 
     
     return (
