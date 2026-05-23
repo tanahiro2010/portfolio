@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import Table from "@/components/ui/table";
 import { BlurFade } from "@/components/animation/blur-fade";
 
@@ -137,10 +137,11 @@ const techstacks: TechStack[] = [
 ];
 
 const About = () => {
+    const [now] = useState(() => Date.now());
     const history = useMemo<Array<HistoryItem>>(() => [...HISTORY]
-        .filter((a) => new Date(a.date).getTime() <= Date.now())
+        .filter((a) => new Date(a.date).getTime() <= now)
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
-    []);
+    [now]);
     
     return (
         <div className="w-full bg-white px-0 py-0 text-black">
