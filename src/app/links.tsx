@@ -36,10 +36,11 @@ const Links = () => {
                 {LINKS.map((link, idx) => (
                     <BlurFade key={link.href} delay={0.2 + idx * 0.05} inView>
                         <li>
-                            <Link
-                                to={link.href}
+                            <a
+                                href={link.href}
                                 aria-label={`${link.label} を開く`}
                                 title={link.label}
+                                target="_blank"
                                 className="group flex items-center justify-between rounded border border-black/15 p-5 md:p-6 transition-colors hover:bg-black hover:text-white"
                             >
                                 <span className="truncate text-xl font-semibold tracking-tight text-black group-hover:text-white transition-colors">
@@ -48,7 +49,7 @@ const Links = () => {
                                 <div className="shrink-0 rounded-full border border-black/15 bg-white p-2 transition-colors group-hover:border-white/40 group-hover:bg-black">
                                     <ArrowRight className="w-6 h-6 text-black group-hover:text-white transition-colors" strokeWidth={3} />
                                 </div>
-                            </Link>
+                            </a>
                         </li>
                     </BlurFade>
                 ))}
