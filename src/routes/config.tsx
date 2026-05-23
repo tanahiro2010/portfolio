@@ -86,7 +86,7 @@ const baseRoutes: Array<HasChildrenRoute> = [
   },
 ];
 
-const routes: Array<HasChildrenRoute> = new Array();
+const routes: Array<HasChildrenRoute> = [];
 
 routes.push(...baseRoutes);
 routes.push(...workRoutes);
