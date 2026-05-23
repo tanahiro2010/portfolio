@@ -21,7 +21,7 @@ const flattenRoutes = (route: HasChildrenRoute, parent = ""): Array<BaseRoute> =
   return [me, ...kids];
 }
 
-export const flatRoutes: Array<BaseRoute> = routes.flatMap((route) => flattenRoutes(route, ""));
+const flatRoutes: Array<BaseRoute> = routes.flatMap((route) => flattenRoutes(route, ""));
 
 const SITE_NAME = "tanahiro2010";
 const SITE_URL = "https://tanahiro2010.com";
