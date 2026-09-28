@@ -1,6 +1,6 @@
 # Hirohisa Tanaka
 
-tanahiro2010 / Web Application Developer / DevRel
+Web Application Developer / DevRel
 
 - [Website](https://tanahiro2010.com/)
 - [X](https://x.com/tanahiro2010)
@@ -9,30 +9,43 @@ tanahiro2010 / Web Application Developer / DevRel
 ## About
 
 - Web Application Developer
-- OSS Contributor
 - DevRel
 - Event Organizer
-- Hono / Cloudflare Workers / React / Slim / Rails
-- TypeScript / Rust / Go / PHP / Ruby / Python / C++
+- Hono / Cloudflare Workers / TypeScript / Rust / Go
+
+## Interests
+
+- Backend / Frontend / Serverless
+- Developer Tools / Frameworks / OSS
+- AI Agents
+- Developer Relations / Community
 
 ## Education
 
-- 2026 - Sanda Gakuen High School
+- 2026 - Present - Sanda Gakuen High School
 
 ## Work experience
 
-- 2026 - Software Engineer Intern at a listed company
-- 2026 - Fenrir Inc. Intern
+- 2026 - Present - Software Engineer Intern at a listed company
+- 2026 - [Fenrir Inc.](https://fenrir-inc.com/) Intern
 - Freelance <span class="meta">- LP, WordPress, server migration, SEO, LINE tools</span>
 
 ## Works
 
-- [Yasumi?](https://yasumi.unischool.jp/) <span class="meta">- LINE Bot / LIFF that notifies school closures based on weather warnings</span>
-- [Devcast](https://devcast.work/) <span class="meta">- Tech article management and distribution service</span>
-- [WebMCP Bridge Extension](https://github.com/gdg-jp/webmcp-bridge-extension) <span class="meta">- Browser extension version of WebMCP Bridge MCP</span>
-- [WebMCP Bridge MCP](https://github.com/gdg-jp/webmcp-bridge-mcp) <span class="meta">- MCP server bridging CLI and WebMCP</span>
-- E.D.I.T.H <span class="meta">- Communication assistance system for smart glasses (Alpha+ Project)</span>
-- ReNovel <span class="meta">- Novel publishing platform with writing, analytics, and social features</span>
+- [Yasumi?](https://yasumi.unischool.jp/) 
+<span class="meta">- LINE Bot / LIFF that notifies school closures based on weather warnings</span>
+- [Devcast](https://devcast.work/) 
+<span class="meta">- Tech article management and distribution service</span>
+- [ReCoron](https://re-coron.vercel.app/) 
+<span class="meta">- API based service for creating and managing cron job</span>
+- [WebMCP Bridge Extension](https://github.com/gdg-jp/webmcp-bridge-extension) 
+<span class="meta">- Browser extension version of WebMCP Bridge MCP</span>
+- [WebMCP Bridge MCP](https://github.com/gdg-jp/webmcp-bridge-mcp) 
+<span class="meta">- MCP server bridging CLI and WebMCP</span>
+- E.D.I.T.H 
+<span class="meta">- Communication assistance system for smart glasses (Alpha+ Project)</span>
+- ReNovel 
+<span class="meta">- Novel publishing platform with writing, analytics, and social features</span>
 
 ## Community
 
