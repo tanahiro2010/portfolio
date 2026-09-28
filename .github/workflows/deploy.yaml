@@ -1,9 +1,6 @@
 name: Build and Deploy to FTP
 
-on:
-  push:
-    branches:
-      - main   # push対象ブランチ
+on: push
 
 jobs:
   frontend-deploy:
@@ -26,7 +23,7 @@ jobs:
       - name: Install deps
         run: bun install
 
-      - name: Build React
+      - name: Build Astro
         run: bun run build
 
       - name: FTP Deploy

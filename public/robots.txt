@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /works/syosetsu
 
-Sitemap: https://tanahiro2010.com/sitemap.xml
+Sitemap: https://tanahiro2010.com/sitemap-index.xml

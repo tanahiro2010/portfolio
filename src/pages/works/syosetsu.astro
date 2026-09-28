@@ -1,0 +1,33 @@
+---
+import Base from "@/layouts/Base.astro";
+import SyosetsuDownloader from "@/components/SyosetsuDownloader.tsx";
+---
+
+<Base
+  title="Syosetsu Downloader | tanahiro2010"
+  description="Kakuyomu の作品をテキストとしてダウンロードするツール。"
+  noindex={true}
+>
+  <main
+    id="main"
+    class="mx-auto flex min-h-screen max-w-2xl flex-col justify-center px-5 py-16 sm:px-8"
+  >
+    <a
+      href="/"
+      class="link-underline mb-12 self-start text-sm text-muted transition-colors hover:text-ink"
+    >
+      ← tanahiro2010
+    </a>
+
+    <p class="eyebrow">Private Tool</p>
+    <h1 class="mt-4 text-4xl sm:text-5xl">Syosetsu Downloader</h1>
+    <p class="mt-4 max-w-xl leading-8 text-muted">
+      小説投稿サイトの作品を 1 つのテキストファイルとして保存するためのツールです。
+      URL を貼り付けてダウンロードしてください。
+    </p>
+
+    <div class="mt-10 border border-line p-6 sm:p-8">
+      <SyosetsuDownloader client:load />
+    </div>
+  </main>
+</Base>
