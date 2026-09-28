@@ -67,6 +67,7 @@ Web Application Developer / DevRel
 ## Contributions
 - [Bokuchi](https://github.com/Bokuchi-Editor/bokuchi) <span class="meta">- Open source lightweight markdown editor</span>
 - [lapras-mcp-server](https://github.com/lapras-inc/lapras-mcp-server) <span class="meta">- Open source MCP server for Lapras.com</span>
+- [ec-cube](https://github.com/ec-cube/ec-cube) <span class="meta">- Open source e-commerce platform</span>
 - [Nanase-Bot](https://github.com/sf-kosen/Nanase-Bot) <span class="meta">- Open source Discord bot for SF Kosen</span>
 
 ## Writing
