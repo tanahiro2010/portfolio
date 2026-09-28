@@ -1,9 +1,42 @@
 name: Build and Deploy to FTP
 
-on: push
+on:
+  push:
+    branches:
+      - main   # push対象ブランチ
+  workflow_dispatch: # 手動実行時は変更の有無に関係なく両方デプロイする
 
 jobs:
+  # push で変更されたファイルからデプロイ対象を判定する
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      frontend: ${{ steps.filter.outputs.frontend }}
+      backend: ${{ steps.filter.outputs.backend }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect changes
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            frontend:
+              - 'src/**'
+              - 'public/**'
+              - 'astro.config.mjs'
+              - 'tsconfig.json'
+              - 'package.json'
+              - 'bun.lock'
+              - '.github/workflows/deploy.yaml'
+            backend:
+              - 'backend/**'
+              - '.github/workflows/deploy.yaml'
+
   frontend-deploy:
+    needs: changes
+    if: github.event_name == 'workflow_dispatch' || needs.changes.outputs.frontend == 'true'
     runs-on: ubuntu-latest
 
     steps:
@@ -36,11 +69,14 @@ jobs:
           server-dir: ${{ secrets.FTP_FRONTEND_REMOTE_DIR }}
 
   backend-deploy:
+    needs: changes
+    if: github.event_name == 'workflow_dispatch' || needs.changes.outputs.backend == 'true'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4   
-        with:    
+        uses: actions/checkout@v4
+        with:
           persist-credentials: true
 
       - name: FTP Deploy
