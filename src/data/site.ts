@@ -22,12 +22,3 @@ export const site = {
   ],
   ogImage: "/ogp.png",
 } as const;
-
-export type NavItem = { label: string; href: string };
-
-export const nav: NavItem[] = [
-  { label: "About", href: "#about" },
-  { label: "Works", href: "#works" },
-  { label: "Links", href: "#links" },
-  { label: "Contact", href: "#contact" },
-];
