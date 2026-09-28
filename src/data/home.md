@@ -26,18 +26,14 @@ Web Application Developer / DevRel
 
 ## Work Experience
 
-* 2026 - Present - Software Engineer Intern at a listed company
-    - Software Engineer Intern / Web / Mobile / Security
-* 2026 - Fenrir Inc.
-    - Frontend Engineer Intern / React / TanStack Router / Tailwind CSS / API Integration / Authentication
-* 2025 - 2026 - Nishinippon Sourcing
-    - Freelance / LP / Google Ads / Meta Ads / LINE Marketing Tools
-* 2025 - 2026 - Shoki
-    - Freelance / WordPress / Performance Optimization / SEO
-* 2025 - 2026 - ALKU
-    - Freelance / LP Maintenance / Apache to Nginx Migration
-* 2025 - 2026 - Eco House Japan
-    - Freelance / Server Migration / Website Content Restoration
+## Work Experience
+
+- 2026 - Present - Software Engineer Intern at a listed company
+- 2026 - [Fenrir Inc.](https://fenrir-inc.com/) Intern
+- 2025 - 2026 - Shoki Freelance
+- 2025 - 2026 - [ALKU](https://alku-inc.jp/) Freelance
+- 2025 - 2026 - [Eco House Japan](https://ecohouse-j.com/) Freelance
+- 2024 - 2026 - [Nishinihon Sourcing](https://www.nishinihon-sourcing.com/) Freelance
 
 ## Works
 
