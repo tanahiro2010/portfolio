@@ -61,7 +61,7 @@ Web Application Developer / DevRel
 - 2025 - SF-Kosen SubOwner
 - 2024 - [UniSchool](https://unischool.jp/) Chief Technology Student
 - 2024 - UniProject Member
-- 2023 ~ 2026 - TeamZisty SubOwner
+- 2023 - 2026 - TeamZisty SubOwner
 
 ## Talks
 
