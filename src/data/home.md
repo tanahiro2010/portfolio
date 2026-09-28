@@ -24,7 +24,7 @@ Web Application Developer / DevRel
 
 - 2026 - Present - Sanda Gakuen High School
 
-Work Experience
+## Work Experience
 
 * 2026 - Present - Software Engineer Intern at a listed company
     - Software Engineer Intern / Web / Mobile / Security
