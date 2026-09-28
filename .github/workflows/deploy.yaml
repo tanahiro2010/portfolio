@@ -2,8 +2,6 @@ name: Build and Deploy to FTP
 
 on:
   push:
-    branches:
-      - main   # push対象ブランチ
   workflow_dispatch: # 手動実行時は変更の有無に関係なく両方デプロイする
 
 jobs:
