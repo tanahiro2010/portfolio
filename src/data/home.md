@@ -30,10 +30,10 @@ Web Application Developer / DevRel
 
 - 2026 - Present - Software Engineer Intern at a listed company
 - 2026 - [Fenrir Inc.](https://fenrir-inc.com/) Intern
-- 2025 - 2026 - Shoki Freelance
-- 2025 - 2026 - [ALKU](https://alku-inc.jp/) Freelance
-- 2025 - 2026 - [Eco House Japan](https://ecohouse-j.com/) Freelance
-- 2024 - 2026 - [Nishinihon Sourcing](https://www.nishinihon-sourcing.com/) Freelance
+- 2025 - 2026 - Shoki inc. Freelance
+- 2025 - 2026 - [ALKU inc.](https://alku-inc.jp/) Freelance
+- 2025 - 2026 - [Eco House Japan inc.](https://ecohouse-j.com/) Freelance
+- 2024 - 2026 - [Nishinihon Sourcing inc.](https://www.nishinihon-sourcing.com/) Freelance
 
 ## Works
 
