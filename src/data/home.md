@@ -12,7 +12,8 @@ tanahiro2010 / Web Application Developer / DevRel
 - OSS Contributor
 - DevRel
 - Event Organizer
-- Hono / Cloudflare Workers / TypeScript / Rust / Go
+- Hono / Cloudflare Workers / React / Slim / Rails
+- TypeScript / Rust / Go / PHP / Ruby / Python / C++
 
 ## Education
 
