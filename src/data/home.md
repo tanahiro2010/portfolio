@@ -1,6 +1,6 @@
 # Hirohisa Tanaka
 
-tanahiro2010 / Web Application Developer / DevRel / Novelist
+tanahiro2010 / Web Application Developer / DevRel
 
 - [Website](https://tanahiro2010.com/)
 - [X](https://x.com/tanahiro2010)
@@ -11,7 +11,7 @@ tanahiro2010 / Web Application Developer / DevRel / Novelist
 - Web Application Developer
 - OSS Contributor
 - DevRel
-- Novelist
+- Event Organizer
 - Hono / Cloudflare Workers / TypeScript / Rust / Go
 
 ## Education
