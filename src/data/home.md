@@ -24,27 +24,20 @@ Web Application Developer / DevRel
 
 - 2026 - Present - Sanda Gakuen High School
 
-## Work experience
+Work Experience
 
-## Work Experience
-
-- **2026 - Present — Software Engineer Intern at a listed company**  
-  <span class="meta">- Working across web, mobile, and security-related development as a software engineer intern.</span>
-
-- **2026 — Fenrir Inc. — Frontend Engineer Intern**  
-  <span class="meta">- Developed a CMS frontend using React, TanStack Router, and Tailwind CSS. Worked on UI implementation connected to existing APIs, routing, and authentication-related design and implementation.</span>
-
-- **2025 - 2026 — Nishinippon Sourcing — Freelance / Contract**  
-  <span class="meta">- Maintained landing pages, supported Google Ads / Meta Ads operations, and configured LINE marketing tools. Continued working on projects for approximately one year.</span>
-
-- **2025 - 2026 — Shoki — Freelance / Contract**  
-  <span class="meta">- Maintained and optimized a custom WordPress theme for landing pages, including performance improvements and SEO-related work.</span>
-
-- **2025 - 2026 — ALKU — Freelance / Contract**  
-  <span class="meta">- Maintained three existing landing pages and worked on server migration from Apache to Nginx.</span>
-
-- **2025 - 2026 — Eco House Japan — Freelance / Contract**  
-  <span class="meta">- Migrated the company website to a new server and restored lost website content, including five pages and ten images.</span>
+* 2026 - Present - Software Engineer Intern at a listed company
+    - Software Engineer Intern / Web / Mobile / Security
+* 2026 - Fenrir Inc.
+    - Frontend Engineer Intern / React / TanStack Router / Tailwind CSS / API Integration / Authentication
+* 2025 - 2026 - Nishinippon Sourcing
+    - Freelance / LP / Google Ads / Meta Ads / LINE Marketing Tools
+* 2025 - 2026 - Shoki
+    - Freelance / WordPress / Performance Optimization / SEO
+* 2025 - 2026 - ALKU
+    - Freelance / LP Maintenance / Apache to Nginx Migration
+* 2025 - 2026 - Eco House Japan
+    - Freelance / Server Migration / Website Content Restoration
 
 ## Works
 
