@@ -30,11 +30,12 @@ Web Application Developer / DevRel
 ## Work Experience
 
 - 2026 - Present - Software Engineer Intern at a listed company
-- 2026 - [Fenrir Inc.](https://fenrir-inc.com/) Intern
-- 2025 - 2026 - Shoki inc. Freelance
-- 2025 - 2026 - [ALKU inc.](https://alku-inc.jp/) Freelance
-- 2025 - 2026 - [Eco House Japan inc.](https://ecohouse-j.com/) Freelance
-- 2024 - 2026 - [Nishinihon Sourcing inc.](https://www.nishinihon-sourcing.com/) Freelance
+- 2026 - [Fenrir Inc.](https://fenrir-inc.com/) Frontend Engineer Intern
+- 2026 - [Hifumi Inc.](https://hifumi-inc.com/) Freelance Security Engineer
+- 2025 - 2026 - [Yuki inc.](https://omotenasii.com/company/) Freelance Frontend Engineer
+- 2025 - 2026 - [ALKU inc.](https://alku-inc.jp/) Freelance Full-Stack Engineer
+- 2025 - 2026 - [Eco House Japan inc.](https://ecohouse-j.com/) Freelance Frontend and Infrastructure Engineer
+- 2024 - 2026 - [Nishinihon Sourcing inc.](https://www.nishinihon-sourcing.com/) Freelance Full-Stack Engineer and Marketer
 
 ## Works
 
