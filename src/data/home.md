@@ -15,7 +15,7 @@ Web Application Developer / DevRel
 
 ## Interests
 
-- Backend / Frontend / Serverless
+- Backend / Frontend / Serverless / Security
 - Developer Tools / Frameworks / OSS
 - AI Agents
 - Developer Relations / Community
@@ -23,8 +23,9 @@ Web Application Developer / DevRel
 ## Education
 
 - 2026 - Present - Sanda Gakuen High School
-
-## Work Experience
+- 2025 - Security Camp Mini Osaka
+- 2024 - Sanda Gakuen Junior High School
+- 2023 - Security Camp Mini Osaka
 
 ## Work Experience
 
@@ -55,19 +56,21 @@ Web Application Developer / DevRel
 ## Community
 
 - 2026 - Hono Conference Tokyo 2026 Core Staff
-- 2026 - GDG Greater Kwansai Padawan Organizer
-- 2026 - Alpha+ Project 4th Generation
+- 2026 - [GDG Greater Kwansai](https://gdgkwansai.connpass.com/) Padawan Organizer
+- 2026 - AI Talks Night Staff
+- 2026 - [STECH](https://stech.jinnen.co.jp/) Member
+- 2026 - [Alpha+ Project](https://greek-academy.org/) 4th Generation
 - 2026 - [Sanda Gakuen School Festival LT](https://sglt.under18.dev/) Organizer
-- 2025 - SF-Kosen SubOwner
+- 2025 - [SF-Kosen](https://sf-kosen.com) SubOwner
 - 2024 - [UniSchool](https://unischool.jp/) Chief Technology Student
-- 2024 - UniProject Member
+- 2024 - [UniProject](https://uniproject.jp) Member
 - 2023 - 2026 - TeamZisty SubOwner
 
 ## Talks
 
 - 2026 - 個人開発者よ、Honoを使え (ja) <span class="meta">- Hono Conference Tokyo 2026</span>
-- 2026 - [WebMCP を作って Antigravity IDE から呼び出してみよう！(ja)](https://learn.gdgs.jp/webmcp-agent/) <span class="meta">- Google I/O Extended Osaka 2026</span>
 - 2026 - [OSSコミュニティがくれた「人との繋がり」 (ja)](https://speakerdeck.com/tanahiro2010/osskomiyuniteigakureta-ren-tonoxi-gari) <span class="meta">- Open Source Conference Kyoto 2026</span>
+- 2026 - [WebMCP を作って Antigravity IDE から呼び出してみよう！(ja)](https://learn.gdgs.jp/webmcp-agent/) <span class="meta">- Google I/O Extended Osaka 2026</span>
 
 ## Contributions
 - [Bokuchi](https://github.com/Bokuchi-Editor/bokuchi) <span class="meta">- Open source lightweight markdown editor</span>
