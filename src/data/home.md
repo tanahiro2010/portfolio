@@ -38,20 +38,22 @@ Web Application Developer / DevRel
 
 ## Works
 
-- [Yasumi?](https://yasumi.unischool.jp/) 
-<span class="meta">- LINE Bot / LIFF that notifies school closures based on weather warnings</span>
-- [Devcast](https://devcast.work/) 
-<span class="meta">- Tech article management and distribution service</span>
-- [ReCoron](https://re-coron.vercel.app/) 
-<span class="meta">- API based service for creating and managing cron job</span>
-- [WebMCP Bridge Extension](https://github.com/gdg-jp/webmcp-bridge-extension) 
-<span class="meta">- Browser extension version of WebMCP Bridge MCP</span>
-- [WebMCP Bridge MCP](https://github.com/gdg-jp/webmcp-bridge-mcp) 
-<span class="meta">- MCP server bridging CLI and WebMCP</span>
-- E.D.I.T.H 
-<span class="meta">- Communication assistance system for smart glasses (Alpha+ Project)</span>
-- ReNovel 
-<span class="meta">- Novel publishing platform with writing, analytics, and social features</span>
+- 2026 - [SG / LT 2026](https://sglt.under18.dev)
+<span class="meta">- Website | Event website for Sanda Gakuen School Festival LT</span>
+- 2026 - [Yasumi?](https://yasumi.unischool.jp/) 
+<span class="meta">- SaaS | LINE Bot / LIFF that notifies school closures based on weather warnings</span>
+- 2026 - [Devcast](https://devcast.work/) 
+<span class="meta">- SaaS | Tech article management and distribution service</span>
+- 2026 - [WebMCP Bridge Extension](https://github.com/gdg-jp/webmcp-bridge-extension) 
+<span class="meta">- OSS | Browser extension version of WebMCP Bridge MCP</span>
+- 2026 - [WebMCP Bridge MCP](https://github.com/gdg-jp/webmcp-bridge-mcp) 
+<span class="meta">- OSS | MCP server bridging CLI and WebMCP</span>
+- 2026 - E.D.I.T.H 
+<span class="meta">- Project | Communication assistance system for smart glasses (Alpha+ Project)</span>
+- 2024 - [ReCoron](https://re-coron.vercel.app/) 
+<span class="meta">- SaaS | API based service for creating and managing cron job</span>
+- 2023 - ReNovel 
+<span class="meta">- SaaS | Novel publishing platform with writing, analytics, and social features</span>
 
 ## Community
 
