@@ -29,13 +29,109 @@ Web Application Developer / DevRel
 
 ## Work Experience
 
-- 2026 - Present - Software Engineer Intern at a listed company
-- 2026 - [Fenrir Inc.](https://fenrir-inc.com/) Frontend Engineer Intern
-- 2026 - [Hifumi Inc.](https://hifumi-123coltd.holy.jp/) Freelance Security Engineer
-- 2025 - 2026 - [Yuki inc.](https://omotenasii.com/company/) Freelance Frontend Engineer
-- 2025 - 2026 - [ALKU inc.](https://alku-inc.jp/) Freelance Full-Stack Engineer
-- 2025 - 2026 - [Eco House Japan inc.](https://ecohouse-j.com/) Freelance Frontend and Infrastructure Engineer
-- 2024 - 2026 - [Nishinihon Sourcing inc.](https://www.nishinihon-sourcing.com/) Freelance Full-Stack Engineer and Marketer
+<details>
+<summary>2026 - Present - Software Engineer Intern at a listed company</summary>
+
+Joined as a Software Engineer Intern after being directly scouted by the CTO in October 2025.
+
+Working across a broad range of areas, including web, mobile, and application security.
+
+Responsibilities and experience include:
+- Maintaining and improving an existing production codebase
+- Refactoring and modifying legacy code
+- Identifying and fixing multiple security vulnerabilities
+- Developing and improving web application features
+- Working across both frontend and backend systems
+- Contributing to mobile application development
+- Improving code maintainability while preserving existing behavior
+
+</details>
+
+<details>
+<summary>2026 - <a href="https://fenrir-inc.com/">Fenrir Inc.</a> - Frontend Engineer Intern</summary>
+
+Participated in a one-week frontend engineering internship in August 2026.
+
+Developed the frontend of a CMS using React, TypeScript, TanStack Router, and Tailwind CSS.
+
+Responsibilities and experience included:
+- Implementing article, user, and administrator management screens
+- Integrating the frontend with existing APIs
+- Designing routing and data-loading flows with TanStack Router
+- Implementing authentication-related frontend logic
+- Building reusable UI components
+- Implementing search, sorting, pagination, and view switching
+- Writing tests for implemented features
+
+Initially expected to work mainly on article-related pages, but completed the planned work ahead of schedule and expanded the implementation to additional areas of the CMS.
+
+</details>
+
+<details>
+<summary>2026 - <a href="https://hifumi-123coltd.holy.jp/">Hifumi Inc.</a> - Security Researcher</summary>
+
+Worked as a Security Researcher with a focus on practical security education.
+
+Responsibilities and experience included:
+- Creating educational materials on SQL Injection
+- Developing a sandbox environment for hands-on security training
+- Designing exercises that allowed participants to safely learn common SQL Injection concepts
+- Delivering a technical lecture and hands-on session
+- Supporting participants during practical security exercises
+
+</details>
+
+<details>
+<summary>2025 - 2026 - <a href="https://omotenasii.com/company/">Yuki Inc.</a> - Freelance Frontend Engineer</summary>
+
+Worked on an existing WordPress-based landing page as a freelance frontend engineer.
+
+Responsibilities included:
+- Modifying a custom WordPress theme
+- Improving frontend performance and reducing page weight
+- Implementing SEO improvements
+
+</details>
+
+<details>
+<summary>2025 - 2026 - <a href="https://alku-inc.jp/">ALKU Inc.</a> - Freelance Full-Stack Engineer</summary>
+
+Worked on the maintenance and infrastructure of existing landing pages.
+
+Responsibilities included:
+- Modifying three existing landing pages
+- Migrating the web server environment from Apache to Nginx
+- Configuring the new server environment and related infrastructure
+
+</details>
+
+<details>
+<summary>2025 - 2026 - <a href="https://ecohouse-j.com/">Eco House Japan Inc.</a> - Freelance Frontend and Infrastructure Engineer</summary>
+
+Worked on website infrastructure migration and content recovery.
+
+Responsibilities included:
+- Migrating the company's website to a new server environment
+- Recovering lost website content after migration issues
+- Restoring 5 pages
+- Restoring 10 image assets
+
+</details>
+
+<details>
+<summary>2024 - 2026 - <a href="https://www.nishinihon-sourcing.com/">Nishinihon Sourcing Inc.</a> - Freelance Full-Stack Engineer and Marketer</summary>
+
+Worked continuously with the company for approximately one year as a freelance engineer and marketer.
+
+Responsibilities included:
+- Modifying and maintaining landing pages
+- Supporting Google Ads campaigns
+- Supporting Meta Ads campaigns
+- Configuring and supporting LINE marketing tools
+- Providing technical support for web-based marketing initiatives
+
+</details>
+
 
 ## Works
 
