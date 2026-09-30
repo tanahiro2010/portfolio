@@ -180,6 +180,7 @@ Scope of work included:
 
 - 2026 - [Bokuchiのすゝめ (ja)](https://sglt.under18.dev/sessions/bokuchi) <span class="meta">- Sanda / LT 2026</span>
 - 2026 - 個人開発者よ、Honoを使え (ja) <span class="meta">- Hono Conference Tokyo 2026</span>
+- 2026 - [Serverlessのすゝめ (ja)](https://speakerdeck.com/tanahiro2010/serverless-no-susume) <span class="meta">- Serverless LT</span>
 - 2026 - [OSSコミュニティがくれた「人との繋がり」 (ja)](https://speakerdeck.com/tanahiro2010/osskomiyuniteigakureta-ren-tonoxi-gari) <span class="meta">- Open Source Conference Kyoto 2026</span>
 - 2026 - [WebMCP を作って Antigravity IDE から呼び出してみよう！(ja)](https://learn.gdgs.jp/webmcp-agent/) <span class="meta">- Google I/O Extended Osaka</span>
 
