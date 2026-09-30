@@ -30,7 +30,7 @@ Web Application Developer / DevRel
 ## Work Experience
 
 <details>
-<summary>2026 - Present - Software Engineer Intern at a listed company</summary>
+<summary>2026 - Present - A Listed Company - Software Engineer Intern</summary>
 
 Joined as a Software Engineer Intern after being directly scouted by the CTO in October 2025.
 
@@ -133,7 +133,7 @@ Responsibilities included:
 </details>
 
 <details>
-<summary>2023 - 2025 - Freelance RPA Engineer at unlisted company</summary>
+<summary>2023 - 2025 - An Unlisted Company - Freelance RPA Engineer</summary>
 Worked as a freelance RPA (Robotic Process Automation) engineer for an unlisted company, focusing on automating repetitive tasks and improving efficiency.
 Scope of work included:
 - Developing and maintaining RPA scripts using Python and Java.
