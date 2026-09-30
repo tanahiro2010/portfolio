@@ -85,6 +85,7 @@ Web Application Developer / DevRel
 ## Writing
 
 - [Zenn articles](https://zenn.dev/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
+- [Dev.to articles](https://dev.to/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
 - [Kakuyomu novels](https://kakuyomu.jp/users/tanahiro2010) <span class="meta">- Original novels and short stories</span>
 
 ## Accounts
