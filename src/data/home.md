@@ -132,6 +132,15 @@ Responsibilities included:
 
 </details>
 
+<details>
+<summary>2023 - 2025 - Freelance RPA Engineer at unlisted company</summary>
+Worked as a freelance RPA (Robotic Process Automation) engineer for an unlisted company, focusing on automating repetitive tasks and improving efficiency.
+Scope of work included:
+- Developing and maintaining RPA scripts using Python and Java.
+- Automating data entry and processing tasks
+- Integrating RPA solutions with existing business processes
+</details>
+
 
 ## Works
 
