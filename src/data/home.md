@@ -31,7 +31,7 @@ Web Application Developer / DevRel
 
 - 2026 - Present - Software Engineer Intern at a listed company
 - 2026 - [Fenrir Inc.](https://fenrir-inc.com/) Frontend Engineer Intern
-- 2026 - [Hifumi Inc.](hifumi-123coltd.holy.jp/) Freelance Security Engineer
+- 2026 - [Hifumi Inc.](https://hifumi-123coltd.holy.jp/) Freelance Security Engineer
 - 2025 - 2026 - [Yuki inc.](https://omotenasii.com/company/) Freelance Frontend Engineer
 - 2025 - 2026 - [ALKU inc.](https://alku-inc.jp/) Freelance Full-Stack Engineer
 - 2025 - 2026 - [Eco House Japan inc.](https://ecohouse-j.com/) Freelance Frontend and Infrastructure Engineer
@@ -58,7 +58,7 @@ Web Application Developer / DevRel
 
 ## Community
 
-- 2026 - Hono Conference Tokyo 2026 Core Staff
+- 2026 - [Hono Conference Tokyo 2026](https://honoconf.dev/2026) Core Staff
 - 2026 - [GDG Greater Kwansai](https://gdgkwansai.connpass.com/) Padawan Organizer
 - 2026 - AI Talks Night Staff
 - 2026 - [STECH](https://stech.jinnen.co.jp/) Member
