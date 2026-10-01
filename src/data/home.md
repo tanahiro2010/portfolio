@@ -165,7 +165,7 @@ Scope of work included:
 
 ## Awards
 - 2025 - 1st GA Web Novel Contest <span class="meta">- Passed the preliminary selection round</span>
-- 2024 - Neo-Page Export Contest　<span class="meta">- Passed the preliminary selection round</span>
+- 2024 - Neo-Page Novel Export Contest　<span class="meta">- Passed the preliminary selection round</span>
 
 ## Community
 
