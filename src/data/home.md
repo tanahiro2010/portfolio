@@ -163,6 +163,10 @@ Scope of work included:
 - 2023 - ReNovel 
 <span class="meta">- SaaS | Novel publishing platform with writing, analytics, and social features</span>
 
+## Awards
+- 2025 - 1st GA Web Novel Contest <span class="meta">- Passed the preliminary selection round</span>
+- 2024 - Neo-Page Export Contest　<span class="meta">- Passed the preliminary selection round</span>
+
 ## Community
 
 - 2026 - [Hono Conference Tokyo 2026](https://honoconf.dev/2026) Core Staff
