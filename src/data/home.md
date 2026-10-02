@@ -175,7 +175,7 @@ Scope of work included:
 - 2026 - [STECH](https://stech.jinnen.co.jp/) Member
 - 2026 - [Alpha+ Project](https://greek-academy.org/) 4th Generation
 - 2026 - [Sanda Gakuen School Festival LT](https://sglt.under18.dev/) Organizer
-- 2025 - [SF-Kosen](https://sf-kosen.com) SubOwner
+- 2025 - [SF-Kosen](https://sf-kosen.com) Sub Owner
 - 2024 - [UniSchool](https://unischool.jp/) Chief Technology Student
 - 2024 - [UniProject](https://uniproject.jp) Member
 - 2023 - 2026 - TeamZisty SubOwner
