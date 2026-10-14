@@ -8,9 +8,7 @@ Web Application Developer / DevRel
 
 ## About
 
-- Web Application Developer
-- DevRel
-- Event Organizer
+- Web Application Developer / DevRel
 - Hono / Cloudflare Workers / TypeScript / Rust / Go
 
 ## Interests
