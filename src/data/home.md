@@ -37,6 +37,7 @@ Joined as a Software Engineer Intern after being directly scouted by the CTO in 
 Working across a broad range of areas, including web, mobile, and application security.
 
 Responsibilities and experience include:
+
 - Maintaining and improving an existing production codebase
 - Refactoring and modifying legacy code
 - Identifying and fixing multiple security vulnerabilities
@@ -55,6 +56,7 @@ Participated in a one-week frontend engineering internship in August 2026.
 Developed the frontend of a CMS using React, TypeScript, TanStack Router, and Tailwind CSS.
 
 Responsibilities and experience included:
+
 - Implementing article, user, and administrator management screens
 - Integrating the frontend with existing APIs
 - Designing routing and data-loading flows with TanStack Router
@@ -73,6 +75,7 @@ Initially expected to work mainly on article-related pages, but completed the pl
 Worked as a Security Researcher with a focus on practical security education.
 
 Responsibilities and experience included:
+
 - Creating educational materials on SQL Injection
 - Developing a sandbox environment for hands-on security training
 - Designing exercises that allowed participants to safely learn common SQL Injection concepts
@@ -87,6 +90,7 @@ Responsibilities and experience included:
 Worked on an existing WordPress-based landing page as a freelance frontend engineer.
 
 Responsibilities included:
+
 - Modifying a custom WordPress theme
 - Improving frontend performance and reducing page weight
 - Implementing SEO improvements
@@ -99,6 +103,7 @@ Responsibilities included:
 Worked on the maintenance and infrastructure of existing landing pages.
 
 Responsibilities included:
+
 - Modifying three existing landing pages
 - Migrating the web server environment from Apache to Nginx
 - Configuring the new server environment and related infrastructure
@@ -111,6 +116,7 @@ Responsibilities included:
 Worked on website infrastructure migration and content recovery.
 
 Responsibilities included:
+
 - Migrating the company's website to a new server environment
 - Recovering lost website content after migration issues
 - Restoring 5 pages
@@ -124,6 +130,7 @@ Responsibilities included:
 Worked continuously with the company for approximately one year as a freelance engineer and marketer.
 
 Responsibilities included:
+
 - Modifying and maintaining landing pages
 - Supporting Google Ads campaigns
 - Supporting Meta Ads campaigns
@@ -137,35 +144,36 @@ Responsibilities included:
 
 Worked as a freelance RPA (Robotic Process Automation) engineer for an unlisted company, focusing on automating repetitive tasks and improving efficiency.
 Scope of work included:
+
 - Developing and maintaining RPA scripts using Python and Java.
 - Automating data entry and processing tasks
 - Integrating RPA solutions with existing business processes
 
 </details>
 
-
 ## Works
 
 - 2026 - [SG / LT 2026](https://sglt.under18.dev)
-<span class="meta">- Website | Event website for Sanda Gakuen School Festival LT</span>
-- 2026 - [Yasumi?](https://yasumi.unischool.jp/) 
-<span class="meta">- SaaS | LINE Bot / LIFF that notifies school closures based on weather warnings</span>
-- 2026 - [Devcast](https://devcast.work/) 
-<span class="meta">- SaaS | Tech article management and distribution service</span>
-- 2026 - [WebMCP Bridge Extension](https://github.com/gdg-jp/webmcp-bridge-extension) 
-<span class="meta">- OSS | Browser extension version of WebMCP Bridge MCP</span>
-- 2026 - [WebMCP Bridge MCP](https://github.com/gdg-jp/webmcp-bridge-mcp) 
-<span class="meta">- OSS | MCP server bridging CLI and WebMCP</span>
-- 2026 - E.D.I.T.H 
-<span class="meta">- Project | Communication assistance system for smart glasses (Alpha+ Project)</span>
-- 2024 - [ReCoron](https://re-coron.vercel.app/) 
-<span class="meta">- SaaS | API based service for creating and managing cron job</span>
-- 2023 - ReNovel 
-<span class="meta">- SaaS | Novel publishing platform with writing, analytics, and social features</span>
+  <span class="meta">- Website | Event website for Sanda Gakuen School Festival LT</span>
+- 2026 - [Yasumi?](https://yasumi.unischool.jp/)
+  <span class="meta">- SaaS | LINE Bot / LIFF that notifies school closures based on weather warnings</span>
+- 2026 - [Devcast](https://devcast.work/)
+  <span class="meta">- SaaS | Tech article management and distribution service</span>
+- 2026 - [WebMCP Bridge Extension](https://github.com/gdg-jp/webmcp-bridge-extension)
+  <span class="meta">- OSS | Browser extension version of WebMCP Bridge MCP</span>
+- 2026 - [WebMCP Bridge MCP](https://github.com/gdg-jp/webmcp-bridge-mcp)
+  <span class="meta">- OSS | MCP server bridging CLI and WebMCP</span>
+- 2026 - E.D.I.T.H
+  <span class="meta">- Project | Communication assistance system for smart glasses (Alpha+ Project)</span>
+- 2024 - [ReCoron](https://re-coron.vercel.app/)
+  <span class="meta">- SaaS | API based service for creating and managing cron job</span>
+- 2023 - ReNovel
+  <span class="meta">- SaaS | Novel publishing platform with writing, analytics, and social features</span>
 
 ## Awards
+
 - 2025 - 1st GA Web Novel Contest <span class="meta">- Passed the preliminary selection round</span>
-- 2024 - Neo-Page Novel Export Contest　<span class="meta">- Passed the preliminary selection round</span>
+- 2024 - Neo-Page Novel Export Contest 　<span class="meta">- Passed the preliminary selection round</span>
 
 ## Community
 
@@ -182,13 +190,14 @@ Scope of work included:
 
 ## Talks
 
-- 2026 - [Bokuchiのすゝめ (ja)](https://sglt.under18.dev/sessions/bokuchi) <span class="meta">- Sanda / LT 2026</span>
-- 2026 - 個人開発者よ、Honoを使え (ja) <span class="meta">- Hono Conference Tokyo 2026</span>
-- 2026 - [Serverlessのすゝめ (ja)](https://speakerdeck.com/tanahiro2010/serverless-no-susume) <span class="meta">- Serverless LT</span>
-- 2026 - [OSSコミュニティがくれた「人との繋がり」 (ja)](https://speakerdeck.com/tanahiro2010/osskomiyuniteigakureta-ren-tonoxi-gari) <span class="meta">- Open Source Conference Kyoto 2026</span>
+- 2026 - [Bokuchi のすゝめ (ja)](https://sglt.under18.dev/sessions/bokuchi) <span class="meta">- Sanda / LT 2026</span>
+- 2026 - [個人開発者よ、Hono を使え (ja)](https://speakerdeck.com/tanahiro2010/kojin-kaihatsusha-yo-hono-o-tsukae-ojisan-ver) <span class="meta">- Hono Conference Tokyo 2026</span>
+- 2026 - [Serverless のすゝめ (ja)](https://speakerdeck.com/tanahiro2010/serverless-no-susume) <span class="meta">- Serverless LT</span>
+- 2026 - [OSS コミュニティがくれた「人との繋がり」 (ja)](https://speakerdeck.com/tanahiro2010/osskomiyuniteigakureta-ren-tonoxi-gari) <span class="meta">- Open Source Conference Kyoto 2026</span>
 - 2026 - [WebMCP を作って Antigravity IDE から呼び出してみよう！(ja)](https://learn.gdgs.jp/webmcp-agent/) <span class="meta">- Google I/O Extended Osaka</span>
 
 ## Contributions
+
 - [Bokuchi](https://github.com/Bokuchi-Editor/bokuchi) <span class="meta">- Open source lightweight markdown editor</span>
 - [lapras-mcp-server](https://github.com/lapras-inc/lapras-mcp-server) <span class="meta">- Open source MCP server for Lapras.com</span>
 - [ec-cube](https://github.com/ec-cube/ec-cube) <span class="meta">- Open source e-commerce platform</span>
