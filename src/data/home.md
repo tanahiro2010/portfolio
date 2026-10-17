@@ -2,7 +2,7 @@
 
 Web Application Developer / DevRel
 
-- [Website](https://tanahiro2010.com/)
+- [Slides](https://slides.tanahiro2010.com/)
 - [X](https://x.com/tanahiro2010)
 - [GitHub](https://github.com/tanahiro2010)
 
@@ -209,7 +209,7 @@ Scope of work included:
 
 ## Accounts
 
-- [tanahiro2010.com](https://tanahiro2010.com/)
+- [Slides / tanahiro2010](https://slides.tanahiro2010.com/)
 - [X / tanahiro2010](https://x.com/tanahiro2010)
 - [GitHub / tanahiro2010](https://github.com/tanahiro2010)
 - [Zenn / tanahiro2010](https://zenn.dev/tanahiro2010)
