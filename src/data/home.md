@@ -3,6 +3,7 @@
 Web Application Developer / DevRel
 
 - [Slides](https://slides.tanahiro2010.com/)
+- [Blog](https://blog.tanahiro2010.com/)
 - [X](https://x.com/tanahiro2010)
 - [GitHub](https://github.com/tanahiro2010)
 
@@ -203,14 +204,16 @@ Scope of work included:
 
 ## Writing
 
+- [Blog articles](https://blog.tanahiro2010.com/) <span class="meta">- Tech articles and tutorials</span>
 - [Zenn articles](https://zenn.dev/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
 - [Dev.to articles](https://dev.to/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
 - [Kakuyomu novels](https://kakuyomu.jp/users/tanahiro2010) <span class="meta">- Original novels and short stories</span>
 
 ## Accounts
 
-- [Slides / tanahiro2010](https://slides.tanahiro2010.com/)
 - [X / tanahiro2010](https://x.com/tanahiro2010)
 - [GitHub / tanahiro2010](https://github.com/tanahiro2010)
 - [Zenn / tanahiro2010](https://zenn.dev/tanahiro2010)
+- [Slides / tanahiro2010](https://slides.tanahiro2010.com/)
+- [Blog / tanahiro2010](https://blog.tanahiro2010.com/)
 - [Email / tanahiro2010](mailto:tanahiro2010@under18.dev)
