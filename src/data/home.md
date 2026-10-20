@@ -181,6 +181,15 @@ Scope of work included:
 - 2026 - [Interviewed by Sun Television](https://youtu.be/FeW4l0X-C-w?t=142)
   <span class="meta">- Interviewed about my programming journey and development activities at school.</span>
 
+## Talks
+
+- 2026 - [飯島春樹さんとのパネルディスカッション (ja)](https://sglt.under18.dev/sessions/panel-discussion) <span class="meta">- Sanda / LT 2026</span>
+- 2026 - [コミュニティ活動 のすゝめ (ja)](https://sglt.under18.dev/sessions/lets_event) <span class="meta">- Sanda / LT 2026</span>
+- 2026 - [個人開発者よ、Hono を使え (ja)](https://speakerdeck.com/tanahiro2010/kojin-kaihatsusha-yo-hono-o-tsukae-ojisan-ver) <span class="meta">- Hono Conference Tokyo 2026</span>
+- 2026 - [Serverless のすゝめ (ja)](https://speakerdeck.com/tanahiro2010/serverless-no-susume) <span class="meta">- Serverless LT</span>
+- 2026 - [OSS コミュニティがくれた「人との繋がり」 (ja)](https://speakerdeck.com/tanahiro2010/osskomiyuniteigakureta-ren-tonoxi-gari) <span class="meta">- Open Source Conference Kyoto 2026</span>
+- 2026 - [WebMCP を作って Antigravity IDE から呼び出してみよう！(ja)](https://learn.gdgs.jp/webmcp-agent/) <span class="meta">- Google I/O Extended Osaka</span>
+
 ## Community
 
 - 2026 - [Hono Conference Tokyo 2026](https://honoconf.dev/2026) Core Staff
@@ -193,14 +202,6 @@ Scope of work included:
 - 2024 - [UniSchool](https://unischool.jp/) Chief Technology Student
 - 2024 - [UniProject](https://uniproject.jp) Member
 - 2023 - 2026 - TeamZisty SubOwner
-
-## Talks
-
-- 2026 - [Bokuchi のすゝめ (ja)](https://sglt.under18.dev/sessions/bokuchi) <span class="meta">- Sanda / LT 2026</span>
-- 2026 - [個人開発者よ、Hono を使え (ja)](https://speakerdeck.com/tanahiro2010/kojin-kaihatsusha-yo-hono-o-tsukae-ojisan-ver) <span class="meta">- Hono Conference Tokyo 2026</span>
-- 2026 - [Serverless のすゝめ (ja)](https://speakerdeck.com/tanahiro2010/serverless-no-susume) <span class="meta">- Serverless LT</span>
-- 2026 - [OSS コミュニティがくれた「人との繋がり」 (ja)](https://speakerdeck.com/tanahiro2010/osskomiyuniteigakureta-ren-tonoxi-gari) <span class="meta">- Open Source Conference Kyoto 2026</span>
-- 2026 - [WebMCP を作って Antigravity IDE から呼び出してみよう！(ja)](https://learn.gdgs.jp/webmcp-agent/) <span class="meta">- Google I/O Extended Osaka</span>
 
 ## Contributions
 
