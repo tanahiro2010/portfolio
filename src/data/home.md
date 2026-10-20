@@ -205,10 +205,78 @@ Scope of work included:
 
 ## Contributions
 
-- [Bokuchi](https://github.com/Bokuchi-Editor/bokuchi) <span class="meta">- Open source lightweight markdown editor</span>
-- [lapras-mcp-server](https://github.com/lapras-inc/lapras-mcp-server) <span class="meta">- Open source MCP server for Lapras.com</span>
-- [ec-cube](https://github.com/ec-cube/ec-cube) <span class="meta">- Open source e-commerce platform</span>
-- [Nanase-Bot](https://github.com/sf-kosen/Nanase-Bot) <span class="meta">- Open source Discord bot for SF Kosen</span>
+<details>
+<summary><a href="https://github.com/cloudflare/mcp">cloudflare/mcp</a> - Official MCP server for Cloudflare</summary>
+
+Reported and investigated a permission-handling issue in Cloudflare's official MCP server.
+
+Details:
+
+- Found that list endpoints filtered down to zero results by OAuth scope returned `200` with an empty result, so no scope challenge was ever raised and agents reported the account as empty
+- Measured the behavior against a real OAuth grant to distinguish permission-filtered lists from genuinely empty ones, and reported the finding with reproduction data ([#302](https://github.com/cloudflare/mcp/issues/302))
+- Submitted an implementation with unit tests and end-to-end tests ([#304](https://github.com/cloudflare/mcp/pull/304))
+- The maintainers' fix ([#305](https://github.com/cloudflare/mcp/pull/305)) was built on this report and branch, and has been merged
+
+</details>
+
+<details>
+<summary><a href="https://github.com/Bokuchi-Editor/bokuchi">Bokuchi-Editor/bokuchi</a> - Open source lightweight markdown editor</summary>
+
+Continuous contributor to an open source Markdown editor built with React and Tauri.
+
+Contributions included:
+
+- Fixed a stored XSS vulnerability in the Markdown preview by introducing DOMPurify sanitization, while preserving KaTeX, Mermaid, and syntax highlighting output ([#371](https://github.com/Bokuchi-Editor/bokuchi/pull/371))
+- Fixed CSV paste handling so that quoted fields containing commas, escaped quotes, and newlines convert into valid Markdown tables ([#475](https://github.com/Bokuchi-Editor/bokuchi/pull/475))
+- Fixed header separator logic in HTML table conversion and added tests ([#463](https://github.com/Bokuchi-Editor/bokuchi/pull/463))
+- Fixed key-repeat and load-race bugs in the typing game and Konami code features ([#462](https://github.com/Bokuchi-Editor/bokuchi/pull/462))
+- Fixed a bug where the preview did not update when switching files ([#509](https://github.com/Bokuchi-Editor/bokuchi/pull/509))
+- Proposed feature requests including filename syntax in fenced code blocks and a separate preview window
+
+</details>
+
+<details>
+<summary><a href="https://github.com/lapras-inc/lapras-mcp-server">lapras-inc/lapras-mcp-server</a> - Open source MCP server for Lapras.com</summary>
+
+Improved the reliability of the API client in LAPRAS's official MCP server ([#14](https://github.com/lapras-inc/lapras-mcp-server/pull/14)).
+
+Contributions included:
+
+- Adding Zod schema validation for API responses
+- Explicitly specifying `application/json` as the request Content-Type
+- Adding error logging to improve debuggability
+- Correcting typos in class names and return values
+
+</details>
+
+<details>
+<summary><a href="https://github.com/ec-cube/ec-cube">ec-cube/ec-cube</a> - Open source e-commerce platform</summary>
+
+Reported a security vulnerability in a widely used open source e-commerce platform.
+
+Details:
+
+- Identified a CSV Injection issue in exported CSV data
+- Reported it to IPA (Information-technology Promotion Agency, Japan) through the coordinated vulnerability disclosure process
+
+</details>
+
+<details>
+<summary><a href="https://github.com/sf-kosen/Nanase-Bot">sf-kosen/Nanase-Bot</a> - Open source Discord bot for SF Kosen</summary>
+
+Maintainer of the Discord bot used by the SF-Kosen community, involved from the initial project setup.
+
+Contributions included:
+
+- Setting up the TypeScript project and building the base command and action handling system ([#1](https://github.com/sf-kosen/Nanase-Bot/pull/1), [#4](https://github.com/sf-kosen/Nanase-Bot/pull/4))
+- Implementing the ticket board feature ([#5](https://github.com/sf-kosen/Nanase-Bot/pull/5))
+- Implementing custom voice channel creation with button and modal handling ([#10](https://github.com/sf-kosen/Nanase-Bot/pull/10), [#11](https://github.com/sf-kosen/Nanase-Bot/pull/11))
+- Fixing an access control issue where unauthenticated users could join auto-created voice channels ([#27](https://github.com/sf-kosen/Nanase-Bot/pull/27))
+- Fixing a permission problem on voice channel creation and adding logging for deletion failures ([#28](https://github.com/sf-kosen/Nanase-Bot/pull/28), [#30](https://github.com/sf-kosen/Nanase-Bot/pull/30))
+- Standardizing action handling and improving type safety across the codebase ([#9](https://github.com/sf-kosen/Nanase-Bot/pull/9), [#13](https://github.com/sf-kosen/Nanase-Bot/pull/13))
+- Leading an ongoing refactor toward a DDD-inspired architecture ([#93](https://github.com/sf-kosen/Nanase-Bot/issues/93), [#94](https://github.com/sf-kosen/Nanase-Bot/pull/94))
+
+</details>
 
 ## Writing
 
