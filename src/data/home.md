@@ -174,6 +174,13 @@ Scope of work included:
 - 2025 - 1st GA Web Novel Contest <span class="meta">- Passed the preliminary selection round</span>
 - 2024 - Neo-Page Novel Export Contest 　<span class="meta">- Passed the preliminary selection round</span>
 
+## Interviews
+<!-- 
+- 2026 - [Hono Conference 最年少登壇者 田中博悠さんへインタビュー](https://techtrain.dev/)
+  <span class="meta">- Interviewed about my involvement in Hono Conference and developer communities.</span> -->
+- 2026 - [Interviewed by Sun Television](https://youtu.be/FeW4l0X-C-w?t=142)
+  <span class="meta">- Interviewed about my programming journey and development activities at school.</span>
+
 ## Community
 
 - 2026 - [Hono Conference Tokyo 2026](https://honoconf.dev/2026) Core Staff
