@@ -203,6 +203,7 @@ Scope of work included:
 - 2024 - [UniProject](https://uniproject.jp) Member
 - 2023 - 2026 - TeamZisty SubOwner
 
+
 ## Contributions
 
 <details>
@@ -220,6 +221,33 @@ Details:
 </details>
 
 <details>
+<summary><a href="https://github.com/cloudflare/cloudflare-docs">cloudflare/cloudflare-docs</a> - Official documentation for Cloudflare</summary>
+
+Identified and corrected documentation inconsistencies through source code inspection and runtime verification.
+
+Contributions included:
+
+- Identified an incorrect backend class name in the Cloudflare Think workspace changelog, where `JavaScriptWorkerBackend` was documented instead of the actual `WorkerJavaScriptBackend` export ([#34504](https://github.com/cloudflare/cloudflare-docs/issues/34504))
+- Verified the mismatch against the `@cloudflare/computer@0.6.0` type declarations and submitted a documentation correction, which was merged ([#34500](https://github.com/cloudflare/cloudflare-docs/pull/34500))
+- Reported a discrepancy between the documented 2 MB value limit for Durable Objects SQL and KV storage and the approximately 8 MiB limit observed in testing, requesting clarification or correction ([#34502](https://github.com/cloudflare/cloudflare-docs/issues/34502))
+
+</details>
+
+<details>
+<summary><a href="https://github.com/cloudflare/agents">cloudflare/agents</a> - Framework for building AI agents on Cloudflare</summary>
+
+Investigated migration behavior and dependency documentation in Cloudflare's Agents SDK.
+
+Details:
+
+- Identified two problems in the documented migration script from `@cloudflare/shell` to `@cloudflare/computer`: absolute symlink targets were not rebased correctly, and interrupted migrations could fail on retries with `EEXIST`
+- Reproduced both problems on a deployed Durable Object using `@cloudflare/shell@0.4.3` and `@cloudflare/computer@0.6.0`, distinguishing documentation errors from package implementation bugs ([#2645](https://github.com/cloudflare/agents/issues/2645))
+- Investigated earlier related pull requests and review discussions to explain why the problems remained unresolved, and prepared a proposed correction
+- Identified a dependency documentation mismatch where Cloudflare Think listed Vercel AI SDK v6 despite `@cloudflare/think@0.21.0` requiring `ai@^7`, and reported the issue with supporting package and commit history ([#2647](https://github.com/cloudflare/agents/issues/2647))
+
+</details>
+
+<details>
 <summary><a href="https://github.com/Bokuchi-Editor/bokuchi">Bokuchi-Editor/bokuchi</a> - Open source lightweight markdown editor</summary>
 
 Continuous contributor to an open source Markdown editor built with React and Tauri.
@@ -232,6 +260,21 @@ Contributions included:
 - Fixed key-repeat and load-race bugs in the typing game and Konami code features ([#462](https://github.com/Bokuchi-Editor/bokuchi/pull/462))
 - Fixed a bug where the preview did not update when switching files ([#509](https://github.com/Bokuchi-Editor/bokuchi/pull/509))
 - Proposed feature requests including filename syntax in fenced code blocks and a separate preview window
+
+</details>
+
+<details>
+<summary><a href="https://github.com/gdg-jp/gdgjp">gdg-jp/gdgjp</a> - Community platform for Google Developer Groups in Japan</summary>
+
+Improved authentication, authorization, and error handling in the live check-in API. The contribution was merged ([#149](https://github.com/gdg-jp/gdgjp/pull/149)).
+
+Contributions included:
+
+- Extracted duplicated authentication and authorization logic from `/api/checkin` and `/api/events` into a reusable `withAuth` helper
+- Centralized session validation and access token checks, returning HTTP `401` for unauthenticated requests
+- Added chapter membership authorization through `canUseQrScanner()`, returning HTTP `403` when access is not permitted
+- Standardized exception handling with endpoint-specific logging and HTTP `500` responses
+- Simplified route handlers by separating authentication concerns from connpass API proxy logic
 
 </details>
 
@@ -277,6 +320,7 @@ Contributions included:
 - Leading an ongoing refactor toward a DDD-inspired architecture ([#93](https://github.com/sf-kosen/Nanase-Bot/issues/93), [#94](https://github.com/sf-kosen/Nanase-Bot/pull/94))
 
 </details>
+
 
 ## Writing
 
