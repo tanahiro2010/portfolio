@@ -206,6 +206,21 @@ Scope of work included:
 
 ## Contributions
 
+
+<details>
+<summary><a href="https://github.com/google/skills">google/skills</a> - Official collection of AI agent skills by Google</summary>
+
+Identified and reported an RFC compliance issue in Google's DPoP adoption skill, supported by specification analysis and empirical testing.
+
+Details:
+
+- Identified that the skill recommended deriving the DPoP `jti` claim deterministically from an OAuth authorization code, potentially generating identical identifiers for multiple proofs
+- Demonstrated that this guidance conflicts with the per-proof uniqueness requirement defined in RFC 9449 Section 4.2
+- Proposed generating a fresh cryptographically random `jti` for every DPoP proof, including authorization code exchanges, token refreshes, and nonce retries
+- Prepared a documentation-only correction in a fork and submitted the findings as an Issue in accordance with the repository's contribution policy, which does not accept external pull requests ([#236](https://github.com/google/skills/issues/236))
+- Provided supporting research from independent testing of Google's OAuth DPoP implementation, including observations of proof reuse under tested conditions ([Technical write-up](https://blog.tanahiro2010.com/articles/google-oauth-dpop/))
+
+</details>
 <details>
 <summary><a href="https://github.com/cloudflare/mcp">cloudflare/mcp</a> - Official MCP server for Cloudflare</summary>
 
