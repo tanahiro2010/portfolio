@@ -203,9 +203,7 @@ Scope of work included:
 - 2024 - [UniProject](https://uniproject.jp) Member
 - 2023 - 2026 - TeamZisty SubOwner
 
-
 ## Contributions
-
 
 <details>
 <summary><a href="https://github.com/google/skills">google/skills</a> - Official collection of AI agent skills by Google</summary>
@@ -221,6 +219,7 @@ Details:
 - Provided supporting research from independent testing of Google's OAuth DPoP implementation, including observations of proof reuse under tested conditions ([Technical write-up](https://blog.tanahiro2010.com/articles/google-oauth-dpop/))
 
 </details>
+
 <details>
 <summary><a href="https://github.com/cloudflare/mcp">cloudflare/mcp</a> - Official MCP server for Cloudflare</summary>
 
@@ -238,32 +237,38 @@ Details:
 <details>
 <summary><a href="https://github.com/cloudflare/cloudflare-docs">cloudflare/cloudflare-docs</a> - Official documentation for Cloudflare</summary>
 
-Identified and corrected documentation inconsistencies through source code inspection and runtime verification.
+Identified and corrected documentation inconsistencies through source code inspection, package analysis, and runtime verification.
 
 Contributions included:
 
 - Identified an incorrect backend class name in the Cloudflare Think workspace changelog, where `JavaScriptWorkerBackend` was documented instead of the actual `WorkerJavaScriptBackend` export ([#34504](https://github.com/cloudflare/cloudflare-docs/issues/34504))
 - Verified the mismatch against the `@cloudflare/computer@0.6.0` type declarations and submitted a documentation correction, which was merged ([#34500](https://github.com/cloudflare/cloudflare-docs/pull/34500))
 - Reported a discrepancy between the documented 2 MB value limit for Durable Objects SQL and KV storage and the approximately 8 MiB limit observed in testing, requesting clarification or correction ([#34502](https://github.com/cloudflare/cloudflare-docs/issues/34502))
+- Identified two inaccuracies in the Agents AI SDK documentation: the number of stream drops permitted before resume fails, and the conditions under which `error.attempts` is populated
+- Verified both behaviors against `agents@0.30.0` using a simulated binding and existing SDK tests, and submitted a documentation-only correction ([#34546](https://github.com/cloudflare/cloudflare-docs/pull/34546))
 
 </details>
 
 <details>
 <summary><a href="https://github.com/cloudflare/agents">cloudflare/agents</a> - Framework for building AI agents on Cloudflare</summary>
 
-Investigated migration behavior and dependency documentation in Cloudflare's Agents SDK.
+Investigated migration behavior, dependency compatibility, error handling, and streaming recovery in Cloudflare's Agents SDK.
 
-Details:
+Contributions included:
 
 - Identified two problems in the documented migration script from `@cloudflare/shell` to `@cloudflare/computer`: absolute symlink targets were not rebased correctly, and interrupted migrations could fail on retries with `EEXIST`
 - Reproduced both problems on a deployed Durable Object using `@cloudflare/shell@0.4.3` and `@cloudflare/computer@0.6.0`, distinguishing documentation errors from package implementation bugs ([#2645](https://github.com/cloudflare/agents/issues/2645))
 - Investigated earlier related pull requests and review discussions to explain why the problems remained unresolved, and prepared a proposed correction
 - Identified a dependency documentation mismatch where Cloudflare Think listed Vercel AI SDK v6 despite `@cloudflare/think@0.21.0` requiring `ai@^7`, and reported the issue with supporting package and commit history ([#2647](https://github.com/cloudflare/agents/issues/2647))
+- Identified an error type inconsistency in `createAI` where failed stream resumption throws an internal `CloudflareAIError` rather than the documented exported class extending `APICallError`
+- Reproduced the error type mismatch using a simulated AI binding with `agents@0.30.0` and `ai@7.0.148`, demonstrating that `instanceof CloudflareAIError` and `APICallError.isInstance()` both fail, potentially affecting documented error handling and retry classification ([#2687](https://github.com/cloudflare/agents/issues/2687))
+- Discovered that the package's peer dependency range permits `ai@6`, although the new `createAI` provider generates `LanguageModelV4` instances that AI SDK v6 cannot consume
+- Reproduced the incompatibility using `agents@0.30.0` and `ai@6.0.312`, demonstrating that installation succeeds without peer dependency warnings but model generation fails with `UnsupportedModelVersionError` before sending a request ([#2690](https://github.com/cloudflare/agents/issues/2690))
 
 </details>
 
 <details>
-<summary><a href="https://github.com/Bokuchi-Editor/bokuchi">Bokuchi-Editor/bokuchi</a> - Open source lightweight markdown editor</summary>
+<summary><a href="https://github.com/Bokuchi-Editor/bokuchi">Bokuchi-Editor/bokuchi</a> - Open source lightweight Markdown editor</summary>
 
 Continuous contributor to an open source Markdown editor built with React and Tauri.
 
@@ -333,6 +338,19 @@ Contributions included:
 - Fixing a permission problem on voice channel creation and adding logging for deletion failures ([#28](https://github.com/sf-kosen/Nanase-Bot/pull/28), [#30](https://github.com/sf-kosen/Nanase-Bot/pull/30))
 - Standardizing action handling and improving type safety across the codebase ([#9](https://github.com/sf-kosen/Nanase-Bot/pull/9), [#13](https://github.com/sf-kosen/Nanase-Bot/pull/13))
 - Leading an ongoing refactor toward a DDD-inspired architecture ([#93](https://github.com/sf-kosen/Nanase-Bot/issues/93), [#94](https://github.com/sf-kosen/Nanase-Bot/pull/94))
+
+</details>
+
+<details>
+<summary><a href="https://github.com/under18dev/ippon-slides">under18dev/ippon-slides</a> - Open source presentation tool</summary>
+
+Improved CI/CD workflow safety for an open source presentation project.
+
+Contributions included:
+
+- Identified that release and deployment workflows could execute in forked repositories, potentially causing unintended publishing or deployment
+- Added repository-specific conditions to the GitHub Actions release and Pages deployment jobs to restrict execution to the intended upstream repository
+- Corrected a documentation reference as part of the workflow changes ([#2](https://github.com/under18dev/ippon-slides/pull/2))
 
 </details>
 
