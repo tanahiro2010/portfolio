@@ -152,7 +152,7 @@ Scope of work included:
 
 ## Works
 
-- 2026 - [ippon-slides](https://github.com/under18dev/ippon-slides)
+- 2026 - [ippon-slides](https://ippon.under18.dev)
   <span class="meta">- OSS | Markdown-based presentation tool with live preview and coding-agent integrations</span>
 - 2026 - [SG / LT 2026](https://sglt.under18.dev)
   <span class="meta">- Website | Event website for Sanda Gakuen School Festival LT</span>
