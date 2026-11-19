@@ -195,11 +195,11 @@ Scope of work included:
 ## Community
 
 - 2026 - [Hono Conference Tokyo 2026](https://honoconf.dev/2026) Core Staff
+- 2026 - [U18 Dev](https://under18.dev) Founder
 - 2026 - [GDG Greater Kwansai](https://gdgkwansai.connpass.com/) Padawan Organizer
 - 2026 - AI Talks Night Staff
 - 2026 - [STECH](https://stech.jinnen.co.jp/) Member
 - 2026 - [Alpha+ Project](https://greek-academy.org/) 4th Generation
-- 2026 - [Sanda Gakuen School Festival LT](https://sglt.under18.dev/) Organizer
 - 2025 - [SF-Kosen](https://sf-kosen.com) Sub Owner
 - 2024 - [UniSchool](https://unischool.jp/) Chief Technology Student
 - 2024 - [UniProject](https://uniproject.jp) Member
