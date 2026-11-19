@@ -152,6 +152,8 @@ Scope of work included:
 
 ## Works
 
+- 2026 - [ippon-slides](https://github.com/under18dev/ippon-slides)
+  <span class="meta">- OSS | Markdown-based presentation tool with live preview and coding-agent integrations</span>
 - 2026 - [SG / LT 2026](https://sglt.under18.dev)
   <span class="meta">- Website | Event website for Sanda Gakuen School Festival LT</span>
 - 2026 - [Yasumi?](https://yasumi.unischool.jp/)
@@ -279,6 +281,11 @@ Contributions included:
 - Fixed header separator logic in HTML table conversion and added tests ([#463](https://github.com/Bokuchi-Editor/bokuchi/pull/463))
 - Fixed key-repeat and load-race bugs in the typing game and Konami code features ([#462](https://github.com/Bokuchi-Editor/bokuchi/pull/462))
 - Fixed a bug where the preview did not update when switching files ([#509](https://github.com/Bokuchi-Editor/bokuchi/pull/509))
+- Submitted improvements to preserve expanded `<details>` sections and code/diagram scroll positions across preview re-renders ([#618](https://github.com/Bokuchi-Editor/bokuchi/pull/618), [#622](https://github.com/Bokuchi-Editor/bokuchi/pull/622))
+- Submitted a fix for PDF export of CSS gradient backgrounds ([#621](https://github.com/Bokuchi-Editor/bokuchi/pull/621))
+- Proposed a startup performance improvement using lazy-loaded i18n locales and syntax highlighting, with browser benchmark results ([#624](https://github.com/Bokuchi-Editor/bokuchi/pull/624), open PR)
+- Investigated local image resolution issues on Windows and in exports ([#625](https://github.com/Bokuchi-Editor/bokuchi/pull/625), closed without merge)
+- Proposed a fix for folder-tree path normalization during file renaming ([#626](https://github.com/Bokuchi-Editor/bokuchi/pull/626), open PR)
 - Proposed feature requests including filename syntax in fenced code blocks and a separate preview window
 
 </details>
@@ -344,21 +351,24 @@ Contributions included:
 <details>
 <summary><a href="https://github.com/under18dev/ippon-slides">under18dev/ippon-slides</a> - Open source presentation tool</summary>
 
-Improved CI/CD workflow safety for an open source presentation project.
+Creator and maintainer of a Markdown-based presentation tool with live preview and coding-agent integration.
 
-Contributions included:
+Development highlights:
 
-- Identified that release and deployment workflows could execute in forked repositories, potentially causing unintended publishing or deployment
-- Added repository-specific conditions to the GitHub Actions release and Pages deployment jobs to restrict execution to the intended upstream repository
-- Corrected a documentation reference as part of the workflow changes ([#2](https://github.com/under18dev/ippon-slides/pull/2))
+- Designed custom slide syntax, layout directives, QR code blocks, background images, and syntax highlighting ([#4](https://github.com/under18dev/ippon-slides/pull/4), [#5](https://github.com/under18dev/ippon-slides/pull/5), [#11](https://github.com/under18dev/ippon-slides/pull/11), [#14](https://github.com/under18dev/ippon-slides/pull/14))
+- Added a coding-agent integration to expose the currently displayed slide through a local endpoint and CLI ([#7](https://github.com/under18dev/ippon-slides/pull/7))
+- Implemented incremental hot reloading and fixed stale-response race conditions ([#9](https://github.com/under18dev/ippon-slides/pull/9), [#10](https://github.com/under18dev/ippon-slides/pull/10))
+- Added OGP image generation and multilingual Astro/Starlight documentation ([#12](https://github.com/under18dev/ippon-slides/pull/12), [#16](https://github.com/under18dev/ippon-slides/pull/16))
+- Restricted release and deployment workflows to the upstream repository ([#2](https://github.com/under18dev/ippon-slides/pull/2))
+- Credited the original presentation design inspiration in project documentation ([#18](https://github.com/under18dev/ippon-slides/pull/18), [#19](https://github.com/under18dev/ippon-slides/pull/19))
 
 </details>
-
 
 ## Writing
 
 - [Blog articles](https://blog.tanahiro2010.com/) <span class="meta">- Tech articles and tutorials</span>
 - [Zenn articles](https://zenn.dev/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
+- [HatenaBlog articles](https://tanahiro2010.hatenablog.jp) <span class="meta">- Tech articles and poem</span>
 - [Dev.to articles](https://dev.to/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
 - [Kakuyomu novels](https://kakuyomu.jp/users/tanahiro2010) <span class="meta">- Original novels and short stories</span>
 
