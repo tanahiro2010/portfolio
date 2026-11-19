@@ -377,6 +377,5 @@ Development highlights:
 - [X / tanahiro2010](https://x.com/tanahiro2010)
 - [GitHub / tanahiro2010](https://github.com/tanahiro2010)
 - [Zenn / tanahiro2010](https://zenn.dev/tanahiro2010)
-- [Slides / tanahiro2010](https://slides.tanahiro2010.com/)
-- [Blog / tanahiro2010](https://blog.tanahiro2010.com/)
-- [Email / tanahiro2010](mailto:tanahiro2010@under18.dev)
+- [Qiita / tanahiro2010](https://qiita.com/tanahiro2010)
+- [Email / tanahiro2010](mailto:hirohisa@g.under18.dev)
