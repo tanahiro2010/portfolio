@@ -52,7 +52,7 @@ Responsibilities and experience include:
 </details>
 
 <details>
-<summary>2026 - [Fenrir Inc.](https://fenrir-inc.com/) - Frontend Engineer Intern</summary>
+<summary>2026 - <a href="https://fenrir-inc.com/">Fenrir Inc.</a> - Frontend Engineer Intern</summary>
 
 Participated in a one-week frontend engineering internship in August 2026.
 
@@ -73,7 +73,7 @@ Initially expected to work mainly on article-related pages, but completed the pl
 </details>
 
 <details>
-<summary>2026 - [Hifumi Inc.](https://hifumi-123coltd.holy.jp/) - Security Researcher</summary>
+<summary>2026 - <a href="https://hifumi-123coltd.holy.jp/">Hifumi Inc.</a> - Security Researcher</summary>
 
 Worked as a Security Researcher with a focus on practical security education.
 
@@ -88,7 +88,7 @@ Responsibilities and experience included:
 </details>
 
 <details>
-<summary>2025 - 2026 - [Yuki Inc.](https://omotenasii.com/company/) - Freelance Frontend Engineer</summary>
+<summary>2025 - 2026 - <a href="https://omotenasii.com/company/">Yuki Inc.</a> - Freelance Frontend Engineer</summary>
 
 Worked on an existing WordPress-based landing page as a freelance frontend engineer.
 
@@ -101,7 +101,7 @@ Responsibilities included:
 </details>
 
 <details>
-<summary>2025 - 2026 - [ALKU Inc.](https://alku-inc.jp/) - Freelance Full-Stack Engineer</summary>
+<summary>2025 - 2026 - <a href="https://alku-inc.jp/">ALKU Inc.</a> - Freelance Full-Stack Engineer</summary>
 
 Worked on the maintenance and infrastructure of existing landing pages.
 
@@ -114,7 +114,7 @@ Responsibilities included:
 </details>
 
 <details>
-<summary>2025 - 2026 - [Eco House Japan Inc.](https://ecohouse-j.com/) - Freelance Frontend and Infrastructure Engineer</summary>
+<summary>2025 - 2026 - <a href="https://ecohouse-j.com/">Eco House Japan Inc.</a> - Freelance Frontend and Infrastructure Engineer</summary>
 
 Worked on website infrastructure migration and content recovery.
 
@@ -128,7 +128,7 @@ Responsibilities included:
 </details>
 
 <details>
-<summary>2024 - 2026 - [Nishinihon Sourcing Inc.](https://www.nishinihon-sourcing.com/) - Freelance Full-Stack Engineer and Marketer</summary>
+<summary>2024 - 2026 - <a href="https://www.nishinihon-sourcing.com/">Nishinihon Sourcing Inc.</a> - Freelance Full-Stack Engineer and Marketer</summary>
 
 Worked continuously with the company for approximately one year as a freelance engineer and marketer.
 
@@ -156,8 +156,9 @@ Scope of work included:
 </details>
 
 ## Works
-
-- 2026 - [Veritas](https://github.com/under18dev/veritas)
+- 2026 - [ghusage](https://ghusage.under18.dev)
+  <span class="meta">- OSS | GitHub usage statistics CLI tool</span>
+- 2026 - [Veritas](https://veritas.under18.dev)
   <span class="meta">- OSS | Test quality analysis and verification toolkit combining mutation testing, property-based testing, static analysis, and formal verification</span>
 - 2026 - [ippon-slides](https://ippon.under18.dev)
   <span class="meta">- OSS | Markdown-based presentation tool with live preview and coding-agent integrations</span>
@@ -173,10 +174,7 @@ Scope of work included:
   <span class="meta">- OSS | MCP server bridging CLI and WebMCP</span>
 - 2026 - E.D.I.T.H
   <span class="meta">- Project | Communication assistance system for smart glasses (Alpha+ Project)</span>
-- 2024 - [ReCoron](https://re-coron.vercel.app/)
-  <span class="meta">- SaaS | API based service for creating and managing cron job</span>
-- 2023 - ReNovel
-  <span class="meta">- SaaS | Novel publishing platform with writing, analytics, and social features</span>
+
 
 ## Awards
 
