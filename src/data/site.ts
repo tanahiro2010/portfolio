@@ -7,6 +7,8 @@ export const site = {
   description:
     "tanahiro2010のポートフォリオサイト。シナリオ執筆、ソフトウェア開発、制作物や連絡先をまとめています。",
   keywords: [
+    "Hirohisa",
+    "Tanaka",
     "tanahiro2010",
     "田中博悠",
     "博悠",
