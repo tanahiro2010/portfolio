@@ -23,4 +23,5 @@ export const site = {
     "連絡先",
   ],
   ogImage: "/ogp.png",
+  twitter: "tanahiro2010",
 } as const;
