@@ -11,12 +11,14 @@ Web Application Developer / DevRel
 
 - Web Application Developer / DevRel
 - Hono / Cloudflare Workers / TypeScript / Rust / Go
+- Open Source Developer / Community Organizer
 
 ## Interests
 
 - Backend / Frontend / Serverless / Security
 - Developer Tools / Frameworks / OSS
-- AI Agents
+- Software Testing / Formal Verification / Static Analysis
+- AI Agents / Agentic Development
 - Developer Relations / Community
 
 ## Education
@@ -33,22 +35,24 @@ Web Application Developer / DevRel
 
 Joined as a Software Engineer Intern after being directly scouted by the CTO in October 2025.
 
-Working across a broad range of areas, including web, mobile, and application security.
+Working across web development, mobile applications, legacy system modernization, and application security.
 
 Responsibilities and experience include:
 
-- Maintaining and improving an existing production codebase
-- Refactoring and modifying legacy code
-- Identifying and fixing multiple security vulnerabilities
-- Developing and improving web application features
-- Working across both frontend and backend systems
-- Contributing to mobile application development
+- Maintaining and improving existing production systems
+- Investigating and fixing security vulnerabilities
+- Developing and improving web application features and APIs
+- Working across frontend and backend systems
+- Participating in the migration of native mobile applications from Swift and Kotlin to Flutter
+- Preparing technical documentation and presentations to support engineering decisions and knowledge sharing
+- Contributing to the modernization of a PHP codebase exceeding 100,000 lines using Hono
 - Improving code maintainability while preserving existing behavior
+- Investigating implementation details and runtime behavior to support reliable technical decisions
 
 </details>
 
 <details>
-<summary>2026 - <a href="https://fenrir-inc.com/">Fenrir Inc.</a> - Frontend Engineer Intern</summary>
+<summary>2026 - [Fenrir Inc.](https://fenrir-inc.com/) - Frontend Engineer Intern</summary>
 
 Participated in a one-week frontend engineering internship in August 2026.
 
@@ -69,7 +73,7 @@ Initially expected to work mainly on article-related pages, but completed the pl
 </details>
 
 <details>
-<summary>2026 - <a href="https://hifumi-123coltd.holy.jp/">Hifumi Inc.</a> - Security Researcher</summary>
+<summary>2026 - [Hifumi Inc.](https://hifumi-123coltd.holy.jp/) - Security Researcher</summary>
 
 Worked as a Security Researcher with a focus on practical security education.
 
@@ -84,7 +88,7 @@ Responsibilities and experience included:
 </details>
 
 <details>
-<summary>2025 - 2026 - <a href="https://omotenasii.com/company/">Yuki Inc.</a> - Freelance Frontend Engineer</summary>
+<summary>2025 - 2026 - [Yuki Inc.](https://omotenasii.com/company/) - Freelance Frontend Engineer</summary>
 
 Worked on an existing WordPress-based landing page as a freelance frontend engineer.
 
@@ -97,7 +101,7 @@ Responsibilities included:
 </details>
 
 <details>
-<summary>2025 - 2026 - <a href="https://alku-inc.jp/">ALKU Inc.</a> - Freelance Full-Stack Engineer</summary>
+<summary>2025 - 2026 - [ALKU Inc.](https://alku-inc.jp/) - Freelance Full-Stack Engineer</summary>
 
 Worked on the maintenance and infrastructure of existing landing pages.
 
@@ -110,7 +114,7 @@ Responsibilities included:
 </details>
 
 <details>
-<summary>2025 - 2026 - <a href="https://ecohouse-j.com/">Eco House Japan Inc.</a> - Freelance Frontend and Infrastructure Engineer</summary>
+<summary>2025 - 2026 - [Eco House Japan Inc.](https://ecohouse-j.com/) - Freelance Frontend and Infrastructure Engineer</summary>
 
 Worked on website infrastructure migration and content recovery.
 
@@ -124,7 +128,7 @@ Responsibilities included:
 </details>
 
 <details>
-<summary>2024 - 2026 - <a href="https://www.nishinihon-sourcing.com/">Nishinihon Sourcing Inc.</a> - Freelance Full-Stack Engineer and Marketer</summary>
+<summary>2024 - 2026 - [Nishinihon Sourcing Inc.](https://www.nishinihon-sourcing.com/) - Freelance Full-Stack Engineer and Marketer</summary>
 
 Worked continuously with the company for approximately one year as a freelance engineer and marketer.
 
@@ -142,9 +146,10 @@ Responsibilities included:
 <summary>2023 - 2025 - An Unlisted Company - Freelance RPA Engineer</summary>
 
 Worked as a freelance RPA (Robotic Process Automation) engineer for an unlisted company, focusing on automating repetitive tasks and improving efficiency.
+
 Scope of work included:
 
-- Developing and maintaining RPA scripts using Python and Java.
+- Developing and maintaining RPA scripts using Python and Java
 - Automating data entry and processing tasks
 - Integrating RPA solutions with existing business processes
 
@@ -152,6 +157,8 @@ Scope of work included:
 
 ## Works
 
+- 2026 - [Veritas](https://github.com/under18dev/veritas)
+  <span class="meta">- OSS | Test quality analysis and verification toolkit combining mutation testing, property-based testing, static analysis, and formal verification</span>
 - 2026 - [ippon-slides](https://ippon.under18.dev)
   <span class="meta">- OSS | Markdown-based presentation tool with live preview and coding-agent integrations</span>
 - 2026 - [SG / LT 2026](https://sglt.under18.dev)
@@ -174,12 +181,15 @@ Scope of work included:
 ## Awards
 
 - 2025 - 1st GA Web Novel Contest <span class="meta">- Passed the preliminary selection round</span>
-- 2024 - Neo-Page Novel Export Contest 　<span class="meta">- Passed the preliminary selection round</span>
+- 2024 - Neo-Page Novel Export Contest <span class="meta">- Passed the preliminary selection round</span>
 
 ## Interviews
-<!-- 
+
+<!--
 - 2026 - [Hono Conference 最年少登壇者 田中博悠さんへインタビュー](https://techtrain.dev/)
-  <span class="meta">- Interviewed about my involvement in Hono Conference and developer communities.</span> -->
+  <span class="meta">- Interviewed about my involvement in Hono Conference and developer communities.</span>
+-->
+
 - 2026 - [Interviewed by Sun Television](https://youtu.be/FeW4l0X-C-w?t=142)
   <span class="meta">- Interviewed about my programming journey and development activities at school.</span>
 
@@ -195,7 +205,7 @@ Scope of work included:
 ## Community
 
 - 2026 - [Hono Conference Tokyo 2026](https://honoconf.dev/2026) Core Staff
-- 2026 - [U18 Dev](https://under18.dev) Founder
+- 2026 - [Under18 Developers](https://under18.dev) Founder
 - 2026 - [GDG Greater Kwansai](https://gdgkwansai.connpass.com/) Padawan Organizer
 - 2026 - AI Talks Night Staff
 - 2026 - [STECH](https://stech.jinnen.co.jp/) Member
@@ -206,6 +216,27 @@ Scope of work included:
 - 2023 - 2026 - TeamZisty SubOwner
 
 ## Contributions
+
+<details>
+<summary><a href="https://github.com/mizchi/mutator">mizchi/mutator</a> - Mutation testing framework for JavaScript and TypeScript</summary>
+
+Contributed investigations, bug reports, and proposed fixes to a mutation testing framework integrating with Vitest and Oxc.
+
+Focused on the correctness of source transformations, parser compatibility, and preserving valid JavaScript semantics during instrumentation.
+
+Contributions included:
+
+- Investigated a baseline failure affecting Vite 8.3.x, where generated expression wrappers interacted with older Oxc versions and caused valid regular expressions to be rejected as HTML comments ([#50](https://github.com/mizchi/mutator/issues/50))
+- Traced the failure across the mutation instrumentation pipeline, Vitest integration, Vite, Rolldown, and Oxc versions
+- Submitted pull requests addressing instrumentation and compatibility issues ([#51](https://github.com/mizchi/mutator/pull/51), [#52](https://github.com/mizchi/mutator/pull/52))
+- Reported invalid output caused by missing statement separators after directive prologues such as `'use strict'` ([#53](https://github.com/mizchi/mutator/issues/53))
+- Identified unsafe arithmetic operator replacement that could merge JavaScript tokens or modify operators inside comments ([#54](https://github.com/mizchi/mutator/issues/54))
+- Reported function-body instrumentation that changed declaration scoping and caused otherwise valid function declarations to fail parsing ([#55](https://github.com/mizchi/mutator/issues/55))
+- Identified invalid optional chaining transformations involving numeric literals, such as converting `1?.toString()` into `1.toString()` ([#56](https://github.com/mizchi/mutator/issues/56))
+
+These investigations involved minimal reproductions, generated-code inspection, and analysis of interactions between JavaScript syntax, parser behavior, and transformation logic.
+
+</details>
 
 <details>
 <summary><a href="https://github.com/google/skills">google/skills</a> - Official collection of AI agent skills by Google</summary>
@@ -274,7 +305,7 @@ Contributions included:
 
 Continuous contributor to an open source Markdown editor built with React and Tauri.
 
-Contributions included:
+Contributions include security improvements, bug fixes, performance investigations, and user experience enhancements.
 
 - Fixed a stored XSS vulnerability in the Markdown preview by introducing DOMPurify sanitization, while preserving KaTeX, Mermaid, and syntax highlighting output ([#371](https://github.com/Bokuchi-Editor/bokuchi/pull/371))
 - Fixed CSV paste handling so that quoted fields containing commas, escaped quotes, and newlines convert into valid Markdown tables ([#475](https://github.com/Bokuchi-Editor/bokuchi/pull/475))
@@ -283,9 +314,11 @@ Contributions included:
 - Fixed a bug where the preview did not update when switching files ([#509](https://github.com/Bokuchi-Editor/bokuchi/pull/509))
 - Submitted improvements to preserve expanded `<details>` sections and code/diagram scroll positions across preview re-renders ([#618](https://github.com/Bokuchi-Editor/bokuchi/pull/618), [#622](https://github.com/Bokuchi-Editor/bokuchi/pull/622))
 - Submitted a fix for PDF export of CSS gradient backgrounds ([#621](https://github.com/Bokuchi-Editor/bokuchi/pull/621))
-- Proposed a startup performance improvement using lazy-loaded i18n locales and syntax highlighting, with browser benchmark results ([#624](https://github.com/Bokuchi-Editor/bokuchi/pull/624), open PR)
-- Investigated local image resolution issues on Windows and in exports ([#625](https://github.com/Bokuchi-Editor/bokuchi/pull/625), closed without merge)
-- Proposed a fix for folder-tree path normalization during file renaming ([#626](https://github.com/Bokuchi-Editor/bokuchi/pull/626), open PR)
+- Proposed a startup performance improvement using lazy-loaded i18n locales and syntax highlighting, with browser benchmark results ([#624](https://github.com/Bokuchi-Editor/bokuchi/pull/624))
+- Investigated local image resolution issues on Windows and in exports ([#625](https://github.com/Bokuchi-Editor/bokuchi/pull/625))
+- Proposed a fix for folder-tree path normalization during file renaming ([#626](https://github.com/Bokuchi-Editor/bokuchi/pull/626))
+- Reported readability and contrast problems in diff code block previews under the dark theme, including reproduction steps and screenshots ([#636](https://github.com/Bokuchi-Editor/bokuchi/issues/636))
+- Continued contributing improvements through additional pull requests ([#637](https://github.com/Bokuchi-Editor/bokuchi/pull/637))
 - Proposed feature requests including filename syntax in fenced code blocks and a separate preview window
 
 </details>
@@ -349,6 +382,28 @@ Contributions included:
 </details>
 
 <details>
+<summary><a href="https://github.com/under18dev/veritas">under18dev/veritas</a> - Open source test quality verification toolkit</summary>
+
+Creator and maintainer of Veritas, a developer tool designed to investigate the effectiveness of software tests and identify gaps between specifications, implementations, and test behavior.
+
+The project explores how static analysis, mutation testing, property-based testing, and formal verification can be combined to evaluate whether tests meaningfully validate software behavior, including code produced by AI agents.
+
+Development highlights:
+
+- Designed a multi-stage verification workflow for analyzing source code, tests, and project specifications
+- Developed test inventory and dependency analysis capabilities to identify relationships between implementation code and test cases
+- Integrated mutation testing to evaluate whether existing tests detect behavioral changes
+- Explored property-based testing and Z3/Lean-based formal verification as complementary approaches to software quality analysis
+- Developed CLI workflows, diagnostics, machine-readable outputs, and human-readable reports
+- Built assessment logic to distinguish confirmed findings, suspected problems, and unknown results
+- Investigated integration with AI-assisted development workflows
+- Tested the toolkit against external open source repositories, including Valibot, Remeda, and ufo
+- Documented correctness, performance, compatibility, and reporting limitations discovered through external project testing
+- Maintained separate development and verification records to track requirements, issues, and quality improvements ([Verification repository](https://github.com/under18dev/veritas_tasks))
+
+</details>
+
+<details>
 <summary><a href="https://github.com/under18dev/ippon-slides">under18dev/ippon-slides</a> - Open source presentation tool</summary>
 
 Creator and maintainer of a Markdown-based presentation tool with live preview and coding-agent integration.
@@ -368,7 +423,7 @@ Development highlights:
 
 - [Blog articles](https://blog.tanahiro2010.com/) <span class="meta">- Tech articles and tutorials</span>
 - [Zenn articles](https://zenn.dev/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
-- [HatenaBlog articles](https://tanahiro2010.hatenablog.jp) <span class="meta">- Tech articles and poem</span>
+- [HatenaBlog articles](https://tanahiro2010.hatenablog.jp) <span class="meta">- Tech articles and essays</span>
 - [Dev.to articles](https://dev.to/tanahiro2010) <span class="meta">- Tech articles and tutorials</span>
 - [Kakuyomu novels](https://kakuyomu.jp/users/tanahiro2010) <span class="meta">- Original novels and short stories</span>
 
