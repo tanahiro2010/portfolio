@@ -379,44 +379,6 @@ Contributions included:
 
 </details>
 
-<details>
-<summary><a href="https://github.com/under18dev/veritas">under18dev/veritas</a> - Open source test quality verification toolkit</summary>
-
-Creator and maintainer of Veritas, a developer tool designed to investigate the effectiveness of software tests and identify gaps between specifications, implementations, and test behavior.
-
-The project explores how static analysis, mutation testing, property-based testing, and formal verification can be combined to evaluate whether tests meaningfully validate software behavior, including code produced by AI agents.
-
-Development highlights:
-
-- Designed a multi-stage verification workflow for analyzing source code, tests, and project specifications
-- Developed test inventory and dependency analysis capabilities to identify relationships between implementation code and test cases
-- Integrated mutation testing to evaluate whether existing tests detect behavioral changes
-- Explored property-based testing and Z3/Lean-based formal verification as complementary approaches to software quality analysis
-- Developed CLI workflows, diagnostics, machine-readable outputs, and human-readable reports
-- Built assessment logic to distinguish confirmed findings, suspected problems, and unknown results
-- Investigated integration with AI-assisted development workflows
-- Tested the toolkit against external open source repositories, including Valibot, Remeda, and ufo
-- Documented correctness, performance, compatibility, and reporting limitations discovered through external project testing
-- Maintained separate development and verification records to track requirements, issues, and quality improvements ([Verification repository](https://github.com/under18dev/veritas_tasks))
-
-</details>
-
-<details>
-<summary><a href="https://github.com/under18dev/ippon-slides">under18dev/ippon-slides</a> - Open source presentation tool</summary>
-
-Creator and maintainer of a Markdown-based presentation tool with live preview and coding-agent integration.
-
-Development highlights:
-
-- Designed custom slide syntax, layout directives, QR code blocks, background images, and syntax highlighting ([#4](https://github.com/under18dev/ippon-slides/pull/4), [#5](https://github.com/under18dev/ippon-slides/pull/5), [#11](https://github.com/under18dev/ippon-slides/pull/11), [#14](https://github.com/under18dev/ippon-slides/pull/14))
-- Added a coding-agent integration to expose the currently displayed slide through a local endpoint and CLI ([#7](https://github.com/under18dev/ippon-slides/pull/7))
-- Implemented incremental hot reloading and fixed stale-response race conditions ([#9](https://github.com/under18dev/ippon-slides/pull/9), [#10](https://github.com/under18dev/ippon-slides/pull/10))
-- Added OGP image generation and multilingual Astro/Starlight documentation ([#12](https://github.com/under18dev/ippon-slides/pull/12), [#16](https://github.com/under18dev/ippon-slides/pull/16))
-- Restricted release and deployment workflows to the upstream repository ([#2](https://github.com/under18dev/ippon-slides/pull/2))
-- Credited the original presentation design inspiration in project documentation ([#18](https://github.com/under18dev/ippon-slides/pull/18), [#19](https://github.com/under18dev/ippon-slides/pull/19))
-
-</details>
-
 ## Writing
 
 - [Blog articles](https://blog.tanahiro2010.com/) <span class="meta">- Tech articles and tutorials</span>
